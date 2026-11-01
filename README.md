@@ -73,4 +73,13 @@ El avance contra los requisitos se lleva en [`entregables/CHECKLIST.md`](entrega
 
 ## Estado
 
-Código completo y probado de punta a punta en un entorno local. Pendiente: corrida oficial en el equipo de medición y redacción del reporte.
+**Experimento terminado.** La matriz oficial se ejecutó del 31 de octubre de 2026 (12:53) al 1 de noviembre de 2026 (16:21) en una laptop Intel i7-13620H con Docker Desktop + WSL2 (cgroups v2): **162 de 162 ejecuciones**, más los planes de ejecución y el análisis.
+
+| Entregable | Archivo |
+|---|---|
+| CSV de mediciones (esquema 8.2) | [`entregables/mediciones.csv`](entregables/mediciones.csv) |
+| Reporte de métricas (7 secciones) | [`entregables/reporte/reporte_metricas.pdf`](entregables/reporte/reporte_metricas.pdf) · [Markdown](entregables/reporte/reporte_metricas.md) |
+| Evidencias de baseline, spill/OOM y planes | [`entregables/evidencias/`](entregables/evidencias/) |
+| Ficha técnica del experimento | [`entregables/benchmark_metadata.json`](entregables/benchmark_metadata.json) |
+
+Las incidencias durante la corrida (cambio del modo de energía y un apagón entre dos corridas) y su verificación están en el anexo de la [ADR-003](docs/decisiones/ADR-003-decisiones-operativas.md).
