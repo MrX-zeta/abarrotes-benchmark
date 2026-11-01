@@ -1,0 +1,11 @@
+[
+  { "$match": {
+      "estado": "entregado",
+      "creado_en": { "$gte": "2026-01-01T00:00:00Z" }
+  } },
+  { "$sort": { "pago.total_final": -1 } },
+  { "$limit": 1000 },
+  { "$project": {
+      "pedido_id": 1, "cliente.cliente_id": 1, "pago.total_final": 1
+  } }
+]

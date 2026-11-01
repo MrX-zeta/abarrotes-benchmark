@@ -1,0 +1,15 @@
+[
+  { "$unwind": "$lineas" },
+  { "$match": { "lineas.precio_unitario": { "$gt": 50 } } },
+  {
+    "$group": {
+      "_id": {
+        "ciudad": "$sucursal.ubicacion.ciudad",
+        "categoria": "$lineas.categoria"
+      },
+      "total_revenue": { "$sum": { "$multiply": ["$lineas.cantidad", "$lineas.precio_unitario"] } },
+      "avg_revenue": { "$avg": { "$multiply": ["$lineas.cantidad", "$lineas.precio_unitario"] } },
+      "count": { "$sum": 1 }
+    }
+  }
+]

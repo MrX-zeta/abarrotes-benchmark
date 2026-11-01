@@ -1,0 +1,15 @@
+{
+  "_descripcion": "Correspondencia query_id -> consulta y configuración por motor (ADR-001). La leen el runner y benchmark_metadata.json.",
+  "Q1": {
+    "mongodb":    { "pipeline": "queries/mongodb/q1_unwind_group.json", "allowDiskUse": null },
+    "postgresql": { "sql": "queries/postgresql/q1_unwind_group.sql", "work_mem": null }
+  },
+  "Q2_V1": {
+    "mongodb":    { "pipeline": "queries/mongodb/q2_sort_topk.json", "allowDiskUse": false },
+    "postgresql": { "sql": "queries/postgresql/q2_sort_topk.sql", "work_mem": "4MB" }
+  },
+  "Q2_V2": {
+    "mongodb":    { "pipeline": "queries/mongodb/q2_sort_topk.json", "allowDiskUse": true },
+    "postgresql": { "sql": "queries/postgresql/q2_sort_topk.sql", "work_mem": "64MB" }
+  }
+}
