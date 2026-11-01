@@ -1,0 +1,42 @@
+{
+  "Q1": {
+    "sort_method": "quicksort  Average Memory: 42kB  Peak Memory: 42kB",
+    "external_merge": true,
+    "temp_buffers": true,
+    "seq_scan": true,
+    "index_scan": false,
+    "error": null
+  },
+  "Q2_V1": {
+    "sort_method": "top-N heapsort  Memory: 274kB",
+    "external_merge": false,
+    "temp_buffers": false,
+    "seq_scan": true,
+    "index_scan": false,
+    "error": null
+  },
+  "Q2_V1_EXPLORATORIA_SIN_LIMIT": {
+    "sort_method": "external merge  Disk: 3408kB",
+    "external_merge": true,
+    "temp_buffers": true,
+    "seq_scan": true,
+    "index_scan": false,
+    "error": null
+  },
+  "Q2_V2": {
+    "sort_method": "top-N heapsort  Memory: 276kB",
+    "external_merge": false,
+    "temp_buffers": false,
+    "seq_scan": true,
+    "index_scan": false,
+    "error": null
+  },
+  "Q2_V2_EXPLORATORIA_SIN_LIMIT": {
+    "sort_method": "quicksort  Memory: 5348kB",
+    "external_merge": false,
+    "temp_buffers": false,
+    "seq_scan": true,
+    "index_scan": false,
+    "error": null
+  }
+}

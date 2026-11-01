@@ -1,0 +1,24 @@
+Limit  (cost=111001.40..111110.60 rows=936 width=96) (actual time=1309.701..1317.070 rows=1000 loops=1)
+  Buffers: shared hit=689 read=105231
+  ->  Gather Merge  (cost=111001.40..111110.60 rows=936 width=96) (actual time=1302.383..1309.639 rows=1000 loops=1)
+        Workers Planned: 2
+        Workers Launched: 2
+        Buffers: shared hit=689 read=105231
+        ->  Sort  (cost=110001.37..110002.54 rows=468 width=96) (actual time=1280.901..1280.985 rows=757 loops=3)
+              Sort Key: ((((data -> 'pago'::text) ->> 'total_final'::text))::numeric) DESC
+              Sort Method: top-N heapsort  Memory: 276kB
+              Buffers: shared hit=689 read=105231
+              Worker 0:  Sort Method: top-N heapsort  Memory: 274kB
+              Worker 1:  Sort Method: top-N heapsort  Memory: 276kB
+              ->  Parallel Seq Scan on pedidos  (cost=0.00..109980.62 rows=468 width=96) (actual time=5.541..1219.975 rows=53069 loops=3)
+                    Filter: (((data ->> 'creado_en'::text) >= '2026-01-01T00:00:00Z'::text) AND ((data ->> 'estado'::text) = 'entregado'::text))
+                    Rows Removed by Filter: 113597
+                    Buffers: shared hit=577 read=105231
+Planning:
+  Buffers: shared hit=119
+Planning Time: 0.677 ms
+JIT:
+  Functions: 13
+  Options: Inlining false, Optimization false, Expressions true, Deforming true
+  Timing: Generation 2.226 ms (Deform 0.460 ms), Inlining 0.000 ms, Optimization 1.300 ms, Emission 22.308 ms, Total 25.834 ms
+Execution Time: 1344.597 ms

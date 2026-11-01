@@ -1,0 +1,50 @@
+run_id: postgresql_A_Q1_c50_r2
+status: spill  disk_spill: TRUE
+docker inspect State: OOMKilled=False ExitCode=0 Running=True
+notas finalize: ['spill: temp_files 0 -> 1263', 'spill: temp_bytes 0 -> 94408622080', "spill: log 'temporary file'"]
+spill_start: {'temp_files': 0, 'temp_bytes': 0}
+spill_end: {'temp_files': 1263, 'temp_bytes': 94408622080}
+limites cgroup: {'cgroup_version': 2, 'cgroup_path': '/host_cgroup/docker/4187c6fb0f36bb6b0b4bbadf16400f4778f1fc5a73e0a762360b5515e9814e5d', 'cpu.max': '400000 100000', 'cpuset.cpus.effective': '0-3', 'memory.max': '4294967296', 'memory.swap.max': '0'}
+
+--- Extracto del log (1270 líneas relevantes; se muestran hasta 40) ---
+2026-11-01 04:30:43.725 UTC [48] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp48.1", size 9805824
+2026-11-01 04:30:44.136 UTC [56] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp56.1", size 9805824
+2026-11-01 04:30:44.146 UTC [79] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp79.1", size 9805824
+2026-11-01 04:30:47.292 UTC [79] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp79.2", size 6307840
+2026-11-01 04:30:47.315 UTC [48] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp48.2", size 6307840
+2026-11-01 04:30:47.679 UTC [56] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp56.2", size 6307840
+2026-11-01 04:30:52.574 UTC [57] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp57.1", size 9805824
+2026-11-01 04:30:53.803 UTC [48] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp48.3", size 13369344
+2026-11-01 04:30:53.825 UTC [79] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp79.3", size 13369344
+2026-11-01 04:30:54.190 UTC [56] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp56.3", size 13361152
+2026-11-01 04:30:56.171 UTC [57] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp57.2", size 6307840
+2026-11-01 04:30:57.541 UTC [48] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp48.4", size 6291456
+2026-11-01 04:30:57.868 UTC [79] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp79.4", size 6291456
+2026-11-01 04:30:58.162 UTC [56] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp56.4", size 6291456
+2026-11-01 04:31:04.302 UTC [48] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp48.5", size 7340032
+2026-11-01 04:31:04.314 UTC [79] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp79.5", size 7340032
+2026-11-01 04:31:05.070 UTC [56] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp56.5", size 7340032
+2026-11-01 04:31:07.140 UTC [57] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp57.3", size 13369344
+2026-11-01 04:31:14.327 UTC [57] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp57.4", size 6291456
+2026-11-01 04:31:14.924 UTC [48] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp48.6", size 9535488
+...
+2026-11-01 04:35:59.067 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.24", size 3727360
+2026-11-01 04:35:59.078 UTC [83] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp83.13", size 783974400
+2026-11-01 04:35:59.078 UTC [51] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp51.13", size 783966208
+2026-11-01 04:35:59.081 UTC [60] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp60.13", size 783966208
+2026-11-01 04:35:59.086 UTC [43] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp43.13", size 783966208
+2026-11-01 04:35:59.090 UTC [76] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp76.13", size 783966208
+2026-11-01 04:35:59.091 UTC [73] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp73.13", size 783949824
+2026-11-01 04:35:59.092 UTC [67] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp67.13", size 783966208
+2026-11-01 04:35:59.098 UTC [82] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp82.13", size 783966208
+2026-11-01 04:35:59.101 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.13", size 783966208
+2026-11-01 04:35:59.102 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.24", size 3727360
+2026-11-01 04:35:59.104 UTC [85] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp85.13", size 783966208
+2026-11-01 04:35:59.210 UTC [48] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp48.26", size 262479872
+2026-11-01 04:35:59.211 UTC [48] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp48.34", size 7348224
+2026-11-01 04:35:59.218 UTC [57] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp57.26", size 388317184
+2026-11-01 04:35:59.219 UTC [56] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp56.26", size 343638016
+2026-11-01 04:35:59.219 UTC [79] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp79.26", size 336338944
+2026-11-01 04:35:59.221 UTC [79] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp79.34", size 7356416
+2026-11-01 04:35:59.221 UTC [57] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp57.27", size 9805824
+2026-11-01 04:35:59.221 UTC [56] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp56.34", size 10977280

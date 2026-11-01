@@ -1,0 +1,10 @@
+run_id: mongodb_C_Q1_c50_r2
+status: error  disk_spill: FALSE
+docker inspect State: OOMKilled=False ExitCode=0 Running=True
+notas finalize: ['ninguna consulta completada dentro de la ventana']
+spill_start: {'metrics.query.group.spilledBytes': 0, 'metrics.query.group.spilledDataStorageSize': 0, 'metrics.query.group.spilledRecords': 0, 'metrics.query.group.spills': 0, 'metrics.query.lookup.hashLookupSpillToDisk': 0, 'metrics.query.lookup.hashLookupSpillToDiskBytes': 0, 'metrics.query.setWindowFields.spilledBytes': 0, 'metrics.query.setWindowFields.spilledRecords': 0, 'metrics.query.setWindowFields.spills': 0, 'metrics.query.sort.spillToDisk': 0, 'metrics.query.sort.spillToDiskBytes': 0}
+spill_end: {'metrics.query.group.spilledBytes': 0, 'metrics.query.group.spilledDataStorageSize': 0, 'metrics.query.group.spilledRecords': 0, 'metrics.query.group.spills': 0, 'metrics.query.lookup.hashLookupSpillToDisk': 0, 'metrics.query.lookup.hashLookupSpillToDiskBytes': 0, 'metrics.query.setWindowFields.spilledBytes': 0, 'metrics.query.setWindowFields.spilledRecords': 0, 'metrics.query.setWindowFields.spills': 0, 'metrics.query.sort.spillToDisk': 0, 'metrics.query.sort.spillToDiskBytes': 0}
+limites cgroup: {'cgroup_version': 2, 'cgroup_path': '/host_cgroup/docker/2a748414df6380fbdf0cef4b21be4224d7c5a1412be4fed73780bec9bd409311', 'cpu.max': '100000 100000', 'cpuset.cpus.effective': '0-3', 'memory.max': '1073741824', 'memory.swap.max': '0'}
+
+--- Extracto del log (0 líneas relevantes; se muestran hasta 40) ---
+

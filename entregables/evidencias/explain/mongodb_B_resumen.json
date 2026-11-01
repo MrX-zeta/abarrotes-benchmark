@@ -1,0 +1,32 @@
+{
+  "Q1": {
+    "usedDisk": false,
+    "COLLSCAN": true,
+    "IXSCAN": false,
+    "error": null
+  },
+  "Q2_V1": {
+    "usedDisk": false,
+    "COLLSCAN": false,
+    "IXSCAN": true,
+    "error": null
+  },
+  "Q2_V1_EXPLORATORIA_SIN_LIMIT": {
+    "usedDisk": false,
+    "COLLSCAN": false,
+    "IXSCAN": true,
+    "error": null
+  },
+  "Q2_V2": {
+    "usedDisk": false,
+    "COLLSCAN": false,
+    "IXSCAN": true,
+    "error": null
+  },
+  "Q2_V2_EXPLORATORIA_SIN_LIMIT": {
+    "usedDisk": false,
+    "COLLSCAN": false,
+    "IXSCAN": true,
+    "error": null
+  }
+}

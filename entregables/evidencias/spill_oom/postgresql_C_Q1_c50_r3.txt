@@ -1,0 +1,24 @@
+run_id: postgresql_C_Q1_c50_r3
+status: oom  disk_spill: FALSE
+docker inspect State: OOMKilled=True ExitCode=0 Running=True
+notas finalize: ['docker inspect: OOMKilled', 'log: proceso terminado por señal 9 (OOM killer)', 'ninguna consulta completada dentro de la ventana', "3416/3416 consultas fallidas (> 5%); códigos ['ConnectionTimeout', 'OperationalError']"]
+spill_start: {'error': "ConnectionTimeout('connection timeout expired')"}
+spill_end: {'error': 'OperationalError(\'connection failed: connection to server at "172.19.0.5", port 5432 failed: FATAL:  the database system is in recovery mode\')'}
+limites cgroup: {'cgroup_version': 2, 'cgroup_path': '/host_cgroup/docker/bb45d768bc7c53f6beb7ac00d765a885124f986e8dd8ac2a4c458260d667ca10', 'cpu.max': '100000 100000', 'cpuset.cpus.effective': '0-3', 'memory.max': '1073741824', 'memory.swap.max': '0'}
+
+--- Extracto del log (15 líneas relevantes; se muestran hasta 40) ---
+2026-11-01 20:44:17.645 UTC [1] LOG:  server process (PID 77) was terminated by signal 9: Killed
+2026-11-01 20:44:17.653 UTC [1] LOG:  terminating any other active server processes
+2026-11-01 20:44:39.040 UTC [1] LOG:  all server processes terminated; reinitializing
+2026-11-01 20:45:07.028 UTC [1] LOG:  server process (PID 676) was terminated by signal 9: Killed
+2026-11-01 20:45:17.234 UTC [1] LOG:  terminating any other active server processes
+2026-11-01 20:46:17.534 UTC [1] LOG:  all server processes terminated; reinitializing
+2026-11-01 20:46:36.007 UTC [1] LOG:  server process (PID 1582) was terminated by signal 9: Killed
+2026-11-01 20:46:56.927 UTC [1] LOG:  terminating any other active server processes
+2026-11-01 20:47:57.326 UTC [1] LOG:  all server processes terminated; reinitializing
+2026-11-01 20:48:25.387 UTC [1] LOG:  server process (PID 2140) was terminated by signal 9: Killed
+2026-11-01 20:48:25.389 UTC [1] LOG:  terminating any other active server processes
+2026-11-01 20:49:28.045 UTC [1] LOG:  all server processes terminated; reinitializing
+2026-11-01 20:49:40.350 UTC [1] LOG:  server process (PID 3155) was terminated by signal 9: Killed
+2026-11-01 20:49:40.350 UTC [1] LOG:  terminating any other active server processes
+2026-11-01 20:50:02.104 UTC [1] LOG:  all server processes terminated; reinitializing
