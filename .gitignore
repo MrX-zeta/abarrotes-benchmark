@@ -1,0 +1,19 @@
+# Secretos
+.env
+
+# Dataset generado
+data/*
+!data/.gitkeep
+
+# Evidencia por corrida (results/raw, 12 MB) SÍ se versiona; el dataset (702 MB) se regenera con la semilla.
+results/prometheus/*
+!results/prometheus/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Sistema
+.DS_Store
+Thumbs.db

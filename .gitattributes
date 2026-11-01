@@ -1,0 +1,21 @@
+# Scripts y configuración siempre con LF (se ejecutan en Linux/Docker)
+* text=auto
+*.sh text eol=lf
+*.py text eol=lf
+*.sql text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.conf text eol=lf
+*.env text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.csv text eol=lf
+
+# Binarios
+*.xlsx binary
+*.png binary
+
+# Lanzadores de Windows con CRLF
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+*.pdf binary
