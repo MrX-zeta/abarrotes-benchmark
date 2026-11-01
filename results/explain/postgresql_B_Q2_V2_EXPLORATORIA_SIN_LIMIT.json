@@ -1,0 +1,151 @@
+{
+  "query": "SELECT data->>'pedido_id' AS pedido_id,\n       data->'cliente'->>'cliente_id' AS cliente_id,\n       (data->'pago'->>'total_final')::numeric AS total_final\nFROM pedidos\nWHERE data->>'estado' = 'entregado'\n  AND data->>'creado_en' >= '2026-01-01T00:00:00Z'\nORDER BY (data->'pago'->>'total_final')::numeric DESC;",
+  "opciones": {
+    "work_mem": "64MB"
+  },
+  "resultado": {
+    "segundos": 1.517,
+    "texto": "Gather Merge  (cost=111001.40..111110.60 rows=936 width=96) (actual time=1362.616..1476.283 rows=159208 loops=1)\n  Workers Planned: 2\n  Workers Launched: 2\n  Buffers: shared hit=881 read=105039\n  ->  Sort  (cost=110001.37..110002.54 rows=468 width=96) (actual time=1338.265..1351.125 rows=53069 loops=3)\n        Sort Key: ((((data -> 'pago'::text) ->> 'total_final'::text))::numeric) DESC\n        Sort Method: quicksort  Memory: 5321kB\n        Buffers: shared hit=881 read=105039\n        Worker 0:  Sort Method: quicksort  Memory: 5202kB\n        Worker 1:  Sort Method: quicksort  Memory: 5281kB\n        ->  Parallel Seq Scan on pedidos  (cost=0.00..109980.62 rows=468 width=96) (actual time=7.604..1283.266 rows=53069 loops=3)\n              Filter: (((data ->> 'creado_en'::text) >= '2026-01-01T00:00:00Z'::text) AND ((data ->> 'estado'::text) = 'entregado'::text))\n              Rows Removed by Filter: 113597\n              Buffers: shared hit=769 read=105039\nPlanning:\n  Buffers: shared hit=119\nPlanning Time: 1.039 ms\nJIT:\n  Functions: 12\n  Options: Inlining false, Optimization false, Expressions true, Deforming true\n  Timing: Generation 3.068 ms (Deform 0.602 ms), Inlining 0.000 ms, Optimization 1.175 ms, Emission 21.102 ms, Total 25.345 ms\nExecution Time: 1513.718 ms",
+    "json": [
+      {
+        "Plan": {
+          "Node Type": "Gather Merge",
+          "Parallel Aware": false,
+          "Async Capable": false,
+          "Startup Cost": 111001.4,
+          "Total Cost": 111110.6,
+          "Plan Rows": 936,
+          "Plan Width": 96,
+          "Actual Startup Time": 1275.763,
+          "Actual Total Time": 1389.614,
+          "Actual Rows": 159208,
+          "Actual Loops": 1,
+          "Workers Planned": 2,
+          "Workers Launched": 2,
+          "Shared Hit Blocks": 977,
+          "Shared Read Blocks": 104943,
+          "Shared Dirtied Blocks": 0,
+          "Shared Written Blocks": 0,
+          "Local Hit Blocks": 0,
+          "Local Read Blocks": 0,
+          "Local Dirtied Blocks": 0,
+          "Local Written Blocks": 0,
+          "Temp Read Blocks": 0,
+          "Temp Written Blocks": 0,
+          "Plans": [
+            {
+              "Node Type": "Sort",
+              "Parent Relationship": "Outer",
+              "Parallel Aware": false,
+              "Async Capable": false,
+              "Startup Cost": 110001.37,
+              "Total Cost": 110002.54,
+              "Plan Rows": 468,
+              "Plan Width": 96,
+              "Actual Startup Time": 1255.985,
+              "Actual Total Time": 1268.567,
+              "Actual Rows": 53069,
+              "Actual Loops": 3,
+              "Sort Key": [
+                "((((data -> 'pago'::text) ->> 'total_final'::text))::numeric) DESC"
+              ],
+              "Sort Method": "quicksort",
+              "Sort Space Used": 5367,
+              "Sort Space Type": "Memory",
+              "Shared Hit Blocks": 977,
+              "Shared Read Blocks": 104943,
+              "Shared Dirtied Blocks": 0,
+              "Shared Written Blocks": 0,
+              "Local Hit Blocks": 0,
+              "Local Read Blocks": 0,
+              "Local Dirtied Blocks": 0,
+              "Local Written Blocks": 0,
+              "Temp Read Blocks": 0,
+              "Temp Written Blocks": 0,
+              "Workers": [
+                {
+                  "Worker Number": 0,
+                  "Sort Method": "quicksort",
+                  "Sort Space Used": 5191,
+                  "Sort Space Type": "Memory"
+                },
+                {
+                  "Worker Number": 1,
+                  "Sort Method": "quicksort",
+                  "Sort Space Used": 5246,
+                  "Sort Space Type": "Memory"
+                }
+              ],
+              "Plans": [
+                {
+                  "Node Type": "Seq Scan",
+                  "Parent Relationship": "Outer",
+                  "Parallel Aware": true,
+                  "Async Capable": false,
+                  "Relation Name": "pedidos",
+                  "Alias": "pedidos",
+                  "Startup Cost": 0.0,
+                  "Total Cost": 109980.62,
+                  "Plan Rows": 468,
+                  "Plan Width": 96,
+                  "Actual Startup Time": 6.285,
+                  "Actual Total Time": 1206.182,
+                  "Actual Rows": 53069,
+                  "Actual Loops": 3,
+                  "Filter": "(((data ->> 'creado_en'::text) >= '2026-01-01T00:00:00Z'::text) AND ((data ->> 'estado'::text) = 'entregado'::text))",
+                  "Rows Removed by Filter": 113597,
+                  "Shared Hit Blocks": 865,
+                  "Shared Read Blocks": 104943,
+                  "Shared Dirtied Blocks": 0,
+                  "Shared Written Blocks": 0,
+                  "Local Hit Blocks": 0,
+                  "Local Read Blocks": 0,
+                  "Local Dirtied Blocks": 0,
+                  "Local Written Blocks": 0,
+                  "Temp Read Blocks": 0,
+                  "Temp Written Blocks": 0,
+                  "Workers": []
+                }
+              ]
+            }
+          ]
+        },
+        "Planning": {
+          "Shared Hit Blocks": 0,
+          "Shared Read Blocks": 0,
+          "Shared Dirtied Blocks": 0,
+          "Shared Written Blocks": 0,
+          "Local Hit Blocks": 0,
+          "Local Read Blocks": 0,
+          "Local Dirtied Blocks": 0,
+          "Local Written Blocks": 0,
+          "Temp Read Blocks": 0,
+          "Temp Written Blocks": 0
+        },
+        "Planning Time": 0.126,
+        "Triggers": [],
+        "JIT": {
+          "Functions": 12,
+          "Options": {
+            "Inlining": false,
+            "Optimization": false,
+            "Expressions": true,
+            "Deforming": true
+          },
+          "Timing": {
+            "Generation": {
+              "Deform": 0.33,
+              "Total": 1.628
+            },
+            "Inlining": 0.0,
+            "Optimization": 0.967,
+            "Emission": 17.557,
+            "Total": 20.152
+          }
+        },
+        "Execution Time": 1401.37
+      }
+    ],
+    "ok": true
+  }
+}

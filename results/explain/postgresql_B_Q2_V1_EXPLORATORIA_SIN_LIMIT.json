@@ -1,0 +1,151 @@
+{
+  "query": "SELECT data->>'pedido_id' AS pedido_id,\n       data->'cliente'->>'cliente_id' AS cliente_id,\n       (data->'pago'->>'total_final')::numeric AS total_final\nFROM pedidos\nWHERE data->>'estado' = 'entregado'\n  AND data->>'creado_en' >= '2026-01-01T00:00:00Z'\nORDER BY (data->'pago'->>'total_final')::numeric DESC;",
+  "opciones": {
+    "work_mem": "4MB"
+  },
+  "resultado": {
+    "segundos": 1.512,
+    "texto": "Gather Merge  (cost=111001.40..111110.60 rows=936 width=96) (actual time=1406.946..1492.872 rows=159208 loops=1)\n  Workers Planned: 2\n  Workers Launched: 2\n  Buffers: shared hit=497 read=105423, temp read=1270 written=1273\n  ->  Sort  (cost=110001.37..110002.54 rows=468 width=96) (actual time=1386.770..1400.549 rows=53069 loops=3)\n        Sort Key: ((((data -> 'pago'::text) ->> 'total_final'::text))::numeric) DESC\n        Sort Method: external merge  Disk: 3440kB\n        Buffers: shared hit=497 read=105423, temp read=1270 written=1273\n        Worker 0:  Sort Method: external merge  Disk: 3392kB\n        Worker 1:  Sort Method: external merge  Disk: 3328kB\n        ->  Parallel Seq Scan on pedidos  (cost=0.00..109980.62 rows=468 width=96) (actual time=6.395..1301.149 rows=53069 loops=3)\n              Filter: (((data ->> 'creado_en'::text) >= '2026-01-01T00:00:00Z'::text) AND ((data ->> 'estado'::text) = 'entregado'::text))\n              Rows Removed by Filter: 113597\n              Buffers: shared hit=385 read=105423\nPlanning:\n  Buffers: shared hit=119\nPlanning Time: 0.637 ms\nJIT:\n  Functions: 12\n  Options: Inlining false, Optimization false, Expressions true, Deforming true\n  Timing: Generation 1.908 ms (Deform 0.364 ms), Inlining 0.000 ms, Optimization 1.080 ms, Emission 17.763 ms, Total 20.750 ms\nExecution Time: 1528.952 ms",
+    "json": [
+      {
+        "Plan": {
+          "Node Type": "Gather Merge",
+          "Parallel Aware": false,
+          "Async Capable": false,
+          "Startup Cost": 111001.4,
+          "Total Cost": 111110.6,
+          "Plan Rows": 936,
+          "Plan Width": 96,
+          "Actual Startup Time": 1322.782,
+          "Actual Total Time": 1413.26,
+          "Actual Rows": 159208,
+          "Actual Loops": 1,
+          "Workers Planned": 2,
+          "Workers Launched": 2,
+          "Shared Hit Blocks": 593,
+          "Shared Read Blocks": 105327,
+          "Shared Dirtied Blocks": 0,
+          "Shared Written Blocks": 0,
+          "Local Hit Blocks": 0,
+          "Local Read Blocks": 0,
+          "Local Dirtied Blocks": 0,
+          "Local Written Blocks": 0,
+          "Temp Read Blocks": 1269,
+          "Temp Written Blocks": 1272,
+          "Plans": [
+            {
+              "Node Type": "Sort",
+              "Parent Relationship": "Outer",
+              "Parallel Aware": false,
+              "Async Capable": false,
+              "Startup Cost": 110001.37,
+              "Total Cost": 110002.54,
+              "Plan Rows": 468,
+              "Plan Width": 96,
+              "Actual Startup Time": 1296.322,
+              "Actual Total Time": 1308.555,
+              "Actual Rows": 53069,
+              "Actual Loops": 3,
+              "Sort Key": [
+                "((((data -> 'pago'::text) ->> 'total_final'::text))::numeric) DESC"
+              ],
+              "Sort Method": "external merge",
+              "Sort Space Used": 3432,
+              "Sort Space Type": "Disk",
+              "Shared Hit Blocks": 593,
+              "Shared Read Blocks": 105327,
+              "Shared Dirtied Blocks": 0,
+              "Shared Written Blocks": 0,
+              "Local Hit Blocks": 0,
+              "Local Read Blocks": 0,
+              "Local Dirtied Blocks": 0,
+              "Local Written Blocks": 0,
+              "Temp Read Blocks": 1269,
+              "Temp Written Blocks": 1272,
+              "Workers": [
+                {
+                  "Worker Number": 0,
+                  "Sort Method": "external merge",
+                  "Sort Space Used": 3440,
+                  "Sort Space Type": "Disk"
+                },
+                {
+                  "Worker Number": 1,
+                  "Sort Method": "external merge",
+                  "Sort Space Used": 3280,
+                  "Sort Space Type": "Disk"
+                }
+              ],
+              "Plans": [
+                {
+                  "Node Type": "Seq Scan",
+                  "Parent Relationship": "Outer",
+                  "Parallel Aware": true,
+                  "Async Capable": false,
+                  "Relation Name": "pedidos",
+                  "Alias": "pedidos",
+                  "Startup Cost": 0.0,
+                  "Total Cost": 109980.62,
+                  "Plan Rows": 468,
+                  "Plan Width": 96,
+                  "Actual Startup Time": 6.043,
+                  "Actual Total Time": 1208.924,
+                  "Actual Rows": 53069,
+                  "Actual Loops": 3,
+                  "Filter": "(((data ->> 'creado_en'::text) >= '2026-01-01T00:00:00Z'::text) AND ((data ->> 'estado'::text) = 'entregado'::text))",
+                  "Rows Removed by Filter": 113597,
+                  "Shared Hit Blocks": 481,
+                  "Shared Read Blocks": 105327,
+                  "Shared Dirtied Blocks": 0,
+                  "Shared Written Blocks": 0,
+                  "Local Hit Blocks": 0,
+                  "Local Read Blocks": 0,
+                  "Local Dirtied Blocks": 0,
+                  "Local Written Blocks": 0,
+                  "Temp Read Blocks": 0,
+                  "Temp Written Blocks": 0,
+                  "Workers": []
+                }
+              ]
+            }
+          ]
+        },
+        "Planning": {
+          "Shared Hit Blocks": 0,
+          "Shared Read Blocks": 0,
+          "Shared Dirtied Blocks": 0,
+          "Shared Written Blocks": 0,
+          "Local Hit Blocks": 0,
+          "Local Read Blocks": 0,
+          "Local Dirtied Blocks": 0,
+          "Local Written Blocks": 0,
+          "Temp Read Blocks": 0,
+          "Temp Written Blocks": 0
+        },
+        "Planning Time": 0.125,
+        "Triggers": [],
+        "JIT": {
+          "Functions": 12,
+          "Options": {
+            "Inlining": false,
+            "Optimization": false,
+            "Expressions": true,
+            "Deforming": true
+          },
+          "Timing": {
+            "Generation": {
+              "Deform": 0.363,
+              "Total": 2.069
+            },
+            "Inlining": 0.0,
+            "Optimization": 1.189,
+            "Emission": 16.622,
+            "Total": 19.88
+          }
+        },
+        "Execution Time": 1425.462
+      }
+    ],
+    "ok": true
+  }
+}

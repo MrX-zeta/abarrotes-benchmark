@@ -1,0 +1,247 @@
+{
+  "query": [
+    {
+      "$unwind": "$lineas"
+    },
+    {
+      "$match": {
+        "lineas.precio_unitario": {
+          "$gt": 50
+        }
+      }
+    },
+    {
+      "$group": {
+        "_id": {
+          "ciudad": "$sucursal.ubicacion.ciudad",
+          "categoria": "$lineas.categoria"
+        },
+        "total_revenue": {
+          "$sum": {
+            "$multiply": [
+              "$lineas.cantidad",
+              "$lineas.precio_unitario"
+            ]
+          }
+        },
+        "avg_revenue": {
+          "$avg": {
+            "$multiply": [
+              "$lineas.cantidad",
+              "$lineas.precio_unitario"
+            ]
+          }
+        },
+        "count": {
+          "$sum": 1
+        }
+      }
+    }
+  ],
+  "opciones": {
+    "allowDiskUse": null
+  },
+  "resultado": {
+    "ok": true,
+    "segundos": 7.042,
+    "explain": {
+      "explainVersion": "1",
+      "stages": [
+        {
+          "$cursor": {
+            "queryPlanner": {
+              "namespace": "abarrotes.pedidos",
+              "parsedQuery": {},
+              "indexFilterSet": false,
+              "queryHash": "5EF7E6AD",
+              "planCacheShapeHash": "5EF7E6AD",
+              "planCacheKey": "E2DB0B19",
+              "optimizationTimeMillis": 1,
+              "maxIndexedOrSolutionsReached": false,
+              "maxIndexedAndSolutionsReached": false,
+              "maxScansToExplodeReached": false,
+              "prunedSimilarIndexes": false,
+              "winningPlan": {
+                "isCached": false,
+                "stage": "PROJECTION_DEFAULT",
+                "transformBy": {
+                  "lineas": 1,
+                  "sucursal.ubicacion.ciudad": 1,
+                  "_id": 0
+                },
+                "inputStage": {
+                  "stage": "COLLSCAN",
+                  "direction": "forward"
+                }
+              },
+              "rejectedPlans": []
+            },
+            "executionStats": {
+              "executionSuccess": true,
+              "nReturned": 500000,
+              "executionTimeMillis": 7036,
+              "totalKeysExamined": 0,
+              "totalDocsExamined": 500000,
+              "executionStages": {
+                "isCached": false,
+                "stage": "PROJECTION_DEFAULT",
+                "nReturned": 500000,
+                "executionTimeMillisEstimate": 3697,
+                "works": 500001,
+                "advanced": 500000,
+                "needTime": 0,
+                "needYield": 0,
+                "saveState": 384,
+                "restoreState": 384,
+                "isEOF": 1,
+                "transformBy": {
+                  "lineas": 1,
+                  "sucursal.ubicacion.ciudad": 1,
+                  "_id": 0
+                },
+                "inputStage": {
+                  "stage": "COLLSCAN",
+                  "nReturned": 500000,
+                  "executionTimeMillisEstimate": 3303,
+                  "works": 500001,
+                  "advanced": 500000,
+                  "needTime": 0,
+                  "needYield": 0,
+                  "saveState": 384,
+                  "restoreState": 384,
+                  "isEOF": 1,
+                  "direction": "forward",
+                  "docsExamined": 500000
+                }
+              }
+            }
+          },
+          "nReturned": 500000,
+          "executionTimeMillisEstimate": 4194
+        },
+        {
+          "$unwind": {
+            "path": "$lineas"
+          },
+          "nReturned": 1498550,
+          "executionTimeMillisEstimate": 4670
+        },
+        {
+          "$match": {
+            "lineas.precio_unitario": {
+              "$gt": 50
+            }
+          },
+          "nReturned": 545122,
+          "executionTimeMillisEstimate": 6066
+        },
+        {
+          "$group": {
+            "_id": {
+              "ciudad": "$sucursal.ubicacion.ciudad",
+              "categoria": "$lineas.categoria"
+            },
+            "total_revenue": {
+              "$sum": {
+                "$multiply": [
+                  "$lineas.cantidad",
+                  "$lineas.precio_unitario"
+                ]
+              }
+            },
+            "avg_revenue": {
+              "$avg": {
+                "$multiply": [
+                  "$lineas.cantidad",
+                  "$lineas.precio_unitario"
+                ]
+              }
+            },
+            "count": {
+              "$sum": {
+                "$const": 1
+              }
+            }
+          },
+          "maxAccumulatorMemoryUsageBytes": {
+            "total_revenue": 9216,
+            "avg_revenue": 7488,
+            "count": 9216
+          },
+          "totalOutputDataSizeBytes": 41394,
+          "usedDisk": false,
+          "spills": 0,
+          "spilledDataStorageSize": 0,
+          "numBytesSpilledEstimate": 0,
+          "spilledRecords": 0,
+          "nReturned": 72,
+          "executionTimeMillisEstimate": 7030
+        }
+      ],
+      "queryShapeHash": "B34F55BB1121247F7E7B728148A8F402A8C5A85CF03B8DA4EC5DBC4A79EE9319",
+      "serverInfo": {
+        "host": "a2cb66242e1b",
+        "port": 27017,
+        "version": "8.0.34",
+        "gitVersion": "51db4515a6597aedcf6188ee4e48a27e65b065ae"
+      },
+      "serverParameters": {
+        "internalQueryFacetBufferSizeBytes": 104857600,
+        "internalQueryFacetMaxOutputDocSizeBytes": 104857600,
+        "internalLookupStageIntermediateDocumentMaxSizeBytes": 104857600,
+        "internalDocumentSourceGroupMaxMemoryBytes": 104857600,
+        "internalQueryMaxBlockingSortMemoryUsageBytes": 104857600,
+        "internalQueryProhibitBlockingMergeOnMongoS": 0,
+        "internalQueryMaxAddToSetBytes": 104857600,
+        "internalDocumentSourceSetWindowFieldsMaxMemoryBytes": 104857600,
+        "internalQueryFrameworkControl": "trySbeRestricted",
+        "internalQueryPlannerIgnoreIndexWithCollationForRegex": 1
+      },
+      "command": {
+        "aggregate": "pedidos",
+        "pipeline": [
+          {
+            "$unwind": "$lineas"
+          },
+          {
+            "$match": {
+              "lineas.precio_unitario": {
+                "$gt": 50
+              }
+            }
+          },
+          {
+            "$group": {
+              "_id": {
+                "ciudad": "$sucursal.ubicacion.ciudad",
+                "categoria": "$lineas.categoria"
+              },
+              "total_revenue": {
+                "$sum": {
+                  "$multiply": [
+                    "$lineas.cantidad",
+                    "$lineas.precio_unitario"
+                  ]
+                }
+              },
+              "avg_revenue": {
+                "$avg": {
+                  "$multiply": [
+                    "$lineas.cantidad",
+                    "$lineas.precio_unitario"
+                  ]
+                }
+              },
+              "count": {
+                "$sum": 1
+              }
+            }
+          }
+        ],
+        "cursor": {},
+        "$db": "abarrotes"
+      },
+      "ok": 1.0
+    }
+  }
+}

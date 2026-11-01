@@ -1,0 +1,273 @@
+{
+  "query": [
+    {
+      "$match": {
+        "estado": "entregado",
+        "creado_en": {
+          "$gte": "2026-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "$sort": {
+        "pago.total_final": -1
+      }
+    },
+    {
+      "$limit": 1000
+    },
+    {
+      "$project": {
+        "pedido_id": 1,
+        "cliente.cliente_id": 1,
+        "pago.total_final": 1
+      }
+    }
+  ],
+  "opciones": {
+    "allowDiskUse": false
+  },
+  "resultado": {
+    "ok": true,
+    "segundos": 0.982,
+    "explain": {
+      "explainVersion": "1",
+      "queryPlanner": {
+        "namespace": "abarrotes.pedidos",
+        "parsedQuery": {
+          "$and": [
+            {
+              "estado": {
+                "$eq": "entregado"
+              }
+            },
+            {
+              "creado_en": {
+                "$gte": "2026-01-01T00:00:00Z"
+              }
+            }
+          ]
+        },
+        "indexFilterSet": false,
+        "queryHash": "EB0FA3A1",
+        "planCacheShapeHash": "EB0FA3A1",
+        "planCacheKey": "053F4DD9",
+        "optimizationTimeMillis": 0,
+        "optimizedPipeline": true,
+        "maxIndexedOrSolutionsReached": false,
+        "maxIndexedAndSolutionsReached": false,
+        "maxScansToExplodeReached": false,
+        "prunedSimilarIndexes": false,
+        "winningPlan": {
+          "isCached": false,
+          "stage": "PROJECTION_DEFAULT",
+          "transformBy": {
+            "_id": true,
+            "pedido_id": true,
+            "cliente": {
+              "cliente_id": true
+            },
+            "pago": {
+              "total_final": true
+            }
+          },
+          "inputStage": {
+            "stage": "SORT",
+            "sortPattern": {
+              "pago.total_final": -1
+            },
+            "memLimit": 104857600,
+            "limitAmount": 1000,
+            "type": "simple",
+            "inputStage": {
+              "stage": "FETCH",
+              "filter": {
+                "estado": {
+                  "$eq": "entregado"
+                }
+              },
+              "inputStage": {
+                "stage": "IXSCAN",
+                "keyPattern": {
+                  "creado_en": 1
+                },
+                "indexName": "idx_creado_en",
+                "isMultiKey": false,
+                "multiKeyPaths": {
+                  "creado_en": []
+                },
+                "isUnique": false,
+                "isSparse": false,
+                "isPartial": false,
+                "indexVersion": 2,
+                "direction": "forward",
+                "indexBounds": {
+                  "creado_en": [
+                    "[\"2026-01-01T00:00:00Z\", {})"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "rejectedPlans": []
+      },
+      "executionStats": {
+        "executionSuccess": true,
+        "nReturned": 1000,
+        "executionTimeMillis": 975,
+        "totalKeysExamined": 227297,
+        "totalDocsExamined": 227297,
+        "executionStages": {
+          "isCached": false,
+          "stage": "PROJECTION_DEFAULT",
+          "nReturned": 1000,
+          "executionTimeMillisEstimate": 964,
+          "works": 228299,
+          "advanced": 1000,
+          "needTime": 227298,
+          "needYield": 0,
+          "saveState": 47,
+          "restoreState": 47,
+          "isEOF": 1,
+          "transformBy": {
+            "_id": true,
+            "pedido_id": true,
+            "cliente": {
+              "cliente_id": true
+            },
+            "pago": {
+              "total_final": true
+            }
+          },
+          "inputStage": {
+            "stage": "SORT",
+            "nReturned": 1000,
+            "executionTimeMillisEstimate": 956,
+            "works": 228299,
+            "advanced": 1000,
+            "needTime": 227298,
+            "needYield": 0,
+            "saveState": 47,
+            "restoreState": 47,
+            "isEOF": 1,
+            "sortPattern": {
+              "pago.total_final": -1
+            },
+            "memLimit": 104857600,
+            "limitAmount": 1000,
+            "type": "simple",
+            "totalDataSizeSorted": 1958364,
+            "usedDisk": false,
+            "spills": 0,
+            "spilledDataStorageSize": 0,
+            "inputStage": {
+              "stage": "FETCH",
+              "filter": {
+                "estado": {
+                  "$eq": "entregado"
+                }
+              },
+              "nReturned": 159208,
+              "executionTimeMillisEstimate": 896,
+              "works": 227298,
+              "advanced": 159208,
+              "needTime": 68089,
+              "needYield": 0,
+              "saveState": 47,
+              "restoreState": 47,
+              "isEOF": 1,
+              "docsExamined": 227297,
+              "alreadyHasObj": 0,
+              "inputStage": {
+                "stage": "IXSCAN",
+                "nReturned": 227297,
+                "executionTimeMillisEstimate": 264,
+                "works": 227298,
+                "advanced": 227297,
+                "needTime": 0,
+                "needYield": 0,
+                "saveState": 47,
+                "restoreState": 47,
+                "isEOF": 1,
+                "keyPattern": {
+                  "creado_en": 1
+                },
+                "indexName": "idx_creado_en",
+                "isMultiKey": false,
+                "multiKeyPaths": {
+                  "creado_en": []
+                },
+                "isUnique": false,
+                "isSparse": false,
+                "isPartial": false,
+                "indexVersion": 2,
+                "direction": "forward",
+                "indexBounds": {
+                  "creado_en": [
+                    "[\"2026-01-01T00:00:00Z\", {})"
+                  ]
+                },
+                "keysExamined": 227297,
+                "seeks": 1,
+                "dupsTested": 0,
+                "dupsDropped": 0
+              }
+            }
+          }
+        }
+      },
+      "queryShapeHash": "820345E1A331333E29B735F830761AE58F51C1ADAD5D4574485E04DA6FD79B9D",
+      "command": {
+        "aggregate": "pedidos",
+        "pipeline": [
+          {
+            "$match": {
+              "estado": "entregado",
+              "creado_en": {
+                "$gte": "2026-01-01T00:00:00Z"
+              }
+            }
+          },
+          {
+            "$sort": {
+              "pago.total_final": -1
+            }
+          },
+          {
+            "$limit": 1000
+          },
+          {
+            "$project": {
+              "pedido_id": 1,
+              "cliente.cliente_id": 1,
+              "pago.total_final": 1
+            }
+          }
+        ],
+        "cursor": {},
+        "allowDiskUse": false,
+        "$db": "abarrotes"
+      },
+      "serverInfo": {
+        "host": "5714d99bc7ee",
+        "port": 27017,
+        "version": "8.0.34",
+        "gitVersion": "51db4515a6597aedcf6188ee4e48a27e65b065ae"
+      },
+      "serverParameters": {
+        "internalQueryFacetBufferSizeBytes": 104857600,
+        "internalQueryFacetMaxOutputDocSizeBytes": 104857600,
+        "internalLookupStageIntermediateDocumentMaxSizeBytes": 104857600,
+        "internalDocumentSourceGroupMaxMemoryBytes": 104857600,
+        "internalQueryMaxBlockingSortMemoryUsageBytes": 104857600,
+        "internalQueryProhibitBlockingMergeOnMongoS": 0,
+        "internalQueryMaxAddToSetBytes": 104857600,
+        "internalDocumentSourceSetWindowFieldsMaxMemoryBytes": 104857600,
+        "internalQueryFrameworkControl": "trySbeRestricted",
+        "internalQueryPlannerIgnoreIndexWithCollationForRegex": 1
+      },
+      "ok": 1.0
+    }
+  }
+}

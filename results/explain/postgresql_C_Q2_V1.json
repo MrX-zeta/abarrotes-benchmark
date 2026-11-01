@@ -1,0 +1,177 @@
+{
+  "query": "SELECT data->>'pedido_id' AS pedido_id,\n       data->'cliente'->>'cliente_id' AS cliente_id,\n       (data->'pago'->>'total_final')::numeric AS total_final\nFROM pedidos\nWHERE data->>'estado' = 'entregado'\n  AND data->>'creado_en' >= '2026-01-01T00:00:00Z'\nORDER BY (data->'pago'->>'total_final')::numeric DESC\nLIMIT 1000;\n",
+  "opciones": {
+    "work_mem": "4MB"
+  },
+  "resultado": {
+    "segundos": 4.503,
+    "texto": "Limit  (cost=111001.40..111110.60 rows=936 width=96) (actual time=4422.848..4432.397 rows=1000 loops=1)\n  Buffers: shared hit=305 read=105615\n  ->  Gather Merge  (cost=111001.40..111110.60 rows=936 width=96) (actual time=4411.731..4421.170 rows=1000 loops=1)\n        Workers Planned: 2\n        Workers Launched: 2\n        Buffers: shared hit=305 read=105615\n        ->  Sort  (cost=110001.37..110002.54 rows=468 width=96) (actual time=4389.516..4389.607 rows=779 loops=3)\n              Sort Key: ((((data -> 'pago'::text) ->> 'total_final'::text))::numeric) DESC\n              Sort Method: top-N heapsort  Memory: 274kB\n              Buffers: shared hit=305 read=105615\n              Worker 0:  Sort Method: top-N heapsort  Memory: 274kB\n              Worker 1:  Sort Method: top-N heapsort  Memory: 273kB\n              ->  Parallel Seq Scan on pedidos  (cost=0.00..109980.62 rows=468 width=96) (actual time=42.886..4344.311 rows=53069 loops=3)\n                    Filter: (((data ->> 'creado_en'::text) >= '2026-01-01T00:00:00Z'::text) AND ((data ->> 'estado'::text) = 'entregado'::text))\n                    Rows Removed by Filter: 113597\n                    Buffers: shared hit=193 read=105615\nPlanning:\n  Buffers: shared hit=119\nPlanning Time: 2.166 ms\nJIT:\n  Functions: 13\n  Options: Inlining false, Optimization false, Expressions true, Deforming true\n  Timing: Generation 1.965 ms (Deform 0.441 ms), Inlining 0.000 ms, Optimization 1.912 ms, Emission 134.108 ms, Total 137.984 ms\nExecution Time: 4488.479 ms",
+    "json": [
+      {
+        "Plan": {
+          "Node Type": "Limit",
+          "Parallel Aware": false,
+          "Async Capable": false,
+          "Startup Cost": 111001.4,
+          "Total Cost": 111110.6,
+          "Plan Rows": 936,
+          "Plan Width": 96,
+          "Actual Startup Time": 2885.985,
+          "Actual Total Time": 2892.374,
+          "Actual Rows": 1000,
+          "Actual Loops": 1,
+          "Shared Hit Blocks": 401,
+          "Shared Read Blocks": 105519,
+          "Shared Dirtied Blocks": 0,
+          "Shared Written Blocks": 0,
+          "Local Hit Blocks": 0,
+          "Local Read Blocks": 0,
+          "Local Dirtied Blocks": 0,
+          "Local Written Blocks": 0,
+          "Temp Read Blocks": 0,
+          "Temp Written Blocks": 0,
+          "Plans": [
+            {
+              "Node Type": "Gather Merge",
+              "Parent Relationship": "Outer",
+              "Parallel Aware": false,
+              "Async Capable": false,
+              "Startup Cost": 111001.4,
+              "Total Cost": 111110.6,
+              "Plan Rows": 936,
+              "Plan Width": 96,
+              "Actual Startup Time": 2881.814,
+              "Actual Total Time": 2888.093,
+              "Actual Rows": 1000,
+              "Actual Loops": 1,
+              "Workers Planned": 2,
+              "Workers Launched": 2,
+              "Shared Hit Blocks": 401,
+              "Shared Read Blocks": 105519,
+              "Shared Dirtied Blocks": 0,
+              "Shared Written Blocks": 0,
+              "Local Hit Blocks": 0,
+              "Local Read Blocks": 0,
+              "Local Dirtied Blocks": 0,
+              "Local Written Blocks": 0,
+              "Temp Read Blocks": 0,
+              "Temp Written Blocks": 0,
+              "Plans": [
+                {
+                  "Node Type": "Sort",
+                  "Parent Relationship": "Outer",
+                  "Parallel Aware": false,
+                  "Async Capable": false,
+                  "Startup Cost": 110001.37,
+                  "Total Cost": 110002.54,
+                  "Plan Rows": 468,
+                  "Plan Width": 96,
+                  "Actual Startup Time": 2823.53,
+                  "Actual Total Time": 2823.639,
+                  "Actual Rows": 752,
+                  "Actual Loops": 3,
+                  "Sort Key": [
+                    "((((data -> 'pago'::text) ->> 'total_final'::text))::numeric) DESC"
+                  ],
+                  "Sort Method": "top-N heapsort",
+                  "Sort Space Used": 275,
+                  "Sort Space Type": "Memory",
+                  "Shared Hit Blocks": 401,
+                  "Shared Read Blocks": 105519,
+                  "Shared Dirtied Blocks": 0,
+                  "Shared Written Blocks": 0,
+                  "Local Hit Blocks": 0,
+                  "Local Read Blocks": 0,
+                  "Local Dirtied Blocks": 0,
+                  "Local Written Blocks": 0,
+                  "Temp Read Blocks": 0,
+                  "Temp Written Blocks": 0,
+                  "Workers": [
+                    {
+                      "Worker Number": 0,
+                      "Sort Method": "top-N heapsort",
+                      "Sort Space Used": 271,
+                      "Sort Space Type": "Memory"
+                    },
+                    {
+                      "Worker Number": 1,
+                      "Sort Method": "top-N heapsort",
+                      "Sort Space Used": 272,
+                      "Sort Space Type": "Memory"
+                    }
+                  ],
+                  "Plans": [
+                    {
+                      "Node Type": "Seq Scan",
+                      "Parent Relationship": "Outer",
+                      "Parallel Aware": true,
+                      "Async Capable": false,
+                      "Relation Name": "pedidos",
+                      "Alias": "pedidos",
+                      "Startup Cost": 0.0,
+                      "Total Cost": 109980.62,
+                      "Plan Rows": 468,
+                      "Plan Width": 96,
+                      "Actual Startup Time": 26.249,
+                      "Actual Total Time": 2704.075,
+                      "Actual Rows": 53069,
+                      "Actual Loops": 3,
+                      "Filter": "(((data ->> 'creado_en'::text) >= '2026-01-01T00:00:00Z'::text) AND ((data ->> 'estado'::text) = 'entregado'::text))",
+                      "Rows Removed by Filter": 113597,
+                      "Shared Hit Blocks": 289,
+                      "Shared Read Blocks": 105519,
+                      "Shared Dirtied Blocks": 0,
+                      "Shared Written Blocks": 0,
+                      "Local Hit Blocks": 0,
+                      "Local Read Blocks": 0,
+                      "Local Dirtied Blocks": 0,
+                      "Local Written Blocks": 0,
+                      "Temp Read Blocks": 0,
+                      "Temp Written Blocks": 0,
+                      "Workers": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "Planning": {
+          "Shared Hit Blocks": 0,
+          "Shared Read Blocks": 0,
+          "Shared Dirtied Blocks": 0,
+          "Shared Written Blocks": 0,
+          "Local Hit Blocks": 0,
+          "Local Read Blocks": 0,
+          "Local Dirtied Blocks": 0,
+          "Local Written Blocks": 0,
+          "Temp Read Blocks": 0,
+          "Temp Written Blocks": 0
+        },
+        "Planning Time": 0.137,
+        "Triggers": [],
+        "JIT": {
+          "Functions": 13,
+          "Options": {
+            "Inlining": false,
+            "Optimization": false,
+            "Expressions": true,
+            "Deforming": true
+          },
+          "Timing": {
+            "Generation": {
+              "Deform": 0.431,
+              "Total": 2.227
+            },
+            "Inlining": 0.0,
+            "Optimization": 0.948,
+            "Emission": 81.651,
+            "Total": 84.825
+          }
+        },
+        "Execution Time": 2892.927
+      }
+    ],
+    "ok": true
+  }
+}
