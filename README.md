@@ -1,21 +1,5 @@
 # abarrotes-benchmark
 
-**Universidad Politécnica de Chiapas**
-
-**Reporte de métricas: MongoDB frente a PostgreSQL JSONB bajo contención de CPU y memoria**
-
-| | |
-|---|---|
-| **Asignatura** | Bases de Datos en la Nube |
-| **Docente** | Horacio Irán Solís Cisneros |
-| **Alumno** | Brian Luis Ruiz Pérez |
-| **Matrícula** | 243738 |
-| **Cuatrimestre y grupo** | 7-A |
-| **Fecha de entrega** | 01/11/2026 |
-
-Suchiapa, Chiapas
-
-
 Benchmark de **MongoDB** contra **PostgreSQL (JSONB)** almacenando los mismos pedidos en formato JSON, con **CPU y memoria limitadas a propósito** (contenedores con cgroups v2) para ver cuál se comporta mejor cuando le falta capacidad.
 
 Práctica de *Bases de Datos en la Nube*. El dominio es ficticio: una tienda de abarrotes con varias sucursales y pedidos en línea que el cliente recoge en tienda (producto de una dinámica de entrevista en clase).
