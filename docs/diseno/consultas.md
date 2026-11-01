@@ -50,9 +50,9 @@ LIMIT 1000;
 | `Q2_V1` | `allowDiskUse: false` | `SET work_mem = '4MB'` |
 | `Q2_V2` | `allowDiskUse: true` | `SET work_mem = '64MB'` |
 
-## Observaciones de la prueba local (no son resultados oficiales)
+## Planes observados
 
-Estos son planes obtenidos en el entorno de prueba (2 CPU) que conviene confirmar con `run_benchmarks.sh explain` en el equipo de medición:
+Primero se observaron en la prueba local y luego se **confirmaron en la corrida oficial** (`results/explain/`, sección 5 del reporte):
 
 - **Q1 en PostgreSQL** ordena para agrupar (`external merge`, spill a disco con `work_mem` 4MB) porque el planificador sobreestima las filas de `jsonb_array_elements`. MongoDB agrupa en memoria (`COLLSCAN` y `$group`).
 - **Q2 en MongoDB** usa el índice `creado_en` (`IXSCAN` + `FETCH`); **PostgreSQL** prefiere `Seq Scan` y ordena con `top-N heapsort`.
