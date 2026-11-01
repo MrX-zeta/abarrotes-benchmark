@@ -1,0 +1,142 @@
+# docker-compose.yml — Benchmark MongoDB vs PostgreSQL JSONB (playbook 8.1)
+#
+# Perfiles de recursos parametrizados: los valores vienen de profiles/PROFILE_*.env, que
+# run_benchmarks.sh exporta antes de cada corrida. Las variables de .env fijan puertos y núcleos.
+#
+# Reglas (CLAUDE.md / ADR-003):
+#   * Un solo motor encendido por corrida (perfiles de compose "mongodb" y "postgresql").
+#   * Sin healthchecks en los motores: un healthcheck corre DENTRO del contenedor y consumiría
+#     CPU/memoria del límite durante la medición. La disponibilidad se comprueba desde el runner.
+#   * Swap desactivado: mem_swappiness 0 (playbook) + memswap_limit = mem_limit (efectivo en cgroups v2).
+#   * Núcleos separados: motor (DB_CPUSET), runner (RUNNER_CPUSET), monitoreo (MONITOR_CPUSET).
+#   * Los motores no publican puertos en Windows: el runner los alcanza por la red interna
+#     "abarrotes-bench" (evita choques con un MongoDB/PostgreSQL local y el proxy de puertos).
+
+name: abarrotes-bench
+
+x-db-limits: &db-limits
+  cpus: ${DB_CPUS:-4.0}
+  cpuset: "${DB_CPUSET:-0-3}"
+  mem_limit: ${DB_MEM:-4096m}
+  memswap_limit: ${DB_MEM:-4096m}
+  mem_swappiness: ${DB_SWAPPINESS:-0}
+  restart: "no"
+  networks: [bench]
+
+services:
+  mongodb:
+    <<: *db-limits
+    image: mongo:8.0.34
+    container_name: bench-mongodb
+    profiles: ["mongodb"]
+    command: ["mongod", "--bind_ip_all", "--wiredTigerCacheSizeGB", "${MONGO_CACHE_GB:-1}"]
+    volumes:
+      - mongo_data:/data/db
+
+  postgresql:
+    <<: *db-limits
+    image: postgres:17.11
+    container_name: bench-postgresql
+    profiles: ["postgresql"]
+    shm_size: 512m
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-bench}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-bench}
+      POSTGRES_DB: ${POSTGRES_DB:-abarrotes}
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8 --locale=C"
+    command:
+      - postgres
+      - -c
+      - shared_buffers=${PG_SHARED_BUFFERS:-1GB}
+      - -c
+      - log_temp_files=0
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+      - ./config/postgresql/init.sql:/docker-entrypoint-initdb.d/01_init.sql:ro
+
+  # --- Telemetría (playbook sección 7) ------------------------------------------------------------
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:v0.52.1
+    container_name: bench-cadvisor
+    profiles: ["monitoring"]
+    privileged: true
+    cpuset: "${MONITOR_CPUSET:-12-15}"
+    devices: ["/dev/kmsg"]
+    command:
+      - --housekeeping_interval=1s
+      # El factory "docker" de cAdvisor falla con el almacén de imágenes containerd (por defecto en
+      # Docker Desktop reciente). Se desactiva apuntándolo a un socket inexistente: cAdvisor lee
+      # entonces los cgroups crudos y etiqueta cada contenedor con id="/docker/<container_id>".
+      - --docker=unix:///nonexistent/docker.sock
+      - --docker_only=false
+      - --store_container_labels=false
+      - --disable_metrics=percpu,sched,tcp,udp,referenced_memory,cpu_topology,resctrl,advtcp,hugetlb,process
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+      - /dev/disk/:/dev/disk:ro
+    networks: [bench]
+    restart: unless-stopped
+
+  node-exporter:
+    image: prom/node-exporter:v1.9.1
+    container_name: bench-node-exporter
+    profiles: ["monitoring"]
+    cpuset: "${MONITOR_CPUSET:-12-15}"
+    pid: host
+    command:
+      - --path.procfs=/host/proc
+      - --path.sysfs=/host/sys
+      - --path.rootfs=/rootfs
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+    networks: [bench]
+    restart: unless-stopped
+
+  prometheus:
+    image: prom/prometheus:v3.5.0
+    container_name: bench-prometheus
+    profiles: ["monitoring"]
+    cpuset: "${MONITOR_CPUSET:-12-15}"
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.retention.time=30d
+    ports: ["127.0.0.1:${PROMETHEUS_PORT:-9090}:9090"]
+    volumes:
+      - ./config/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prom_data:/prometheus
+    networks: [bench]
+    restart: unless-stopped
+
+  # --- Herramientas: generador, carga, runner, explain, análisis -----------------------------------
+  runner:
+    build: ./benchmark_runner
+    image: abarrotes-runner:1.0
+    profiles: ["tools"]
+    cpuset: "${RUNNER_CPUSET:-4-11}"
+    cgroup: host
+    working_dir: /work
+    environment:
+      MONGO_URI: mongodb://mongodb:27017/?directConnection=true
+      MONGO_DB: ${MONGO_DB:-abarrotes}
+      PG_DSN: postgresql://${POSTGRES_USER:-bench}:${POSTGRES_PASSWORD:-bench}@postgresql:5432/${POSTGRES_DB:-abarrotes}
+      PROMETHEUS_URL: http://prometheus:9090
+      HOST_CGROUP_ROOT: /host_cgroup
+      PYTHONUNBUFFERED: "1"
+    volumes:
+      - ./:/work
+      - /sys/fs/cgroup:/host_cgroup:ro
+    networks: [bench]
+
+networks:
+  bench:
+    name: abarrotes-bench
+
+volumes:
+  mongo_data:
+  pg_data:
+  prom_data:
