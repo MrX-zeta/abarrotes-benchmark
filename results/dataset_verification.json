@@ -1,0 +1,19 @@
+{
+  "documentos": 500000,
+  "documentos_esperados": 500000,
+  "profundidad_maxima_anidamiento": 3,
+  "promedio_lineas_por_pedido": 2.997,
+  "lineas_totales": 1498550,
+  "q1_lineas_que_pasan_filtro": 545122,
+  "q1_selectividad_filtro_pct": 36.38,
+  "q1_numero_de_grupos": 72,
+  "q2_documentos_candidatos": 159208,
+  "q2_candidatos_pct": 31.84,
+  "checks": {
+    "conteo_correcto": true,
+    "tres_niveles_anidamiento": true,
+    "promedio_aprox_3_lineas": true,
+    "selectividad_q1_entre_30_y_45": true
+  },
+  "todo_ok": true
+}

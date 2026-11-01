@@ -1,0 +1,20 @@
+# Versiones exactas (2026-10-31T18:29:15Z)
+docker_server=29.9.2
+compose=5.6.1
+image mongo:8.0.34 mongo@sha256:b9924c330a8bbc5800fe9c69f04a84e221eca7b28fd049a0354147d9908fa142
+image postgres:17.11 postgres@sha256:31ba9c94a03ada9988f2bb493a22a75eef3a185884533e5cdbcd498ea835b08f
+image gcr.io/cadvisor/cadvisor:v0.52.1 gcr.io/cadvisor/cadvisor@sha256:f40e65878e25c2e78ea037f73a449527a0fb994e303dc3e34cb6b187b4b91435
+image prom/prometheus:v3.5.0 prom/prometheus@sha256:63805ebb8d2b3920190daf1cb14a60871b16fd38bed42b857a3182bc621f4996
+image prom/node-exporter:v1.9.1 prom/node-exporter@sha256:d00a542e409ee618a4edc67da14dd48c5da66726bbd5537ab2af9c1dfc442c8a
+image alpine:3.20 alpine@sha256:d9e853e87e55526f6b2917df91a2115c36dd7c696a35be12163d44e6e2a4b6bc
+image abarrotes-runner:1.0 abarrotes-runner@sha256:e945432c667480bbe16dcf9505af1a5c640bb479d1f11e85ef9b0dcd57f49bca
+mongod: db version v8.0.34
+postgres: postgres (PostgreSQL) 17.11 (Debian 17.11-1.pgdg13+2)
+runner python libs:
+matplotlib==3.11.2
+numpy==2.5.3
+pandas==3.0.5
+psycopg==3.3.6
+psycopg-binary==3.3.6
+pymongo==4.19.0
+requests==2.34.2

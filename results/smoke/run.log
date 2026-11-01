@@ -1,0 +1,12 @@
+[2026-10-31 12:35:15] INICIO smoke_mongodb_C_Q1_c10_r1  [mongodb PROFILE_C_SEVERE Q1 c=10 r=1]
+[2026-10-31 12:36:21] FIN smoke_mongodb_C_Q1_c10_r1; cooldown 5s
+[2026-10-31 12:36:26] INICIO smoke_mongodb_C_Q2_V1_c10_r1  [mongodb PROFILE_C_SEVERE Q2_V1 c=10 r=1]
+[2026-10-31 12:37:28] FIN smoke_mongodb_C_Q2_V1_c10_r1; cooldown 5s
+[2026-10-31 12:37:33] INICIO smoke_mongodb_C_Q2_V2_c10_r1  [mongodb PROFILE_C_SEVERE Q2_V2 c=10 r=1]
+[2026-10-31 12:38:36] FIN smoke_mongodb_C_Q2_V2_c10_r1; cooldown 5s
+[2026-10-31 12:38:41] INICIO smoke_postgresql_C_Q1_c10_r1  [postgresql PROFILE_C_SEVERE Q1 c=10 r=1]
+[2026-10-31 12:39:53] FIN smoke_postgresql_C_Q1_c10_r1; cooldown 5s
+[2026-10-31 12:39:58] INICIO smoke_postgresql_C_Q2_V1_c10_r1  [postgresql PROFILE_C_SEVERE Q2_V1 c=10 r=1]
+[2026-10-31 12:41:01] FIN smoke_postgresql_C_Q2_V1_c10_r1; cooldown 5s
+[2026-10-31 12:41:06] INICIO smoke_postgresql_C_Q2_V2_c10_r1  [postgresql PROFILE_C_SEVERE Q2_V2 c=10 r=1]
+[2026-10-31 12:42:09] FIN smoke_postgresql_C_Q2_V2_c10_r1; cooldown 5s

@@ -1,0 +1,62 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261031115707
+Username: WORKSTATION-01\Luis
+RunAs User: WORKSTATION-01\Luis
+Configuration Name: 
+Machine: WORKSTATION-01 (Microsoft Windows NT 10.0.26300.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File c:\Users\brian\UPchiapas\Septimo Cuatri\Optativa I\U2\2026.C3.EVA02\abarrotes-benchmark\windows\00_preparar_windows.ps1
+Process ID: 8456
+PSVersion: 5.1.26100.9818
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9818
+BuildVersion: 10.0.26100.9818
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+=== Preparación de Windows 2026-10-31T11:57:08 ===
+
+=== 1. Docker Desktop
+Docker Desktop instalado: C:\Program Files\Docker\Docker\Docker Desktop.exe
+
+
+=== 2. Distribuciones de WSL
+
+Distribución para el benchmark: Ubuntu
+
+=== 3. .wslconfig (24 GB, 16 CPUs, sin swap)
+Respaldo del .wslconfig anterior: C:\Users\brian\.wslconfig.bak-20261031-115708
+[wsl2]
+memory=24GB
+processors=16
+swap=0
+Nuevo .wslconfig:
+[wsl2]
+memory=24GB
+processors=16
+swap=0
+
+
+=== 4. Energía (conectado a corriente): sin suspensión ni hibernación, tapa sin acción
+
+
+
+
+
+    Current AC Power Setting Index: 0x00000000
+
+=== 5. Reinicio de WSL y Docker Desktop para aplicar .wslconfig
+
+Docker listo.
+
+=== 6. Verificación
+
+
+
+=== Listo. Pendiente manual: pausar actualizaciones de Windows 1 semana y modo de energía 'Mejor rendimiento'.
+**********************
+Windows PowerShell transcript end
+End time: 20261031115742
+**********************

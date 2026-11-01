@@ -1,0 +1,6 @@
+  postgresql: 100,000
+  postgresql: 200,000
+  postgresql: 300,000
+  postgresql: 400,000
+  postgresql: 500,000
+{"engine": "postgresql", "documentos": 500000, "indices": ["idx_pedidos_creado_en", "pedidos_pkey"], "segundos": 81.3}

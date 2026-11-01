@@ -1,0 +1,194 @@
+2026-10-31 18:39:44.654 UTC [46] ERROR:  canceling statement due to statement timeout
+2026-10-31 18:39:44.654 UTC [46] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 18:39:44.654 UTC [49] ERROR:  canceling statement due to statement timeout
+2026-10-31 18:39:44.654 UTC [49] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 18:39:44.654 UTC [50] ERROR:  canceling statement due to statement timeout
+2026-10-31 18:39:44.654 UTC [50] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 18:39:44.654 UTC [52] ERROR:  canceling statement due to statement timeout
+2026-10-31 18:39:44.654 UTC [52] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 18:39:44.654 UTC [51] ERROR:  canceling statement due to statement timeout
+2026-10-31 18:39:44.654 UTC [51] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 18:39:44.654 UTC [44] ERROR:  canceling statement due to statement timeout
+2026-10-31 18:39:44.654 UTC [44] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 18:39:44.654 UTC [53] ERROR:  canceling statement due to statement timeout
+2026-10-31 18:39:44.654 UTC [53] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 18:39:44.654 UTC [45] ERROR:  canceling statement due to statement timeout
+2026-10-31 18:39:44.654 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 18:39:44.654 UTC [48] ERROR:  canceling statement due to statement timeout
+2026-10-31 18:39:44.654 UTC [48] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 18:39:44.654 UTC [47] ERROR:  canceling statement due to statement timeout
+2026-10-31 18:39:44.654 UTC [47] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 18:39:44.663 UTC [59] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 18:39:44.663 UTC [59] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 18:39:44.664 UTC [60] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 18:39:44.664 UTC [60] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 18:39:44.664 UTC [57] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 18:39:44.664 UTC [57] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 18:39:44.664 UTC [55] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 18:39:44.664 UTC [55] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 18:39:44.664 UTC [54] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 18:39:44.664 UTC [54] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 18:39:44.664 UTC [58] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 18:39:44.664 UTC [58] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 18:39:44.667 UTC [56] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 18:39:44.667 UTC [56] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 18:39:44.679 UTC [57] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp57.0", size 272875520
+2026-10-31 18:39:44.749 UTC [58] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp58.0", size 263839744
+2026-10-31 18:39:44.750 UTC [54] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp54.0", size 261259264
+2026-10-31 18:39:44.754 UTC [59] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp59.0", size 279027712
+2026-10-31 18:39:44.754 UTC [56] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp56.0", size 271753216
+2026-10-31 18:39:44.754 UTC [55] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp55.0", size 285122560
+2026-10-31 18:39:44.761 UTC [60] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp60.0", size 423215104
+2026-10-31 18:39:44.783 UTC [51] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp51.0", size 379494400
+2026-10-31 18:39:44.784 UTC [53] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp53.0", size 379494400
+2026-10-31 18:39:44.849 UTC [49] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp49.0", size 379494400
+2026-10-31 18:39:44.851 UTC [48] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp48.0", size 379494400
+2026-10-31 18:39:44.851 UTC [52] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp52.0", size 379494400
+2026-10-31 18:39:44.852 UTC [44] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp44.0", size 395468800
+2026-10-31 18:39:45.062 UTC [1] LOG:  background worker "parallel worker" (PID 60) exited with exit code 1
+2026-10-31 18:39:45.143 UTC [1] LOG:  background worker "parallel worker" (PID 54) exited with exit code 1
+2026-10-31 18:39:45.143 UTC [1] LOG:  background worker "parallel worker" (PID 55) exited with exit code 1
+2026-10-31 18:39:45.143 UTC [1] LOG:  background worker "parallel worker" (PID 56) exited with exit code 1
+2026-10-31 18:39:45.143 UTC [1] LOG:  background worker "parallel worker" (PID 57) exited with exit code 1
+2026-10-31 18:39:45.143 UTC [1] LOG:  background worker "parallel worker" (PID 59) exited with exit code 1
+2026-10-31 18:39:45.145 UTC [1] LOG:  background worker "parallel worker" (PID 58) exited with exit code 1
+2026-10-31 18:39:45.149 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.0", size 360816640
+2026-10-31 18:39:45.152 UTC [50] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp50.0", size 239427584
+2026-10-31 18:39:45.152 UTC [47] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp47.0", size 237682688
+2026-10-31 18:39:45.153 UTC [46] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp46.0", size 241172480

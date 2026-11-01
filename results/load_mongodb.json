@@ -1,0 +1,6 @@
+  mongodb: 100,000
+  mongodb: 200,000
+  mongodb: 300,000
+  mongodb: 400,000
+  mongodb: 500,000
+{"engine": "mongodb", "documentos": 500000, "indices": ["_id_", "idx_creado_en", "idx_pedido_id"], "segundos": 116.8}

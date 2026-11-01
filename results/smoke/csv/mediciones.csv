@@ -1,0 +1,7 @@
+timestamp_epoch,engine,profile,query_id,concurrency,run_number,throughput_qps,latency_p50_ms,latency_p95_ms,latency_p99_ms,cpu_throttled_seconds,max_rss_mb,disk_spill,status
+1793471743,mongodb,PROFILE_C_SEVERE,Q1,10,1,0.000,,,,90.545,406.209,false,error
+1793471811,mongodb,PROFILE_C_SEVERE,Q2_V1,10,1,0.000,,,,74.101,418.775,false,error
+1793471878,mongodb,PROFILE_C_SEVERE,Q2_V2,10,1,0.000,,,,82.367,411.345,false,error
+1793471954,postgresql,PROFILE_C_SEVERE,Q1,10,1,0.000,,,,80.366,523.850,true,error
+1793472023,postgresql,PROFILE_C_SEVERE,Q2_V1,10,1,0.000,,,,90.039,178.745,false,error
+1793472091,postgresql,PROFILE_C_SEVERE,Q2_V2,10,1,0.000,,,,81.498,177.582,false,error
