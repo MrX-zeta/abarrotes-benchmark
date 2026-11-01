@@ -1,0 +1,2 @@
+timestamp_epoch,engine,profile,query_id,concurrency,run_number,throughput_qps,latency_p50_ms,latency_p95_ms,latency_p99_ms,cpu_throttled_seconds,max_rss_mb,disk_spill,status
+1793505684,mongodb,PROFILE_A_BASELINE,Q2_V1,1,2,1.107,893.744,1001.958,1051.032,0.000,944.304,false,ok

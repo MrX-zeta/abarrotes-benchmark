@@ -1,0 +1,34 @@
+2026-10-31 19:20:19.688 UTC [27] LOG:  checkpoint starting: time
+2026-10-31 19:20:19.724 UTC [27] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.014 s, sync=0.003 s, total=0.038 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/357DD898, redo lsn=0/357DD840
+2026-10-31 19:21:31.749 UTC [36] ERROR:  canceling statement due to statement timeout
+2026-10-31 19:21:31.749 UTC [36] STATEMENT:  SELECT data->>'pedido_id' AS pedido_id,
+	       data->'cliente'->>'cliente_id' AS cliente_id,
+	       (data->'pago'->>'total_final')::numeric AS total_final
+	FROM pedidos
+	WHERE data->>'estado' = 'entregado'
+	  AND data->>'creado_en' >= '2026-01-01T00:00:00Z'
+	ORDER BY (data->'pago'->>'total_final')::numeric DESC
+	LIMIT 1000;
+	
+2026-10-31 19:21:31.759 UTC [915] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 19:21:31.759 UTC [915] STATEMENT:  SELECT data->>'pedido_id' AS pedido_id,
+	       data->'cliente'->>'cliente_id' AS cliente_id,
+	       (data->'pago'->>'total_final')::numeric AS total_final
+	FROM pedidos
+	WHERE data->>'estado' = 'entregado'
+	  AND data->>'creado_en' >= '2026-01-01T00:00:00Z'
+	ORDER BY (data->'pago'->>'total_final')::numeric DESC
+	LIMIT 1000;
+	
+2026-10-31 19:21:31.760 UTC [914] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 19:21:31.760 UTC [914] STATEMENT:  SELECT data->>'pedido_id' AS pedido_id,
+	       data->'cliente'->>'cliente_id' AS cliente_id,
+	       (data->'pago'->>'total_final')::numeric AS total_final
+	FROM pedidos
+	WHERE data->>'estado' = 'entregado'
+	  AND data->>'creado_en' >= '2026-01-01T00:00:00Z'
+	ORDER BY (data->'pago'->>'total_final')::numeric DESC
+	LIMIT 1000;
+	
+2026-10-31 19:21:31.765 UTC [1] LOG:  background worker "parallel worker" (PID 915) exited with exit code 1
+2026-10-31 19:21:31.765 UTC [1] LOG:  background worker "parallel worker" (PID 914) exited with exit code 1

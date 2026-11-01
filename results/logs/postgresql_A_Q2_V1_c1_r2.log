@@ -1,0 +1,14 @@
+2026-11-01 05:27:47.498 UTC [36] ERROR:  canceling statement due to statement timeout
+2026-11-01 05:27:47.498 UTC [36] STATEMENT:  SELECT data->>'pedido_id' AS pedido_id,
+	       data->'cliente'->>'cliente_id' AS cliente_id,
+	       (data->'pago'->>'total_final')::numeric AS total_final
+	FROM pedidos
+	WHERE data->>'estado' = 'entregado'
+	  AND data->>'creado_en' >= '2026-01-01T00:00:00Z'
+	ORDER BY (data->'pago'->>'total_final')::numeric DESC
+	LIMIT 1000;
+	
+2026-11-01 05:27:47.499 UTC [918] ERROR:  could not map dynamic shared memory segment
+2026-11-01 05:27:47.500 UTC [919] ERROR:  could not map dynamic shared memory segment
+2026-11-01 05:27:47.502 UTC [1] LOG:  background worker "parallel worker" (PID 918) exited with exit code 1
+2026-11-01 05:27:47.502 UTC [1] LOG:  background worker "parallel worker" (PID 919) exited with exit code 1

@@ -1,0 +1,32 @@
+2026-10-31 19:14:08.439 UTC [37] ERROR:  canceling statement due to statement timeout
+2026-10-31 19:14:08.439 UTC [37] STATEMENT:  SELECT data->>'pedido_id' AS pedido_id,
+	       data->'cliente'->>'cliente_id' AS cliente_id,
+	       (data->'pago'->>'total_final')::numeric AS total_final
+	FROM pedidos
+	WHERE data->>'estado' = 'entregado'
+	  AND data->>'creado_en' >= '2026-01-01T00:00:00Z'
+	ORDER BY (data->'pago'->>'total_final')::numeric DESC
+	LIMIT 1000;
+	
+2026-10-31 19:14:08.450 UTC [582] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 19:14:08.450 UTC [582] STATEMENT:  SELECT data->>'pedido_id' AS pedido_id,
+	       data->'cliente'->>'cliente_id' AS cliente_id,
+	       (data->'pago'->>'total_final')::numeric AS total_final
+	FROM pedidos
+	WHERE data->>'estado' = 'entregado'
+	  AND data->>'creado_en' >= '2026-01-01T00:00:00Z'
+	ORDER BY (data->'pago'->>'total_final')::numeric DESC
+	LIMIT 1000;
+	
+2026-10-31 19:14:08.450 UTC [581] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 19:14:08.450 UTC [581] STATEMENT:  SELECT data->>'pedido_id' AS pedido_id,
+	       data->'cliente'->>'cliente_id' AS cliente_id,
+	       (data->'pago'->>'total_final')::numeric AS total_final
+	FROM pedidos
+	WHERE data->>'estado' = 'entregado'
+	  AND data->>'creado_en' >= '2026-01-01T00:00:00Z'
+	ORDER BY (data->'pago'->>'total_final')::numeric DESC
+	LIMIT 1000;
+	
+2026-10-31 19:14:08.456 UTC [1] LOG:  background worker "parallel worker" (PID 581) exited with exit code 1
+2026-10-31 19:14:08.456 UTC [1] LOG:  background worker "parallel worker" (PID 582) exited with exit code 1

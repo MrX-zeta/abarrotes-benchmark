@@ -1,0 +1,1106 @@
+2026-10-31 20:01:36.815 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.1", size 9805824
+2026-10-31 20:01:36.815 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:01:37.734 UTC [83] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp83.1", size 9805824
+2026-10-31 20:01:37.734 UTC [83] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:01:39.202 UTC [54] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp54.1", size 9805824
+2026-10-31 20:01:39.202 UTC [54] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:01:46.109 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.2", size 6307840
+2026-10-31 20:01:46.109 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:01:48.026 UTC [83] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp83.2", size 6307840
+2026-10-31 20:01:48.026 UTC [83] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:01:50.205 UTC [54] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp54.2", size 6307840
+2026-10-31 20:01:50.205 UTC [54] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:02:03.622 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.3", size 13369344
+2026-10-31 20:02:03.622 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:02:08.312 UTC [83] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp83.3", size 13361152
+2026-10-31 20:02:08.312 UTC [83] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:02:09.313 UTC [57] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp57.1", size 9805824
+2026-10-31 20:02:09.313 UTC [57] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:02:10.834 UTC [54] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp54.3", size 13369344
+2026-10-31 20:02:10.834 UTC [54] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:02:19.624 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.4", size 6291456
+2026-10-31 20:02:19.624 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:02:24.899 UTC [83] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp83.4", size 6291456
+2026-10-31 20:02:24.899 UTC [83] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:02:24.910 UTC [57] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp57.2", size 6307840
+2026-10-31 20:02:24.910 UTC [57] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:02:27.012 UTC [54] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp54.4", size 6291456
+2026-10-31 20:02:27.012 UTC [54] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:02:38.517 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.5", size 7340032
+2026-10-31 20:02:38.517 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:02:45.204 UTC [83] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp83.5", size 7340032
+2026-10-31 20:02:45.204 UTC [83] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:02:46.501 UTC [54] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp54.5", size 7348224
+2026-10-31 20:02:46.501 UTC [54] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:02:57.122 UTC [57] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp57.3", size 13369344
+2026-10-31 20:02:57.122 UTC [57] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:03:03.319 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.6", size 9535488
+2026-10-31 20:03:03.319 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:03:09.832 UTC [83] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp83.6", size 9543680
+2026-10-31 20:03:09.832 UTC [83] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:03:11.222 UTC [54] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp54.6", size 9543680
+2026-10-31 20:03:11.222 UTC [54] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:03:14.132 UTC [57] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp57.4", size 6291456
+2026-10-31 20:03:14.132 UTC [57] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:03:16.818 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.7", size 5308416
+2026-10-31 20:03:16.818 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:03:22.448 UTC [83] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp83.7", size 5316608
+2026-10-31 20:03:22.448 UTC [83] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:03:24.839 UTC [54] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp54.7", size 5308416
+2026-10-31 20:03:24.839 UTC [54] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:03:33.143 UTC [57] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp57.5", size 7348224
+2026-10-31 20:03:33.143 UTC [57] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:03:57.517 UTC [57] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp57.6", size 9543680
+2026-10-31 20:03:57.517 UTC [57] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:03:59.539 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.8", size 18055168
+2026-10-31 20:03:59.539 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:04:04.323 UTC [83] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp83.8", size 18071552
+2026-10-31 20:04:04.323 UTC [83] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:04:06.228 UTC [54] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp54.8", size 18063360
+2026-10-31 20:04:06.228 UTC [54] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:04:10.053 UTC [57] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp57.7", size 5308416
+2026-10-31 20:04:10.053 UTC [57] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:04:41.358 UTC [1] LOG:  server process (PID 74) was terminated by signal 9: Killed
+2026-10-31 20:04:41.358 UTC [1] DETAIL:  Failed process was running: SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:04:41.358 UTC [1] LOG:  terminating any other active server processes
+2026-10-31 20:04:41.658 UTC [1] LOG:  all server processes terminated; reinitializing
+2026-10-31 20:04:42.152 UTC [98] LOG:  database system was interrupted; last known up at 2026-10-31 19:59:42 UTC
+2026-10-31 20:04:42.156 UTC [103] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.157 UTC [101] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.158 UTC [102] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.159 UTC [104] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.162 UTC [105] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.162 UTC [106] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.163 UTC [108] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.166 UTC [107] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.166 UTC [112] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.168 UTC [110] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.171 UTC [109] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.172 UTC [117] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.173 UTC [114] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.173 UTC [111] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.175 UTC [113] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.175 UTC [119] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.176 UTC [118] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.176 UTC [116] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.178 UTC [123] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.180 UTC [121] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.180 UTC [115] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.180 UTC [120] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.180 UTC [124] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.182 UTC [122] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.183 UTC [125] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.184 UTC [127] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.184 UTC [128] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.185 UTC [126] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.188 UTC [129] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.190 UTC [130] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.191 UTC [131] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.192 UTC [132] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.193 UTC [134] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.193 UTC [133] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.194 UTC [135] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.224 UTC [136] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.225 UTC [138] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.235 UTC [141] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.236 UTC [139] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.238 UTC [142] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.239 UTC [137] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.240 UTC [143] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.241 UTC [140] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.246 UTC [144] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.246 UTC [145] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.247 UTC [146] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.248 UTC [147] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.249 UTC [148] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.252 UTC [149] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.385 UTC [150] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.679 UTC [151] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.681 UTC [152] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.683 UTC [154] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.684 UTC [153] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.685 UTC [156] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.686 UTC [155] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.688 UTC [157] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.688 UTC [158] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.689 UTC [159] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.699 UTC [160] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.705 UTC [161] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.707 UTC [162] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.708 UTC [164] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.710 UTC [163] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.714 UTC [166] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.714 UTC [167] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.714 UTC [165] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.718 UTC [168] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.723 UTC [169] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.724 UTC [170] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.725 UTC [171] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.726 UTC [172] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.728 UTC [173] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.729 UTC [174] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.730 UTC [175] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.733 UTC [176] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.733 UTC [177] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.734 UTC [179] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.735 UTC [180] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.736 UTC [178] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.738 UTC [182] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.740 UTC [181] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.742 UTC [183] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.743 UTC [184] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.743 UTC [185] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.745 UTC [186] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.746 UTC [187] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.754 UTC [188] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.755 UTC [189] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.755 UTC [190] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.758 UTC [191] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.759 UTC [192] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.760 UTC [193] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.764 UTC [194] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.765 UTC [195] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.766 UTC [196] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.767 UTC [197] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.768 UTC [198] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.772 UTC [199] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:42.908 UTC [200] FATAL:  the database system is in recovery mode
+2026-10-31 20:04:43.175 UTC [98] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-10-31 20:04:43.185 UTC [98] LOG:  redo starts at 0/357DDE18
+2026-10-31 20:04:43.186 UTC [98] LOG:  invalid record length at 0/357DDE50: expected at least 24, got 0
+2026-10-31 20:04:43.186 UTC [98] LOG:  redo done at 0/357DDE18 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-10-31 20:04:43.195 UTC [99] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-31 20:04:43.201 UTC [201] FATAL:  the database system is not yet accepting connections
+2026-10-31 20:04:43.201 UTC [201] DETAIL:  Consistent recovery state has not been yet reached.
+2026-10-31 20:04:43.201 UTC [202] FATAL:  the database system is not yet accepting connections
+2026-10-31 20:04:43.201 UTC [202] DETAIL:  Consistent recovery state has not been yet reached.
+2026-10-31 20:04:43.202 UTC [203] FATAL:  the database system is not yet accepting connections
+2026-10-31 20:04:43.202 UTC [203] DETAIL:  Consistent recovery state has not been yet reached.
+2026-10-31 20:04:43.205 UTC [205] FATAL:  the database system is not yet accepting connections
+2026-10-31 20:04:43.205 UTC [205] DETAIL:  Consistent recovery state has not been yet reached.
+2026-10-31 20:04:43.206 UTC [204] FATAL:  the database system is not yet accepting connections
+2026-10-31 20:04:43.206 UTC [204] DETAIL:  Consistent recovery state has not been yet reached.
+2026-10-31 20:04:43.209 UTC [207] FATAL:  the database system is not yet accepting connections
+2026-10-31 20:04:43.209 UTC [207] DETAIL:  Consistent recovery state has not been yet reached.
+2026-10-31 20:04:43.209 UTC [209] FATAL:  the database system is not yet accepting connections
+2026-10-31 20:04:43.209 UTC [209] DETAIL:  Consistent recovery state has not been yet reached.
+2026-10-31 20:04:43.209 UTC [206] FATAL:  the database system is not yet accepting connections
+2026-10-31 20:04:43.209 UTC [206] DETAIL:  Consistent recovery state has not been yet reached.
+2026-10-31 20:04:43.209 UTC [208] FATAL:  the database system is not yet accepting connections
+2026-10-31 20:04:43.209 UTC [208] DETAIL:  Consistent recovery state has not been yet reached.
+2026-10-31 20:04:43.218 UTC [210] FATAL:  the database system is not yet accepting connections
+2026-10-31 20:04:43.218 UTC [210] DETAIL:  Consistent recovery state has not been yet reached.
+2026-10-31 20:04:43.219 UTC [211] FATAL:  the database system is not yet accepting connections
+2026-10-31 20:04:43.219 UTC [211] DETAIL:  Consistent recovery state has not been yet reached.
+2026-10-31 20:04:43.220 UTC [212] FATAL:  the database system is not yet accepting connections
+2026-10-31 20:04:43.220 UTC [212] DETAIL:  Consistent recovery state has not been yet reached.
+2026-10-31 20:04:43.224 UTC [213] FATAL:  the database system is not yet accepting connections
+2026-10-31 20:04:43.224 UTC [213] DETAIL:  Consistent recovery state has not been yet reached.
+2026-10-31 20:04:43.225 UTC [214] FATAL:  the database system is not yet accepting connections
+2026-10-31 20:04:43.225 UTC [214] DETAIL:  Consistent recovery state has not been yet reached.
+2026-10-31 20:04:43.233 UTC [215] FATAL:  the database system is not yet accepting connections
+2026-10-31 20:04:43.233 UTC [215] DETAIL:  Consistent recovery state has not been yet reached.
+2026-10-31 20:04:43.235 UTC [216] FATAL:  the database system is not yet accepting connections
+2026-10-31 20:04:43.235 UTC [216] DETAIL:  Consistent recovery state has not been yet reached.
+2026-10-31 20:04:43.238 UTC [99] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.013 s, sync=0.003 s, total=0.047 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/357DDE50, redo lsn=0/357DDE50
+2026-10-31 20:04:43.238 UTC [217] FATAL:  the database system is not yet accepting connections
+2026-10-31 20:04:43.238 UTC [217] DETAIL:  Consistent recovery state has not been yet reached.
+2026-10-31 20:04:43.242 UTC [218] FATAL:  the database system is not yet accepting connections
+2026-10-31 20:04:43.242 UTC [218] DETAIL:  Consistent recovery state has not been yet reached.
+2026-10-31 20:04:43.245 UTC [219] FATAL:  the database system is not yet accepting connections
+2026-10-31 20:04:43.245 UTC [219] DETAIL:  Consistent recovery state has not been yet reached.
+2026-10-31 20:04:43.246 UTC [220] FATAL:  the database system is not yet accepting connections
+2026-10-31 20:04:43.246 UTC [220] DETAIL:  Consistent recovery state has not been yet reached.
+2026-10-31 20:04:43.247 UTC [221] FATAL:  the database system is not yet accepting connections
+2026-10-31 20:04:43.247 UTC [221] DETAIL:  Consistent recovery state has not been yet reached.
+2026-10-31 20:04:43.250 UTC [1] LOG:  database system is ready to accept connections
+2026-10-31 20:05:54.939 UTC [250] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.939 UTC [250] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.944 UTC [252] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.944 UTC [252] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.941 UTC [240] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.941 UTC [240] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.939 UTC [243] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.939 UTC [243] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.939 UTC [257] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.939 UTC [257] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.942 UTC [239] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.942 UTC [239] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.942 UTC [225] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.942 UTC [225] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.939 UTC [232] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.939 UTC [232] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.943 UTC [228] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.943 UTC [228] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.939 UTC [271] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.939 UTC [271] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.941 UTC [259] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.941 UTC [259] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.943 UTC [244] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.943 UTC [244] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.945 UTC [247] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.945 UTC [247] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.939 UTC [249] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.939 UTC [249] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.947 UTC [233] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.947 UTC [233] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.943 UTC [246] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.943 UTC [246] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.939 UTC [251] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.939 UTC [251] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.949 UTC [255] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.949 UTC [255] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.949 UTC [245] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.949 UTC [245] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.950 UTC [226] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.950 UTC [226] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.951 UTC [242] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.951 UTC [242] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.955 UTC [238] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.955 UTC [238] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.957 UTC [227] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.957 UTC [227] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.957 UTC [234] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.957 UTC [234] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.958 UTC [236] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.958 UTC [236] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.958 UTC [274] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.958 UTC [274] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.958 UTC [254] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.958 UTC [254] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.960 UTC [280] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 20:05:54.960 UTC [280] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.960 UTC [279] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 20:05:54.960 UTC [279] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.960 UTC [276] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 20:05:54.960 UTC [276] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.960 UTC [248] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.960 UTC [248] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.961 UTC [253] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.961 UTC [253] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.961 UTC [281] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 20:05:54.961 UTC [281] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.962 UTC [235] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.962 UTC [235] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.962 UTC [278] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 20:05:54.962 UTC [278] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.963 UTC [277] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 20:05:54.963 UTC [277] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.967 UTC [272] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.967 UTC [272] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.968 UTC [241] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.968 UTC [241] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.970 UTC [273] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.970 UTC [273] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.973 UTC [279] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp279.0", size 263077888
+2026-10-31 20:05:54.974 UTC [278] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp278.0", size 289472512
+2026-10-31 20:05:54.975 UTC [231] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.975 UTC [231] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.976 UTC [230] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.976 UTC [230] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.977 UTC [229] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.977 UTC [229] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.978 UTC [263] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.978 UTC [263] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.980 UTC [237] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:54.980 UTC [237] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:54.985 UTC [277] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp277.0", size 279764992
+2026-10-31 20:05:55.039 UTC [270] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:55.039 UTC [270] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:55.039 UTC [264] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:55.039 UTC [264] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:55.039 UTC [262] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:55.039 UTC [262] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:55.040 UTC [258] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:55.040 UTC [258] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:55.055 UTC [275] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 20:05:55.055 UTC [275] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:55.058 UTC [265] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:55.058 UTC [265] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:55.060 UTC [281] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp281.0", size 277635072
+2026-10-31 20:05:55.062 UTC [261] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:55.062 UTC [261] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:55.079 UTC [256] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:55.079 UTC [256] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:55.085 UTC [276] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp276.0", size 262545408
+2026-10-31 20:05:55.087 UTC [268] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:55.087 UTC [268] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:55.088 UTC [229] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp229.0", size 359530496
+2026-10-31 20:05:55.092 UTC [253] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp253.0", size 415424512
+2026-10-31 20:05:55.140 UTC [280] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp280.0", size 275881984
+2026-10-31 20:05:55.142 UTC [260] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:55.142 UTC [260] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:55.143 UTC [261] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp261.0", size 359530496
+2026-10-31 20:05:55.145 UTC [233] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp233.0", size 359530496
+2026-10-31 20:05:55.146 UTC [267] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:55.146 UTC [267] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:55.148 UTC [265] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp265.0", size 359530496
+2026-10-31 20:05:55.150 UTC [274] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp274.0", size 359530496
+2026-10-31 20:05:55.150 UTC [266] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:55.150 UTC [266] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:55.152 UTC [246] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp246.0", size 359530496
+2026-10-31 20:05:55.154 UTC [275] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp275.0", size 359530496
+2026-10-31 20:05:55.154 UTC [231] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp231.0", size 359530496
+2026-10-31 20:05:55.155 UTC [255] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp255.0", size 415424512
+2026-10-31 20:05:55.159 UTC [245] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp245.0", size 359530496
+2026-10-31 20:05:55.160 UTC [270] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp270.0", size 415424512
+2026-10-31 20:05:55.162 UTC [269] ERROR:  canceling statement due to statement timeout
+2026-10-31 20:05:55.162 UTC [269] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 20:05:55.167 UTC [251] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp251.0", size 359530496
+2026-10-31 20:05:55.171 UTC [264] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp264.0", size 415424512
+2026-10-31 20:05:55.173 UTC [241] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp241.0", size 415424512
+2026-10-31 20:05:55.179 UTC [254] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp254.0", size 359530496
+2026-10-31 20:05:55.180 UTC [244] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp244.0", size 359530496
+2026-10-31 20:05:55.180 UTC [228] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp228.0", size 359530496
+2026-10-31 20:05:55.185 UTC [257] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp257.0", size 415424512
+2026-10-31 20:05:55.186 UTC [256] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp256.0", size 415424512
+2026-10-31 20:05:55.246 UTC [263] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp263.0", size 415424512
+2026-10-31 20:05:55.250 UTC [236] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp236.0", size 359530496
+2026-10-31 20:05:55.254 UTC [258] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp258.0", size 415424512
+2026-10-31 20:05:55.254 UTC [247] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp247.0", size 359530496
+2026-10-31 20:05:55.255 UTC [227] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp227.0", size 383483904
+2026-10-31 20:05:55.255 UTC [259] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp259.0", size 415424512
+2026-10-31 20:05:55.256 UTC [230] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp230.0", size 359530496
+2026-10-31 20:05:55.256 UTC [235] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp235.0", size 359530496
+2026-10-31 20:05:55.257 UTC [268] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp268.0", size 415424512
+2026-10-31 20:05:55.257 UTC [240] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp240.0", size 359530496
+2026-10-31 20:05:55.259 UTC [232] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp232.0", size 415424512
+2026-10-31 20:05:55.259 UTC [252] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp252.0", size 415424512
+2026-10-31 20:05:55.260 UTC [225] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp225.0", size 359530496
+2026-10-31 20:05:55.261 UTC [272] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp272.0", size 307634176
+2026-10-31 20:05:55.262 UTC [243] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp243.0", size 415424512
+2026-10-31 20:05:55.266 UTC [248] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp248.0", size 415424512
+2026-10-31 20:05:55.267 UTC [250] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp250.0", size 359530496
+2026-10-31 20:05:55.269 UTC [238] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp238.0", size 415424512
+2026-10-31 20:05:55.273 UTC [234] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp234.0", size 415424512
+2026-10-31 20:05:55.277 UTC [237] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp237.0", size 415424512
+2026-10-31 20:05:55.278 UTC [242] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp242.0", size 359530496
+2026-10-31 20:05:55.278 UTC [273] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp273.0", size 415424512
+2026-10-31 20:05:55.283 UTC [226] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp226.0", size 359530496
+2026-10-31 20:05:55.287 UTC [260] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp260.0", size 359530496
+2026-10-31 20:05:55.290 UTC [267] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp267.0", size 359530496
+2026-10-31 20:05:55.341 UTC [269] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp269.0", size 363520000
+2026-10-31 20:05:55.343 UTC [266] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp266.0", size 359530496
+2026-10-31 20:05:55.557 UTC [1] LOG:  background worker "parallel worker" (PID 277) exited with exit code 1
+2026-10-31 20:05:55.578 UTC [1] LOG:  background worker "parallel worker" (PID 275) exited with exit code 1
+2026-10-31 20:05:55.578 UTC [1] LOG:  background worker "parallel worker" (PID 276) exited with exit code 1
+2026-10-31 20:05:55.578 UTC [1] LOG:  background worker "parallel worker" (PID 278) exited with exit code 1
+2026-10-31 20:05:55.578 UTC [1] LOG:  background worker "parallel worker" (PID 280) exited with exit code 1
+2026-10-31 20:05:55.578 UTC [1] LOG:  background worker "parallel worker" (PID 281) exited with exit code 1
+2026-10-31 20:05:55.584 UTC [249] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp249.0", size 241737728
+2026-10-31 20:05:55.584 UTC [1] LOG:  background worker "parallel worker" (PID 279) exited with exit code 1
+2026-10-31 20:05:55.590 UTC [271] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp271.0", size 231505920
+2026-10-31 20:05:55.641 UTC [239] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp239.0", size 230547456
+2026-10-31 20:05:55.643 UTC [262] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp262.0", size 307666944

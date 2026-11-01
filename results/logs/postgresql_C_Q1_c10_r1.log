@@ -1,0 +1,2580 @@
+2026-10-31 23:13:11.998 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.1", size 9805824
+2026-10-31 23:13:11.998 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:12.098 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.1", size 9805824
+2026-10-31 23:13:12.098 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:12.200 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.1", size 9805824
+2026-10-31 23:13:12.200 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:16.605 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.2", size 6307840
+2026-10-31 23:13:16.605 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:16.989 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.2", size 6299648
+2026-10-31 23:13:16.989 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:17.292 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.2", size 6307840
+2026-10-31 23:13:17.292 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:17.890 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.1", size 9805824
+2026-10-31 23:13:17.890 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:23.097 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.2", size 6307840
+2026-10-31 23:13:23.097 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:26.611 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.3", size 13369344
+2026-10-31 23:13:26.611 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:26.694 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.3", size 13361152
+2026-10-31 23:13:26.694 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:27.292 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.3", size 13361152
+2026-10-31 23:13:27.292 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:32.384 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.4", size 6291456
+2026-10-31 23:13:32.384 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:32.489 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.4", size 6291456
+2026-10-31 23:13:32.489 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:32.888 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.3", size 13361152
+2026-10-31 23:13:32.888 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:33.001 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.4", size 6291456
+2026-10-31 23:13:33.001 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:38.085 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.4", size 6291456
+2026-10-31 23:13:38.085 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:38.604 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.5", size 7340032
+2026-10-31 23:13:38.604 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:38.609 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.5", size 7340032
+2026-10-31 23:13:38.609 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:39.191 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.5", size 7340032
+2026-10-31 23:13:39.191 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:44.107 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.5", size 7340032
+2026-10-31 23:13:44.107 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:45.809 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.6", size 9535488
+2026-10-31 23:13:45.809 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:46.113 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.6", size 9535488
+2026-10-31 23:13:46.113 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:46.720 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.6", size 9535488
+2026-10-31 23:13:46.720 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:50.091 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.7", size 5308416
+2026-10-31 23:13:50.091 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:50.185 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.7", size 5308416
+2026-10-31 23:13:50.185 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:50.583 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.7", size 5308416
+2026-10-31 23:13:50.583 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:51.585 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.6", size 9535488
+2026-10-31 23:13:51.585 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:53.999 UTC [43] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp43.1", size 9805824
+2026-10-31 23:13:53.999 UTC [43] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:54.000 UTC [36] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp36.1", size 9805824
+2026-10-31 23:13:54.000 UTC [36] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:54.486 UTC [44] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp44.1", size 9805824
+2026-10-31 23:13:54.486 UTC [44] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:54.591 UTC [39] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp39.1", size 9805824
+2026-10-31 23:13:54.591 UTC [39] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:54.706 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.1", size 9805824
+2026-10-31 23:13:54.706 UTC [37] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:54.894 UTC [42] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp42.1", size 9805824
+2026-10-31 23:13:54.894 UTC [42] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:56.011 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.7", size 5308416
+2026-10-31 23:13:56.011 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:58.390 UTC [43] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp43.2", size 6307840
+2026-10-31 23:13:58.390 UTC [43] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:58.501 UTC [36] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp36.2", size 6307840
+2026-10-31 23:13:58.501 UTC [36] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:59.090 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.2", size 6307840
+2026-10-31 23:13:59.090 UTC [37] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:59.300 UTC [39] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp39.2", size 6307840
+2026-10-31 23:13:59.300 UTC [39] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:59.382 UTC [44] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp44.2", size 6307840
+2026-10-31 23:13:59.382 UTC [44] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:13:59.392 UTC [42] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp42.2", size 6307840
+2026-10-31 23:13:59.392 UTC [42] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:02.286 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.8", size 18071552
+2026-10-31 23:14:02.286 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:02.296 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.8", size 18055168
+2026-10-31 23:14:02.296 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:02.991 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.8", size 18063360
+2026-10-31 23:14:02.991 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:06.489 UTC [43] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp43.3", size 13369344
+2026-10-31 23:14:06.489 UTC [43] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:07.278 UTC [36] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp36.3", size 13369344
+2026-10-31 23:14:07.278 UTC [36] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:07.494 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.3", size 13369344
+2026-10-31 23:14:07.494 UTC [37] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:07.890 UTC [42] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp42.3", size 13369344
+2026-10-31 23:14:07.890 UTC [42] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:07.903 UTC [44] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp44.3", size 13369344
+2026-10-31 23:14:07.903 UTC [44] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:08.093 UTC [39] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp39.3", size 13369344
+2026-10-31 23:14:08.093 UTC [39] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:08.497 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.8", size 18071552
+2026-10-31 23:14:08.497 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:11.183 UTC [43] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp43.4", size 6291456
+2026-10-31 23:14:11.183 UTC [43] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:11.898 UTC [36] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp36.4", size 6291456
+2026-10-31 23:14:11.898 UTC [36] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:12.200 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.4", size 6291456
+2026-10-31 23:14:12.200 UTC [37] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:12.681 UTC [44] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp44.4", size 6291456
+2026-10-31 23:14:12.681 UTC [44] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:12.781 UTC [42] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp42.4", size 6291456
+2026-10-31 23:14:12.781 UTC [42] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:12.982 UTC [39] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp39.4", size 6291456
+2026-10-31 23:14:12.982 UTC [39] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:16.499 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.9", size 20979712
+2026-10-31 23:14:16.499 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:16.586 UTC [43] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp43.5", size 7340032
+2026-10-31 23:14:16.586 UTC [43] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:16.901 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.9", size 21004288
+2026-10-31 23:14:16.901 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:17.114 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.9", size 20987904
+2026-10-31 23:14:17.114 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:17.303 UTC [36] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp36.5", size 7340032
+2026-10-31 23:14:17.303 UTC [36] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:17.780 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.5", size 7340032
+2026-10-31 23:14:17.780 UTC [37] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:18.010 UTC [42] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp42.5", size 7340032
+2026-10-31 23:14:18.010 UTC [42] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:18.086 UTC [44] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp44.5", size 7340032
+2026-10-31 23:14:18.086 UTC [44] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:18.379 UTC [39] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp39.5", size 7340032
+2026-10-31 23:14:18.379 UTC [39] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:22.304 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.9", size 20979712
+2026-10-31 23:14:22.304 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:22.883 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.10", size 7307264
+2026-10-31 23:14:22.883 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:22.989 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.10", size 7307264
+2026-10-31 23:14:22.989 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:23.293 UTC [43] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp43.6", size 9535488
+2026-10-31 23:14:23.293 UTC [43] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:23.701 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.10", size 7307264
+2026-10-31 23:14:23.701 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:23.801 UTC [36] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp36.6", size 9535488
+2026-10-31 23:14:23.801 UTC [36] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:24.106 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.6", size 9535488
+2026-10-31 23:14:24.106 UTC [37] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:24.306 UTC [42] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp42.6", size 9535488
+2026-10-31 23:14:24.306 UTC [42] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:24.381 UTC [44] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp44.6", size 9535488
+2026-10-31 23:14:24.381 UTC [44] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:24.796 UTC [39] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp39.6", size 9535488
+2026-10-31 23:14:24.796 UTC [39] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:26.888 UTC [43] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp43.7", size 5308416
+2026-10-31 23:14:26.888 UTC [43] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:27.290 UTC [36] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp36.7", size 5308416
+2026-10-31 23:14:27.290 UTC [36] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:27.598 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.7", size 5308416
+2026-10-31 23:14:27.598 UTC [37] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:27.791 UTC [44] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp44.7", size 5308416
+2026-10-31 23:14:27.791 UTC [44] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:27.985 UTC [42] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp42.7", size 5308416
+2026-10-31 23:14:27.985 UTC [42] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:28.397 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.10", size 7307264
+2026-10-31 23:14:28.397 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:28.501 UTC [39] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp39.7", size 5308416
+2026-10-31 23:14:28.501 UTC [39] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:37.976 UTC [43] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp43.8", size 18046976
+2026-10-31 23:14:37.976 UTC [43] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:38.503 UTC [36] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp36.8", size 18046976
+2026-10-31 23:14:38.503 UTC [36] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:38.784 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.8", size 18046976
+2026-10-31 23:14:38.784 UTC [37] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:39.082 UTC [44] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp44.8", size 18046976
+2026-10-31 23:14:39.082 UTC [44] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:39.301 UTC [42] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp42.8", size 18046976
+2026-10-31 23:14:39.301 UTC [42] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:39.781 UTC [39] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp39.8", size 18046976
+2026-10-31 23:14:39.781 UTC [39] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:43.684 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.11", size 32391168
+2026-10-31 23:14:43.684 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:44.487 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.11", size 32391168
+2026-10-31 23:14:44.487 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:44.579 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.11", size 32391168
+2026-10-31 23:14:44.579 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:45.895 UTC [48] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp48.0", size 267722752
+2026-10-31 23:14:45.895 UTC [48] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:46.702 UTC [52] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp52.0", size 267812864
+2026-10-31 23:14:46.702 UTC [52] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:46.881 UTC [50] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp50.0", size 278487040
+2026-10-31 23:14:46.881 UTC [50] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:48.590 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.11", size 32382976
+2026-10-31 23:14:48.590 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:49.991 UTC [47] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp47.0", size 269983744
+2026-10-31 23:14:49.991 UTC [47] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:50.290 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.12", size 8658944
+2026-10-31 23:14:50.290 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:50.378 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.0", size 246358016
+2026-10-31 23:14:50.378 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:50.781 UTC [49] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp49.0", size 274571264
+2026-10-31 23:14:50.781 UTC [49] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:50.886 UTC [51] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp51.0", size 268230656
+2026-10-31 23:14:50.886 UTC [51] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:50.900 UTC [43] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp43.9", size 21004288
+2026-10-31 23:14:50.900 UTC [43] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:51.095 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.12", size 8667136
+2026-10-31 23:14:51.095 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:51.101 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.0", size 231022592
+2026-10-31 23:14:51.101 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:51.179 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.12", size 8658944
+2026-10-31 23:14:51.179 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:51.277 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.0", size 248004608
+2026-10-31 23:14:51.277 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:51.384 UTC [36] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp36.9", size 21004288
+2026-10-31 23:14:51.384 UTC [36] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:51.886 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.9", size 21004288
+2026-10-31 23:14:51.886 UTC [37] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:51.978 UTC [44] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp44.9", size 21004288
+2026-10-31 23:14:51.978 UTC [44] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:51.991 UTC [42] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp42.9", size 21004288
+2026-10-31 23:14:51.991 UTC [42] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:52.386 UTC [39] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp39.9", size 21004288
+2026-10-31 23:14:52.386 UTC [39] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:52.994 UTC [46] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp46.0", size 412467200
+2026-10-31 23:14:52.994 UTC [46] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:57.678 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.12", size 8667136
+2026-10-31 23:14:57.678 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:57.695 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.0", size 371531776
+2026-10-31 23:14:57.695 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:14:59.194 UTC [43] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp43.10", size 7307264
+2026-10-31 23:14:59.194 UTC [43] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:00.480 UTC [36] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp36.10", size 7307264
+2026-10-31 23:15:00.480 UTC [36] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:00.884 UTC [39] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp39.10", size 7307264
+2026-10-31 23:15:00.884 UTC [39] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:00.889 UTC [44] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp44.10", size 7307264
+2026-10-31 23:15:00.889 UTC [44] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:00.990 UTC [42] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp42.10", size 7307264
+2026-10-31 23:15:00.990 UTC [42] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:00.995 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.10", size 7307264
+2026-10-31 23:15:00.995 UTC [37] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:28.279 UTC [43] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp43.11", size 32382976
+2026-10-31 23:15:28.279 UTC [43] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:28.588 UTC [44] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp44.11", size 32382976
+2026-10-31 23:15:28.588 UTC [44] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:28.592 UTC [36] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp36.11", size 32382976
+2026-10-31 23:15:28.592 UTC [36] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:28.989 UTC [39] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp39.11", size 32382976
+2026-10-31 23:15:28.989 UTC [39] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:29.086 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.11", size 32382976
+2026-10-31 23:15:29.086 UTC [37] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:29.796 UTC [42] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp42.11", size 32382976
+2026-10-31 23:15:29.796 UTC [42] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:38.994 UTC [43] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp43.12", size 8658944
+2026-10-31 23:15:38.994 UTC [43] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:39.073 UTC [36] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp36.12", size 8658944
+2026-10-31 23:15:39.073 UTC [36] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:39.273 UTC [43] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp43.0", size 783958016
+2026-10-31 23:15:39.273 UTC [43] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:39.274 UTC [36] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp36.0", size 783958016
+2026-10-31 23:15:39.274 UTC [36] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:39.482 UTC [44] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp44.12", size 8658944
+2026-10-31 23:15:39.482 UTC [44] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:39.485 UTC [39] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp39.12", size 8658944
+2026-10-31 23:15:39.485 UTC [39] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:39.678 UTC [39] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp39.0", size 783958016
+2026-10-31 23:15:39.678 UTC [39] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:39.689 UTC [44] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp44.0", size 783958016
+2026-10-31 23:15:39.689 UTC [44] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:39.695 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.12", size 8658944
+2026-10-31 23:15:39.695 UTC [37] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:39.886 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.0", size 783958016
+2026-10-31 23:15:39.886 UTC [37] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:40.582 UTC [42] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp42.12", size 8658944
+2026-10-31 23:15:40.582 UTC [42] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:40.789 UTC [42] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp42.0", size 783958016
+2026-10-31 23:15:40.789 UTC [42] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:55.975 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.14", size 9805824
+2026-10-31 23:15:55.975 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:56.279 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.14", size 9797632
+2026-10-31 23:15:56.279 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:15:56.385 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.14", size 9805824
+2026-10-31 23:15:56.385 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:01.219 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.15", size 6307840
+2026-10-31 23:16:01.219 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:01.376 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.15", size 6307840
+2026-10-31 23:16:01.376 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:01.692 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.15", size 6307840
+2026-10-31 23:16:01.692 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:10.889 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.16", size 13369344
+2026-10-31 23:16:10.889 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:11.370 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.16", size 13369344
+2026-10-31 23:16:11.370 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:11.391 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.16", size 13369344
+2026-10-31 23:16:11.391 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:13.678 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.14", size 9805824
+2026-10-31 23:16:13.678 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:15.890 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.17", size 6291456
+2026-10-31 23:16:15.890 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:16.080 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.17", size 6291456
+2026-10-31 23:16:16.080 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:16.092 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.17", size 6291456
+2026-10-31 23:16:16.092 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:17.888 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.15", size 6307840
+2026-10-31 23:16:17.888 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:21.585 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.18", size 7340032
+2026-10-31 23:16:21.585 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:21.592 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.18", size 7340032
+2026-10-31 23:16:21.592 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:21.903 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.18", size 7340032
+2026-10-31 23:16:21.903 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:26.091 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.16", size 13369344
+2026-10-31 23:16:26.091 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:28.787 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.19", size 9535488
+2026-10-31 23:16:28.787 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:28.984 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.19", size 9543680
+2026-10-31 23:16:28.984 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:29.073 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.19", size 9535488
+2026-10-31 23:16:29.073 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:30.688 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.17", size 6291456
+2026-10-31 23:16:30.688 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:32.783 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.20", size 5316608
+2026-10-31 23:16:32.783 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:32.966 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.20", size 5308416
+2026-10-31 23:16:32.966 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:32.989 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.20", size 5308416
+2026-10-31 23:16:32.989 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:36.371 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.18", size 7348224
+2026-10-31 23:16:36.371 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:44.570 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.19", size 9535488
+2026-10-31 23:16:44.570 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:44.967 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.21", size 18055168
+2026-10-31 23:16:44.967 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:45.083 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.21", size 18063360
+2026-10-31 23:16:45.083 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:45.171 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.21", size 18071552
+2026-10-31 23:16:45.171 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:48.689 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.20", size 5308416
+2026-10-31 23:16:48.689 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:58.484 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.22", size 20987904
+2026-10-31 23:16:58.484 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:59.166 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.22", size 20979712
+2026-10-31 23:16:59.166 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:16:59.282 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.22", size 20996096
+2026-10-31 23:16:59.282 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:00.268 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.21", size 18071552
+2026-10-31 23:17:00.268 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:04.768 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.23", size 7307264
+2026-10-31 23:17:04.768 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:05.272 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.23", size 7307264
+2026-10-31 23:17:05.272 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:05.388 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.23", size 7307264
+2026-10-31 23:17:05.388 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:13.264 UTC [39] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp39.14", size 9805824
+2026-10-31 23:17:13.264 UTC [39] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:13.775 UTC [36] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp36.14", size 9805824
+2026-10-31 23:17:13.775 UTC [36] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:13.787 UTC [44] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp44.14", size 9805824
+2026-10-31 23:17:13.787 UTC [44] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:14.087 UTC [43] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp43.14", size 9805824
+2026-10-31 23:17:14.087 UTC [43] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:14.168 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.22", size 20987904
+2026-10-31 23:17:14.168 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:14.185 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.14", size 9805824
+2026-10-31 23:17:14.185 UTC [37] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:14.384 UTC [42] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp42.14", size 9805824
+2026-10-31 23:17:14.384 UTC [42] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:17.881 UTC [39] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp39.15", size 6307840
+2026-10-31 23:17:17.881 UTC [39] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:18.584 UTC [43] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp43.15", size 6307840
+2026-10-31 23:17:18.584 UTC [43] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:18.589 UTC [44] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp44.15", size 6307840
+2026-10-31 23:17:18.589 UTC [44] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:18.683 UTC [36] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp36.15", size 6307840
+2026-10-31 23:17:18.683 UTC [36] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:18.778 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.15", size 6307840
+2026-10-31 23:17:18.778 UTC [37] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:18.973 UTC [42] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp42.15", size 6307840
+2026-10-31 23:17:18.973 UTC [42] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:20.472 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.23", size 7307264
+2026-10-31 23:17:20.472 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:24.878 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.24", size 32391168
+2026-10-31 23:17:24.878 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:25.764 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.24", size 32399360
+2026-10-31 23:17:25.764 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:26.573 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.24", size 32399360
+2026-10-31 23:17:26.573 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:26.587 UTC [39] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp39.16", size 13361152
+2026-10-31 23:17:26.587 UTC [39] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:27.086 UTC [43] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp43.16", size 13369344
+2026-10-31 23:17:27.086 UTC [43] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:27.171 UTC [44] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp44.16", size 13369344
+2026-10-31 23:17:27.171 UTC [44] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:27.374 UTC [59] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp59.0", size 271720448
+2026-10-31 23:17:27.374 UTC [59] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:27.483 UTC [36] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp36.16", size 13361152
+2026-10-31 23:17:27.483 UTC [36] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:27.583 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.16", size 13369344
+2026-10-31 23:17:27.583 UTC [37] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:27.688 UTC [42] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp42.16", size 13361152
+2026-10-31 23:17:27.688 UTC [42] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:28.080 UTC [57] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp57.0", size 265846784
+2026-10-31 23:17:28.080 UTC [57] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:28.793 UTC [61] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp61.0", size 267722752
+2026-10-31 23:17:28.793 UTC [61] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:31.173 UTC [39] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp39.17", size 6291456
+2026-10-31 23:17:31.173 UTC [39] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:31.368 UTC [58] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp58.0", size 259063808
+2026-10-31 23:17:31.368 UTC [58] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:31.488 UTC [44] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp44.17", size 6291456
+2026-10-31 23:17:31.488 UTC [44] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:31.668 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.25", size 8667136
+2026-10-31 23:17:31.668 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:31.671 UTC [43] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp43.17", size 6291456
+2026-10-31 23:17:31.671 UTC [43] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:31.679 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.13", size 253263872
+2026-10-31 23:17:31.679 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:31.891 UTC [36] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp36.17", size 6291456
+2026-10-31 23:17:31.891 UTC [36] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:31.975 UTC [56] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp56.0", size 262643712
+2026-10-31 23:17:31.975 UTC [56] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:32.165 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.17", size 6291456
+2026-10-31 23:17:32.165 UTC [37] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:32.283 UTC [42] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp42.17", size 6291456
+2026-10-31 23:17:32.283 UTC [42] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:32.376 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.25", size 8658944
+2026-10-31 23:17:32.376 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:32.461 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.13", size 255574016
+2026-10-31 23:17:32.461 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:32.861 UTC [60] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp60.0", size 260964352
+2026-10-31 23:17:32.861 UTC [60] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:33.182 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.25", size 8667136
+2026-10-31 23:17:33.182 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:33.267 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.13", size 255377408
+2026-10-31 23:17:33.267 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:39.168 UTC [39] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp39.18", size 7340032
+2026-10-31 23:17:39.168 UTC [39] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:39.473 UTC [43] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp43.18", size 7340032
+2026-10-31 23:17:39.473 UTC [43] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:39.775 UTC [36] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp36.18", size 7340032
+2026-10-31 23:17:39.775 UTC [36] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:39.784 UTC [44] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp44.18", size 7340032
+2026-10-31 23:17:39.784 UTC [44] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:40.064 UTC [42] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp42.18", size 7340032
+2026-10-31 23:17:40.064 UTC [42] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:40.172 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.18", size 7340032
+2026-10-31 23:17:40.172 UTC [37] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:43.273 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.24", size 32391168
+2026-10-31 23:17:43.273 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:48.070 UTC [62] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp62.0", size 395902976
+2026-10-31 23:17:48.070 UTC [62] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:49.075 UTC [43] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp43.19", size 9535488
+2026-10-31 23:17:49.075 UTC [43] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:49.269 UTC [39] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp39.19", size 9535488
+2026-10-31 23:17:49.269 UTC [39] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:49.391 UTC [36] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp36.19", size 9535488
+2026-10-31 23:17:49.391 UTC [36] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:49.484 UTC [44] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp44.19", size 9535488
+2026-10-31 23:17:49.484 UTC [44] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:49.684 UTC [42] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp42.19", size 9535488
+2026-10-31 23:17:49.684 UTC [42] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:49.978 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.19", size 9535488
+2026-10-31 23:17:49.978 UTC [37] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:52.371 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.25", size 8658944
+2026-10-31 23:17:52.371 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:52.466 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.13", size 388087808
+2026-10-31 23:17:52.466 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:54.572 UTC [43] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp43.20", size 5308416
+2026-10-31 23:17:54.572 UTC [43] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:54.679 UTC [39] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp39.20", size 5308416
+2026-10-31 23:17:54.679 UTC [39] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:54.982 UTC [36] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp36.20", size 5308416
+2026-10-31 23:17:54.982 UTC [36] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:55.089 UTC [44] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp44.20", size 5308416
+2026-10-31 23:17:55.089 UTC [44] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:55.584 UTC [42] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp42.20", size 5308416
+2026-10-31 23:17:55.584 UTC [42] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:17:55.767 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.20", size 5308416
+2026-10-31 23:17:55.767 UTC [37] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:18:10.564 UTC [37] ERROR:  canceling statement due to statement timeout
+2026-10-31 23:18:10.564 UTC [37] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:18:10.564 UTC [43] ERROR:  canceling statement due to statement timeout
+2026-10-31 23:18:10.564 UTC [43] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:18:10.564 UTC [36] ERROR:  canceling statement due to statement timeout
+2026-10-31 23:18:10.564 UTC [36] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:18:10.564 UTC [41] ERROR:  canceling statement due to statement timeout
+2026-10-31 23:18:10.564 UTC [41] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:18:10.569 UTC [44] ERROR:  canceling statement due to statement timeout
+2026-10-31 23:18:10.569 UTC [44] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:18:10.569 UTC [45] ERROR:  canceling statement due to statement timeout
+2026-10-31 23:18:10.569 UTC [45] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:18:10.572 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.21", size 14606336
+2026-10-31 23:18:10.573 UTC [39] ERROR:  canceling statement due to statement timeout
+2026-10-31 23:18:10.573 UTC [39] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:18:10.578 UTC [42] ERROR:  canceling statement due to statement timeout
+2026-10-31 23:18:10.578 UTC [42] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:18:10.578 UTC [70] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 23:18:10.578 UTC [70] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:18:10.582 UTC [68] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 23:18:10.582 UTC [68] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:18:10.657 UTC [69] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 23:18:10.657 UTC [69] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:18:10.657 UTC [71] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 23:18:10.657 UTC [71] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:18:10.662 UTC [40] ERROR:  canceling statement due to statement timeout
+2026-10-31 23:18:10.662 UTC [40] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:18:10.662 UTC [66] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 23:18:10.662 UTC [66] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:18:10.665 UTC [68] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp68.0", size 259497984
+2026-10-31 23:18:10.666 UTC [67] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 23:18:10.666 UTC [67] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:18:10.670 UTC [38] ERROR:  canceling statement due to statement timeout
+2026-10-31 23:18:10.670 UTC [38] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:18:10.670 UTC [72] FATAL:  terminating background worker "parallel worker" due to administrator command
+2026-10-31 23:18:10.670 UTC [72] STATEMENT:  SELECT data->'sucursal'->'ubicacion'->>'ciudad' AS ciudad,
+	       linea->>'categoria' AS categoria,
+	       SUM((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS total_revenue,
+	       AVG((linea->>'cantidad')::numeric * (linea->>'precio_unitario')::numeric) AS avg_revenue,
+	       COUNT(*) AS count
+	FROM pedidos, jsonb_array_elements(data->'lineas') AS linea
+	WHERE (linea->>'precio_unitario')::numeric > 50
+	GROUP BY 1, 2;
+	
+2026-10-31 23:18:10.676 UTC [71] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp71.0", size 259751936
+2026-10-31 23:18:10.758 UTC [70] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp70.0", size 269197312
+2026-10-31 23:18:10.760 UTC [72] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp72.0", size 107945984
+2026-10-31 23:18:10.763 UTC [66] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp66.0", size 271253504
+2026-10-31 23:18:10.766 UTC [67] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp67.0", size 258400256
+2026-10-31 23:18:10.766 UTC [69] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp69.0", size 262414336
+2026-10-31 23:18:10.769 UTC [36] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp36.13", size 783966208
+2026-10-31 23:18:10.771 UTC [36] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp36.21", size 18071552
+2026-10-31 23:18:10.774 UTC [37] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp37.13", size 783966208
+2026-10-31 23:18:10.781 UTC [42] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp42.13", size 783958016
+2026-10-31 23:18:10.781 UTC [42] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp42.21", size 14614528
+2026-10-31 23:18:10.859 UTC [44] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp44.13", size 783966208
+2026-10-31 23:18:10.860 UTC [39] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp39.13", size 783966208
+2026-10-31 23:18:10.861 UTC [44] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp44.21", size 18063360
+2026-10-31 23:18:10.862 UTC [43] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp43.13", size 783966208
+2026-10-31 23:18:10.862 UTC [39] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp39.21", size 18071552
+2026-10-31 23:18:10.864 UTC [43] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp43.21", size 18063360
+2026-10-31 23:18:11.070 UTC [1] LOG:  background worker "parallel worker" (PID 72) exited with exit code 1
+2026-10-31 23:18:11.070 UTC [1] LOG:  background worker "parallel worker" (PID 71) exited with exit code 1
+2026-10-31 23:18:11.070 UTC [38] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp38.26", size 115924992
+2026-10-31 23:18:11.071 UTC [1] LOG:  background worker "parallel worker" (PID 68) exited with exit code 1
+2026-10-31 23:18:11.077 UTC [1] LOG:  background worker "parallel worker" (PID 69) exited with exit code 1
+2026-10-31 23:18:11.077 UTC [1] LOG:  background worker "parallel worker" (PID 67) exited with exit code 1
+2026-10-31 23:18:11.082 UTC [45] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp45.26", size 262144000
+2026-10-31 23:18:11.162 UTC [1] LOG:  background worker "parallel worker" (PID 70) exited with exit code 1
+2026-10-31 23:18:11.162 UTC [1] LOG:  background worker "parallel worker" (PID 66) exited with exit code 1
+2026-10-31 23:18:11.162 UTC [41] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp41.26", size 255115264
+2026-10-31 23:18:11.173 UTC [40] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp40.26", size 254394368

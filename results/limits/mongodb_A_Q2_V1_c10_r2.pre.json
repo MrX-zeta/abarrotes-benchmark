@@ -1,0 +1,270 @@
+[
+    {
+        "Id": "a7ea2e5d180a401b1875bb4765582acf549f9787c40eb0c01b162ce4a62aa5ad",
+        "Created": "2026-11-01T02:39:01.751808Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "mongod",
+            "--bind_ip_all",
+            "--wiredTigerCacheSizeGB",
+            "1"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 76419,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-11-01T02:39:01.948303102Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:b9924c330a8bbc5800fe9c69f04a84e221eca7b28fd049a0354147d9908fa142",
+        "ResolvConfPath": "/var/lib/docker/containers/a7ea2e5d180a401b1875bb4765582acf549f9787c40eb0c01b162ce4a62aa5ad/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/a7ea2e5d180a401b1875bb4765582acf549f9787c40eb0c01b162ce4a62aa5ad/hostname",
+        "HostsPath": "/var/lib/docker/containers/a7ea2e5d180a401b1875bb4765582acf549f9787c40eb0c01b162ce4a62aa5ad/hosts",
+        "LogPath": "",
+        "Name": "/bench-mongodb",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "abarrotes-bench_mongo_data:/data/db:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "local",
+                "Config": {}
+            },
+            "NetworkMode": "abarrotes-bench",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 4294967296,
+            "NanoCpus": 4000000000,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "0-3",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 4294967296,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "442a51a844aebbd706b6c3af20de1d527e19a0725d5ea6f48057d26c218f2c48",
+                "Source": "/var/lib/docker/volumes/442a51a844aebbd706b6c3af20de1d527e19a0725d5ea6f48057d26c218f2c48/_data",
+                "Destination": "/data/configdb",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "abarrotes-bench_mongo_data",
+                "Source": "/var/lib/docker/volumes/abarrotes-bench_mongo_data/_data",
+                "Destination": "/data/db",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "a7ea2e5d180a",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "27017/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOSU_VERSION=1.19",
+                "JSYAML_VERSION=3.13.1",
+                "JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941",
+                "MONGO_PACKAGE=mongodb-org",
+                "MONGO_REPO=repo.mongodb.org",
+                "MONGO_MAJOR=8.0",
+                "MONGO_VERSION=8.0.34",
+                "HOME=/data/db",
+                "GLIBC_TUNABLES=glibc.pthread.rseq=0"
+            ],
+            "Cmd": [
+                "mongod",
+                "--bind_ip_all",
+                "--wiredTigerCacheSizeGB",
+                "1"
+            ],
+            "Image": "mongo:8.0.34",
+            "Volumes": {
+                "/data/configdb": {},
+                "/data/db": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "dc70d0de03e679a8733db0d838b5e72e88fd69d7e2f32d607fb0cb9bd5983dbc",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:1d7a2d487c6465ea022474b90b65d6c91bb600b421b65880d8c6e141d6122200",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "abarrotes-bench",
+                "com.docker.compose.project.config_files": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/021cc2db16e0de3fa2dfd713eaf223de77accfa5c88fefa97c51288b60d0466c/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/021cc2db16e0de3fa2dfd713eaf223de77accfa5c88fefa97c51288b60d0466c",
+                "com.docker.compose.service": "mongodb",
+                "com.docker.compose.version": "5.6.1",
+                "desktop.docker.io/wsl-distro": "Ubuntu",
+                "org.opencontainers.image.version": "24.04"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "875cd2ed3ddd77464b50e73342e1ed08b28bdbfcea0e437a8b0238e220db90fd",
+            "SandboxKey": "/var/run/docker/netns/875cd2ed3ddd",
+            "Ports": {
+                "27017/tcp": null
+            },
+            "Networks": {
+                "abarrotes-bench": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "bench-mongodb",
+                        "mongodb"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "e20d18fc51b11d7723b4a8f1b7c64dd53a6ec85fd00b036b6026d0adc5f8317a",
+                    "EndpointID": "8fbb9622b38ebce6b855013a215de723ba045397461e3715d3f0409afd355863",
+                    "Gateway": "172.19.0.1",
+                    "IPAddress": "172.19.0.5",
+                    "MacAddress": "1a:45:7b:8a:ac:83",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "bench-mongodb",
+                        "mongodb",
+                        "a7ea2e5d180a"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:1d7a2d487c6465ea022474b90b65d6c91bb600b421b65880d8c6e141d6122200",
+            "size": 2476,
+            "annotations": {
+                "com.docker.official-images.bashbrew.arch": "amd64",
+                "org.opencontainers.image.base.digest": "sha256:78d4744ead1f5b19b04d0df558ab182a5300903900755e515b2ca4d10eb2044d",
+                "org.opencontainers.image.base.name": "ubuntu:noble",
+                "org.opencontainers.image.created": "2026-10-26T23:25:18Z",
+                "org.opencontainers.image.revision": "ea5191cbb2fe8958dc3e8dd0364b6d1f0d1b61a1",
+                "org.opencontainers.image.source": "https://github.com/docker-library/mongo.git#ea5191cbb2fe8958dc3e8dd0364b6d1f0d1b61a1:8.0",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/mongo",
+                "org.opencontainers.image.version": "8.0.34-noble"
+            },
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]

@@ -1,0 +1,2016 @@
+[2026-10-31 12:53:08] MATRIZ: 162 ejecuciones; ya completadas: 0
+[2026-10-31 12:53:08] INICIO mongodb_A_Q1_c50_r1  [mongodb PROFILE_A_BASELINE Q1 c=50 r=1]
+ Container abarrotes-bench-runner-run-e2a74bbf8ffe Creating 
+ Container abarrotes-bench-runner-run-e2a74bbf8ffe Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-b826627c7636 Creating 
+ Container abarrotes-bench-runner-run-b826627c7636 Created 
+[runner] mongodb_A_Q1_c50_r1: 250 consultas completadas en la ventana -> results/raw/mongodb_A_Q1_c50_r1.json
+ Container abarrotes-bench-runner-run-3d44a74fa3e7 Creating 
+ Container abarrotes-bench-runner-run-3d44a74fa3e7 Created 
+[finalize] mongodb_A_Q1_c50_r1: status=ok qps=0.8333333333333334 p99=54356.556429862976 thr=1.815116 rss_mb=1139.32288 spill=False fuente=prometheus notas=[]
+[2026-10-31 12:59:32] FIN mongodb_A_Q1_c50_r1; cooldown 60s
+[2026-10-31 13:00:32] AVANCE: 1 / 162
+[2026-10-31 13:00:32] INICIO mongodb_C_Q2_V1_c10_r1  [mongodb PROFILE_C_SEVERE Q2_V1 c=10 r=1]
+ Container abarrotes-bench-runner-run-a1e3e211bddd Creating 
+ Container abarrotes-bench-runner-run-a1e3e211bddd Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-276a6b0e193a Creating 
+ Container abarrotes-bench-runner-run-276a6b0e193a Created 
+[runner] mongodb_C_Q2_V1_c10_r1: 20 consultas completadas en la ventana -> results/raw/mongodb_C_Q2_V1_c10_r1.json
+ Container abarrotes-bench-runner-run-f0881b8bdfc7 Creating 
+ Container abarrotes-bench-runner-run-f0881b8bdfc7 Created 
+[finalize] mongodb_C_Q2_V1_c10_r1: status=ok qps=0.06666666666666667 p99=128867.03083515167 thr=884.8397380000001 rss_mb=419.917824 spill=False fuente=prometheus notas=[]
+[2026-10-31 13:06:53] FIN mongodb_C_Q2_V1_c10_r1; cooldown 60s
+[2026-10-31 13:07:53] AVANCE: 2 / 162
+[2026-10-31 13:07:53] INICIO postgresql_B_Q2_V2_c1_r1  [postgresql PROFILE_B_MEDIUM Q2_V2 c=1 r=1]
+ Container abarrotes-bench-runner-run-4482533c292e Creating 
+ Container abarrotes-bench-runner-run-4482533c292e Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-788eb02029c7 Creating 
+ Container abarrotes-bench-runner-run-788eb02029c7 Created 
+[runner] postgresql_B_Q2_V2_c1_r1: 224 consultas completadas en la ventana -> results/raw/postgresql_B_Q2_V2_c1_r1.json
+ Container abarrotes-bench-runner-run-2f8dcb8c9e73 Creating 
+ Container abarrotes-bench-runner-run-2f8dcb8c9e73 Created 
+[finalize] postgresql_B_Q2_V2_c1_r1: status=ok qps=0.7466666666666667 p99=1488.2278084754946 thr=290.94472499999995 rss_mb=34.992128 spill=False fuente=prometheus notas=[]
+[2026-10-31 13:14:16] FIN postgresql_B_Q2_V2_c1_r1; cooldown 60s
+[2026-10-31 13:15:16] AVANCE: 3 / 162
+[2026-10-31 13:15:16] INICIO postgresql_A_Q2_V2_c1_r1  [postgresql PROFILE_A_BASELINE Q2_V2 c=1 r=1]
+ Container abarrotes-bench-runner-run-24b4f25f7f0a Creating 
+ Container abarrotes-bench-runner-run-24b4f25f7f0a Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-b296c69259a2 Creating 
+ Container abarrotes-bench-runner-run-b296c69259a2 Created 
+[runner] postgresql_A_Q2_V2_c1_r1: 364 consultas completadas en la ventana -> results/raw/postgresql_A_Q2_V2_c1_r1.json
+ Container abarrotes-bench-runner-run-2cdbc2fe9221 Creating 
+ Container abarrotes-bench-runner-run-2cdbc2fe9221 Created 
+[finalize] postgresql_A_Q2_V2_c1_r1: status=ok qps=1.2133333333333334 p99=1016.216824054718 thr=0.0 rss_mb=34.955264 spill=False fuente=prometheus notas=[]
+[2026-10-31 13:21:39] FIN postgresql_A_Q2_V2_c1_r1; cooldown 60s
+[2026-10-31 13:22:39] AVANCE: 4 / 162
+[2026-10-31 13:22:39] INICIO mongodb_B_Q1_c50_r1  [mongodb PROFILE_B_MEDIUM Q1 c=50 r=1]
+ Container abarrotes-bench-runner-run-9693441c28c6 Creating 
+ Container abarrotes-bench-runner-run-9693441c28c6 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-0c79e393b370 Creating 
+ Container abarrotes-bench-runner-run-0c79e393b370 Created 
+[runner] mongodb_B_Q1_c50_r1: 100 consultas completadas en la ventana -> results/raw/mongodb_B_Q1_c50_r1.json
+ Container abarrotes-bench-runner-run-487b6f39b12d Creating 
+ Container abarrotes-bench-runner-run-487b6f39b12d Created 
+[finalize] mongodb_B_Q1_c50_r1: status=ok qps=0.3333333333333333 p99=117419.62526321413 thr=598.9363050000001 rss_mb=883.97824 spill=False fuente=prometheus notas=[]
+[2026-10-31 13:29:03] FIN mongodb_B_Q1_c50_r1; cooldown 60s
+[2026-10-31 13:30:03] AVANCE: 5 / 162
+[2026-10-31 13:30:03] INICIO postgresql_C_Q2_V1_c50_r1  [postgresql PROFILE_C_SEVERE Q2_V1 c=50 r=1]
+ Container abarrotes-bench-runner-run-f1fdc086380d Creating 
+ Container abarrotes-bench-runner-run-f1fdc086380d Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-745eebdceeb0 Creating 
+ Container abarrotes-bench-runner-run-745eebdceeb0 Created 
+[runner] postgresql_C_Q2_V1_c50_r1: 50 consultas completadas en la ventana -> results/raw/postgresql_C_Q2_V1_c50_r1.json
+ Container abarrotes-bench-runner-run-a014d75f1763 Creating 
+ Container abarrotes-bench-runner-run-a014d75f1763 Created 
+[finalize] postgresql_C_Q2_V1_c50_r1: status=ok qps=0.16666666666666666 p99=200481.15247011185 thr=885.288216 rss_mb=594.194432 spill=False fuente=prometheus notas=[]
+[2026-10-31 13:36:27] FIN postgresql_C_Q2_V1_c50_r1; cooldown 60s
+[2026-10-31 13:37:27] AVANCE: 6 / 162
+[2026-10-31 13:37:27] INICIO postgresql_A_Q2_V2_c50_r1  [postgresql PROFILE_A_BASELINE Q2_V2 c=50 r=1]
+ Container abarrotes-bench-runner-run-c72c0a0e87c4 Creating 
+ Container abarrotes-bench-runner-run-c72c0a0e87c4 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-fd343430b0e7 Creating 
+ Container abarrotes-bench-runner-run-fd343430b0e7 Created 
+[runner] postgresql_A_Q2_V2_c50_r1: 457 consultas completadas en la ventana -> results/raw/postgresql_A_Q2_V2_c50_r1.json
+ Container abarrotes-bench-runner-run-ce62e493d8e9 Creating 
+ Container abarrotes-bench-runner-run-ce62e493d8e9 Created 
+[finalize] postgresql_A_Q2_V2_c50_r1: status=ok qps=1.5233333333333334 p99=38904.35396194458 thr=0.71152 rss_mb=599.343104 spill=False fuente=prometheus notas=[]
+[2026-10-31 13:43:51] FIN postgresql_A_Q2_V2_c50_r1; cooldown 60s
+[2026-10-31 13:44:51] AVANCE: 7 / 162
+[2026-10-31 13:44:51] INICIO postgresql_C_Q2_V1_c10_r1  [postgresql PROFILE_C_SEVERE Q2_V1 c=10 r=1]
+ Container abarrotes-bench-runner-run-b00156a8cce9 Creating 
+ Container abarrotes-bench-runner-run-b00156a8cce9 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-bbcc5d303620 Creating 
+ Container abarrotes-bench-runner-run-bbcc5d303620 Created 
+[runner] postgresql_C_Q2_V1_c10_r1: 94 consultas completadas en la ventana -> results/raw/postgresql_C_Q2_V1_c10_r1.json
+ Container abarrotes-bench-runner-run-ca31eee965ea Creating 
+ Container abarrotes-bench-runner-run-ca31eee965ea Created 
+[finalize] postgresql_C_Q2_V1_c10_r1: status=ok qps=0.31333333333333335 p99=34708.28182697296 thr=854.591985 rss_mb=178.991104 spill=False fuente=prometheus notas=[]
+[2026-10-31 13:51:16] FIN postgresql_C_Q2_V1_c10_r1; cooldown 60s
+[2026-10-31 13:52:16] AVANCE: 8 / 162
+[2026-10-31 13:52:16] INICIO mongodb_B_Q1_c10_r1  [mongodb PROFILE_B_MEDIUM Q1 c=10 r=1]
+ Container abarrotes-bench-runner-run-038690502c6a Creating 
+ Container abarrotes-bench-runner-run-038690502c6a Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-601f36849cec Creating 
+ Container abarrotes-bench-runner-run-601f36849cec Created 
+[runner] mongodb_B_Q1_c10_r1: 125 consultas completadas en la ventana -> results/raw/mongodb_B_Q1_c10_r1.json
+ Container abarrotes-bench-runner-run-5d6460594645 Creating 
+ Container abarrotes-bench-runner-run-5d6460594645 Created 
+[finalize] mongodb_B_Q1_c10_r1: status=ok qps=0.4166666666666667 p99=27094.124841690067 thr=596.917814 rss_mb=759.17312 spill=False fuente=prometheus notas=[]
+[2026-10-31 13:58:38] FIN mongodb_B_Q1_c10_r1; cooldown 60s
+[2026-10-31 13:59:38] AVANCE: 9 / 162
+[2026-10-31 13:59:38] INICIO postgresql_B_Q1_c50_r1  [postgresql PROFILE_B_MEDIUM Q1 c=50 r=1]
+ Container abarrotes-bench-runner-run-4c66cf799f54 Creating 
+ Container abarrotes-bench-runner-run-4c66cf799f54 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-2a0c953707a7 Creating 
+ Container abarrotes-bench-runner-run-2a0c953707a7 Created 
+[runner] postgresql_B_Q1_c50_r1: 0 consultas completadas en la ventana -> results/raw/postgresql_B_Q1_c50_r1.json
+ Container abarrotes-bench-runner-run-228b015d9110 Creating 
+ Container abarrotes-bench-runner-run-228b015d9110 Created 
+[finalize] postgresql_B_Q1_c50_r1: status=oom qps=0.0 p99=None thr=585.487667 rss_mb=1813.62688 spill=True fuente=prometheus notas=['spill: temp_files 0 -> 57', 'spill: temp_bytes 0 -> 20595802112', "spill: log 'temporary file'", 'docker inspect: OOMKilled', 'log: proceso terminado por señal 9 (OOM killer)', 'ninguna consulta completada dentro de la ventana', "121/171 consultas fallidas (> 5%); códigos ['OperationalError']"]
+[2026-10-31 14:06:03] FIN postgresql_B_Q1_c50_r1; cooldown 60s
+[2026-10-31 14:07:03] AVANCE: 10 / 162
+[2026-10-31 14:07:03] INICIO mongodb_B_Q2_V2_c50_r1  [mongodb PROFILE_B_MEDIUM Q2_V2 c=50 r=1]
+ Container abarrotes-bench-runner-run-cccba98e84d4 Creating 
+ Container abarrotes-bench-runner-run-cccba98e84d4 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-fbe50f5af4f7 Creating 
+ Container abarrotes-bench-runner-run-fbe50f5af4f7 Created 
+[runner] mongodb_B_Q2_V2_c50_r1: 249 consultas completadas en la ventana -> results/raw/mongodb_B_Q2_V2_c50_r1.json
+ Container abarrotes-bench-runner-run-e28de71bc38a Creating 
+ Container abarrotes-bench-runner-run-e28de71bc38a Created 
+[finalize] mongodb_B_Q2_V2_c50_r1: status=ok qps=0.83 p99=59475.57673454285 thr=589.819568 rss_mb=837.279744 spill=False fuente=prometheus notas=[]
+[2026-10-31 14:13:26] FIN mongodb_B_Q2_V2_c50_r1; cooldown 60s
+[2026-10-31 14:14:27] AVANCE: 11 / 162
+[2026-10-31 14:14:27] INICIO mongodb_B_Q2_V1_c1_r1  [mongodb PROFILE_B_MEDIUM Q2_V1 c=1 r=1]
+ Container abarrotes-bench-runner-run-3b8328390ee7 Creating 
+ Container abarrotes-bench-runner-run-3b8328390ee7 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-7ebd35c7f815 Creating 
+ Container abarrotes-bench-runner-run-7ebd35c7f815 Created 
+[runner] mongodb_B_Q2_V1_c1_r1: 28 consultas completadas en la ventana -> results/raw/mongodb_B_Q2_V1_c1_r1.json
+ Container abarrotes-bench-runner-run-cc91b97347da Creating 
+ Container abarrotes-bench-runner-run-cc91b97347da Created 
+[finalize] mongodb_B_Q2_V1_c1_r1: status=ok qps=0.09333333333333334 p99=10377.34905719757 thr=0.0 rss_mb=671.00672 spill=False fuente=prometheus notas=[]
+[2026-10-31 14:20:48] FIN mongodb_B_Q2_V1_c1_r1; cooldown 60s
+[2026-10-31 14:21:48] AVANCE: 12 / 162
+[2026-10-31 14:21:48] INICIO postgresql_B_Q2_V2_c50_r1  [postgresql PROFILE_B_MEDIUM Q2_V2 c=50 r=1]
+ Container abarrotes-bench-runner-run-bbdedef5be3d Creating 
+ Container abarrotes-bench-runner-run-bbdedef5be3d Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-293d009ede5e Creating 
+ Container abarrotes-bench-runner-run-293d009ede5e Created 
+[runner] postgresql_B_Q2_V2_c50_r1: 176 consultas completadas en la ventana -> results/raw/postgresql_B_Q2_V2_c50_r1.json
+ Container abarrotes-bench-runner-run-0bd3895cba6c Creating 
+ Container abarrotes-bench-runner-run-0bd3895cba6c Created 
+[finalize] postgresql_B_Q2_V2_c50_r1: status=ok qps=0.5866666666666667 p99=88275.25526285172 thr=587.0021770000001 rss_mb=595.501056 spill=False fuente=prometheus notas=[]
+[2026-10-31 14:28:13] FIN postgresql_B_Q2_V2_c50_r1; cooldown 60s
+[2026-10-31 14:29:13] AVANCE: 13 / 162
+[2026-10-31 14:29:13] INICIO postgresql_C_Q2_V2_c50_r1  [postgresql PROFILE_C_SEVERE Q2_V2 c=50 r=1]
+ Container abarrotes-bench-runner-run-d00df90389d7 Creating 
+ Container abarrotes-bench-runner-run-d00df90389d7 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-989cffe80068 Creating 
+ Container abarrotes-bench-runner-run-989cffe80068 Created 
+[runner] postgresql_C_Q2_V2_c50_r1: 44 consultas completadas en la ventana -> results/raw/postgresql_C_Q2_V2_c50_r1.json
+ Container abarrotes-bench-runner-run-cd95c4394e0d Creating 
+ Container abarrotes-bench-runner-run-cd95c4394e0d Created 
+[finalize] postgresql_C_Q2_V2_c50_r1: status=ok qps=0.14666666666666667 p99=197993.8000535965 thr=891.4295770000001 rss_mb=594.149376 spill=False fuente=prometheus notas=[]
+[2026-10-31 14:35:39] FIN postgresql_C_Q2_V2_c50_r1; cooldown 60s
+[2026-10-31 14:36:39] AVANCE: 14 / 162
+[2026-10-31 14:36:39] INICIO postgresql_A_Q1_c1_r1  [postgresql PROFILE_A_BASELINE Q1 c=1 r=1]
+ Container abarrotes-bench-runner-run-d7bf995f1707 Creating 
+ Container abarrotes-bench-runner-run-d7bf995f1707 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-254199cd9318 Creating 
+ Container abarrotes-bench-runner-run-254199cd9318 Created 
+[runner] postgresql_A_Q1_c1_r1: 35 consultas completadas en la ventana -> results/raw/postgresql_A_Q1_c1_r1.json
+ Container abarrotes-bench-runner-run-a601811d110a Creating 
+ Container abarrotes-bench-runner-run-a601811d110a Created 
+[finalize] postgresql_A_Q1_c1_r1: status=spill qps=0.11666666666666667 p99=10491.990466117857 thr=0.0 rss_mb=102.539264 spill=True fuente=prometheus notas=['spill: temp_files 90 -> 635', 'spill: temp_bytes 5576491008 -> 39833329664', "spill: log 'temporary file'"]
+[2026-10-31 14:43:04] FIN postgresql_A_Q1_c1_r1; cooldown 60s
+[2026-10-31 14:44:04] AVANCE: 15 / 162
+[2026-10-31 14:44:04] INICIO postgresql_C_Q2_V2_c1_r1  [postgresql PROFILE_C_SEVERE Q2_V2 c=1 r=1]
+ Container abarrotes-bench-runner-run-939ced83a054 Creating 
+ Container abarrotes-bench-runner-run-939ced83a054 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-8ed3cf296f76 Creating 
+ Container abarrotes-bench-runner-run-8ed3cf296f76 Created 
+[runner] postgresql_C_Q2_V2_c1_r1: 112 consultas completadas en la ventana -> results/raw/postgresql_C_Q2_V2_c1_r1.json
+ Container abarrotes-bench-runner-run-6313ee95ce6e Creating 
+ Container abarrotes-bench-runner-run-6313ee95ce6e Created 
+[finalize] postgresql_C_Q2_V2_c1_r1: status=ok qps=0.37333333333333335 p99=2904.295287132263 thr=586.435692 rss_mb=34.930688 spill=False fuente=prometheus notas=[]
+[2026-10-31 14:50:26] FIN postgresql_C_Q2_V2_c1_r1; cooldown 60s
+[2026-10-31 14:51:27] AVANCE: 16 / 162
+[2026-10-31 14:51:27] INICIO mongodb_C_Q1_c50_r1  [mongodb PROFILE_C_SEVERE Q1 c=50 r=1]
+ Container abarrotes-bench-runner-run-d2fbe22e0205 Creating 
+ Container abarrotes-bench-runner-run-d2fbe22e0205 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-1581d4d54ea8 Creating 
+ Container abarrotes-bench-runner-run-1581d4d54ea8 Created 
+[runner] mongodb_C_Q1_c50_r1: 0 consultas completadas en la ventana -> results/raw/mongodb_C_Q1_c50_r1.json
+ Container abarrotes-bench-runner-run-2b0cd7557c2b Creating 
+ Container abarrotes-bench-runner-run-2b0cd7557c2b Created 
+[finalize] mongodb_C_Q1_c50_r1: status=error qps=0.0 p99=None thr=896.25917 rss_mb=596.013056 spill=False fuente=prometheus notas=['ninguna consulta completada dentro de la ventana']
+[2026-10-31 14:57:50] FIN mongodb_C_Q1_c50_r1; cooldown 60s
+[2026-10-31 14:58:50] AVANCE: 17 / 162
+[2026-10-31 14:58:50] INICIO postgresql_C_Q2_V1_c1_r1  [postgresql PROFILE_C_SEVERE Q2_V1 c=1 r=1]
+ Container abarrotes-bench-runner-run-e35ffab9ceeb Creating 
+ Container abarrotes-bench-runner-run-e35ffab9ceeb Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-f7e323e6ca73 Creating 
+ Container abarrotes-bench-runner-run-f7e323e6ca73 Created 
+[runner] postgresql_C_Q2_V1_c1_r1: 115 consultas completadas en la ventana -> results/raw/postgresql_C_Q2_V1_c1_r1.json
+ Container abarrotes-bench-runner-run-f71862547fe0 Creating 
+ Container abarrotes-bench-runner-run-f71862547fe0 Created 
+[finalize] postgresql_C_Q2_V1_c1_r1: status=ok qps=0.38333333333333336 p99=2889.251732826233 thr=587.044633 rss_mb=35.028992 spill=False fuente=prometheus notas=[]
+[2026-10-31 15:05:13] FIN postgresql_C_Q2_V1_c1_r1; cooldown 60s
+[2026-10-31 15:06:13] AVANCE: 18 / 162
+[2026-10-31 15:06:13] INICIO postgresql_A_Q2_V1_c50_r1  [postgresql PROFILE_A_BASELINE Q2_V1 c=50 r=1]
+ Container abarrotes-bench-runner-run-7730adf38c39 Creating 
+ Container abarrotes-bench-runner-run-7730adf38c39 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-f305d8f97f3d Creating 
+ Container abarrotes-bench-runner-run-f305d8f97f3d Created 
+[runner] postgresql_A_Q2_V1_c50_r1: 454 consultas completadas en la ventana -> results/raw/postgresql_A_Q2_V1_c50_r1.json
+ Container abarrotes-bench-runner-run-a514cb5fc612 Creating 
+ Container abarrotes-bench-runner-run-a514cb5fc612 Created 
+[finalize] postgresql_A_Q2_V1_c50_r1: status=ok qps=1.5133333333333334 p99=38808.9598584175 thr=2.349423 rss_mb=598.577152 spill=False fuente=prometheus notas=[]
+[2026-10-31 15:12:38] FIN postgresql_A_Q2_V1_c50_r1; cooldown 60s
+[2026-10-31 15:13:38] AVANCE: 19 / 162
+[2026-10-31 15:13:38] INICIO mongodb_A_Q2_V2_c50_r1  [mongodb PROFILE_A_BASELINE Q2_V2 c=50 r=1]
+ Container abarrotes-bench-runner-run-c5780a35cd20 Creating 
+ Container abarrotes-bench-runner-run-c5780a35cd20 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-492feda7a1b0 Creating 
+ Container abarrotes-bench-runner-run-492feda7a1b0 Created 
+[runner] mongodb_A_Q2_V2_c50_r1: 1250 consultas completadas en la ventana -> results/raw/mongodb_A_Q2_V2_c50_r1.json
+ Container abarrotes-bench-runner-run-0e7490284bf1 Creating 
+ Container abarrotes-bench-runner-run-0e7490284bf1 Created 
+[finalize] mongodb_A_Q2_V2_c50_r1: status=ok qps=4.166666666666667 p99=13149.93584394455 thr=1.656525 rss_mb=1128.415232 spill=False fuente=prometheus notas=[]
+[2026-10-31 15:20:02] FIN mongodb_A_Q2_V2_c50_r1; cooldown 60s
+[2026-10-31 15:21:02] AVANCE: 20 / 162
+[2026-10-31 15:21:02] INICIO postgresql_A_Q1_c10_r1  [postgresql PROFILE_A_BASELINE Q1 c=10 r=1]
+ Container abarrotes-bench-runner-run-4b71f9bb1b07 Creating 
+ Container abarrotes-bench-runner-run-4b71f9bb1b07 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-5bc7177138eb Creating 
+ Container abarrotes-bench-runner-run-5bc7177138eb Created 
+[runner] postgresql_A_Q1_c10_r1: 82 consultas completadas en la ventana -> results/raw/postgresql_A_Q1_c10_r1.json
+ Container abarrotes-bench-runner-run-75d35036c935 Creating 
+ Container abarrotes-bench-runner-run-75d35036c935 Created 
+[finalize] postgresql_A_Q1_c10_r1: status=spill qps=0.2733333333333333 p99=40241.17567777634 thr=0.251794 rss_mb=582.303744 spill=True fuente=prometheus notas=['spill: temp_files 137 -> 1427', 'spill: temp_bytes 9293561856 -> 102615908352', "spill: log 'temporary file'"]
+[2026-10-31 15:27:29] FIN postgresql_A_Q1_c10_r1; cooldown 60s
+[2026-10-31 15:28:29] AVANCE: 21 / 162
+[2026-10-31 15:28:29] INICIO mongodb_C_Q2_V2_c50_r1  [mongodb PROFILE_C_SEVERE Q2_V2 c=50 r=1]
+ Container abarrotes-bench-runner-run-b439869bc5bf Creating 
+ Container abarrotes-bench-runner-run-b439869bc5bf Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-5918678c73ae Creating 
+ Container abarrotes-bench-runner-run-5918678c73ae Created 
+[runner] mongodb_C_Q2_V2_c50_r1: 0 consultas completadas en la ventana -> results/raw/mongodb_C_Q2_V2_c50_r1.json
+ Container abarrotes-bench-runner-run-872264de66f2 Creating 
+ Container abarrotes-bench-runner-run-872264de66f2 Created 
+[finalize] mongodb_C_Q2_V2_c50_r1: status=error qps=0.0 p99=None thr=887.401182 rss_mb=582.139904 spill=False fuente=prometheus notas=['ninguna consulta completada dentro de la ventana']
+[2026-10-31 15:34:53] FIN mongodb_C_Q2_V2_c50_r1; cooldown 60s
+[2026-10-31 15:35:53] AVANCE: 22 / 162
+[2026-10-31 15:35:53] INICIO postgresql_C_Q1_c1_r1  [postgresql PROFILE_C_SEVERE Q1 c=1 r=1]
+ Container abarrotes-bench-runner-run-7156743f2a7d Creating 
+ Container abarrotes-bench-runner-run-7156743f2a7d Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-7595a183481c Creating 
+ Container abarrotes-bench-runner-run-7595a183481c Created 
+[runner] postgresql_C_Q1_c1_r1: 19 consultas completadas en la ventana -> results/raw/postgresql_C_Q1_c1_r1.json
+ Container abarrotes-bench-runner-run-18e2834a58fb Creating 
+ Container abarrotes-bench-runner-run-18e2834a58fb Created 
+[finalize] postgresql_C_Q1_c1_r1: status=spill qps=0.06333333333333334 p99=16505.148491859436 thr=179.927537 rss_mb=101.281792 spill=True fuente=prometheus notas=['spill: temp_files 45 -> 356', 'spill: temp_bytes 2788294656 -> 22233448448', "spill: log 'temporary file'"]
+[2026-10-31 15:42:18] FIN postgresql_C_Q1_c1_r1; cooldown 60s
+[2026-10-31 15:43:18] AVANCE: 23 / 162
+[2026-10-31 15:43:18] INICIO postgresql_B_Q2_V1_c1_r1  [postgresql PROFILE_B_MEDIUM Q2_V1 c=1 r=1]
+ Container abarrotes-bench-runner-run-f667acdaecb7 Creating 
+ Container abarrotes-bench-runner-run-f667acdaecb7 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-1f4be3bb8c78 Creating 
+ Container abarrotes-bench-runner-run-1f4be3bb8c78 Created 
+[runner] postgresql_B_Q2_V1_c1_r1: 227 consultas completadas en la ventana -> results/raw/postgresql_B_Q2_V1_c1_r1.json
+ Container abarrotes-bench-runner-run-c808d069ff0e Creating 
+ Container abarrotes-bench-runner-run-c808d069ff0e Created 
+[finalize] postgresql_B_Q2_V1_c1_r1: status=ok qps=0.7566666666666667 p99=1438.0963659286501 thr=292.24083399999995 rss_mb=34.885632 spill=False fuente=prometheus notas=[]
+[2026-10-31 15:49:41] FIN postgresql_B_Q2_V1_c1_r1; cooldown 60s
+[2026-10-31 15:50:41] AVANCE: 24 / 162
+[2026-10-31 15:50:41] INICIO mongodb_A_Q1_c10_r1  [mongodb PROFILE_A_BASELINE Q1 c=10 r=1]
+ Container abarrotes-bench-runner-run-4c0ef999c621 Creating 
+ Container abarrotes-bench-runner-run-4c0ef999c621 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-288ede294c49 Creating 
+ Container abarrotes-bench-runner-run-288ede294c49 Created 
+[runner] mongodb_A_Q1_c10_r1: 309 consultas completadas en la ventana -> results/raw/mongodb_A_Q1_c10_r1.json
+ Container abarrotes-bench-runner-run-1ada352d19b8 Creating 
+ Container abarrotes-bench-runner-run-1ada352d19b8 Created 
+[finalize] mongodb_A_Q1_c10_r1: status=ok qps=1.03 p99=10700.6568813324 thr=1.931556 rss_mb=964.99712 spill=False fuente=prometheus notas=[]
+[2026-10-31 15:57:03] FIN mongodb_A_Q1_c10_r1; cooldown 60s
+[2026-10-31 15:58:03] AVANCE: 25 / 162
+[2026-10-31 15:58:03] INICIO mongodb_A_Q2_V2_c1_r1  [mongodb PROFILE_A_BASELINE Q2_V2 c=1 r=1]
+ Container abarrotes-bench-runner-run-120bc7cd06c3 Creating 
+ Container abarrotes-bench-runner-run-120bc7cd06c3 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-d9353b5b10b4 Creating 
+ Container abarrotes-bench-runner-run-d9353b5b10b4 Created 
+[runner] mongodb_A_Q2_V2_c1_r1: 341 consultas completadas en la ventana -> results/raw/mongodb_A_Q2_V2_c1_r1.json
+ Container abarrotes-bench-runner-run-136f3e744f90 Creating 
+ Container abarrotes-bench-runner-run-136f3e744f90 Created 
+[finalize] mongodb_A_Q2_V2_c1_r1: status=ok qps=1.1366666666666667 p99=947.9340076446534 thr=0.0 rss_mb=949.174272 spill=False fuente=prometheus notas=[]
+[2026-10-31 16:04:25] FIN mongodb_A_Q2_V2_c1_r1; cooldown 60s
+[2026-10-31 16:05:26] AVANCE: 26 / 162
+[2026-10-31 16:05:26] INICIO mongodb_C_Q1_c1_r1  [mongodb PROFILE_C_SEVERE Q1 c=1 r=1]
+ Container abarrotes-bench-runner-run-7513db09cb53 Creating 
+ Container abarrotes-bench-runner-run-7513db09cb53 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-28b724e8f3f9 Creating 
+ Container abarrotes-bench-runner-run-28b724e8f3f9 Created 
+[runner] mongodb_C_Q1_c1_r1: 68 consultas completadas en la ventana -> results/raw/mongodb_C_Q1_c1_r1.json
+ Container abarrotes-bench-runner-run-c205b7598144 Creating 
+ Container abarrotes-bench-runner-run-c205b7598144 Created 
+[finalize] mongodb_C_Q1_c1_r1: status=ok qps=0.22666666666666666 p99=4693.909637928009 thr=11.911629 rss_mb=451.579904 spill=False fuente=prometheus notas=[]
+[2026-10-31 16:11:47] FIN mongodb_C_Q1_c1_r1; cooldown 60s
+[2026-10-31 16:12:47] AVANCE: 27 / 162
+[2026-10-31 16:12:47] INICIO mongodb_C_Q2_V1_c1_r1  [mongodb PROFILE_C_SEVERE Q2_V1 c=1 r=1]
+ Container abarrotes-bench-runner-run-bdfdb147f0a7 Creating 
+ Container abarrotes-bench-runner-run-bdfdb147f0a7 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-6df7b5519c75 Creating 
+ Container abarrotes-bench-runner-run-6df7b5519c75 Created 
+[runner] mongodb_C_Q2_V1_c1_r1: 17 consultas completadas en la ventana -> results/raw/mongodb_C_Q2_V1_c1_r1.json
+ Container abarrotes-bench-runner-run-95886d9efe98 Creating 
+ Container abarrotes-bench-runner-run-95886d9efe98 Created 
+[finalize] mongodb_C_Q2_V1_c1_r1: status=ok qps=0.056666666666666664 p99=16908.39840888977 thr=19.435213 rss_mb=405.815296 spill=False fuente=prometheus notas=[]
+[2026-10-31 16:19:09] FIN mongodb_C_Q2_V1_c1_r1; cooldown 60s
+[2026-10-31 16:20:09] AVANCE: 28 / 162
+[2026-10-31 16:20:09] INICIO mongodb_A_Q2_V1_c10_r1  [mongodb PROFILE_A_BASELINE Q2_V1 c=10 r=1]
+ Container abarrotes-bench-runner-run-d9ff50bb0fbc Creating 
+ Container abarrotes-bench-runner-run-d9ff50bb0fbc Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-8e94a4fb2eb3 Creating 
+ Container abarrotes-bench-runner-run-8e94a4fb2eb3 Created 
+[runner] mongodb_A_Q2_V1_c10_r1: 1314 consultas completadas en la ventana -> results/raw/mongodb_A_Q2_V1_c10_r1.json
+ Container abarrotes-bench-runner-run-cd93ee011c55 Creating 
+ Container abarrotes-bench-runner-run-cd93ee011c55 Created 
+[finalize] mongodb_A_Q2_V1_c10_r1: status=ok qps=4.38 p99=2899.877133369445 thr=0.450763 rss_mb=993.509376 spill=False fuente=prometheus notas=[]
+[2026-10-31 16:26:32] FIN mongodb_A_Q2_V1_c10_r1; cooldown 60s
+[2026-10-31 16:27:32] AVANCE: 29 / 162
+[2026-10-31 16:27:32] INICIO mongodb_B_Q2_V2_c1_r1  [mongodb PROFILE_B_MEDIUM Q2_V2 c=1 r=1]
+ Container abarrotes-bench-runner-run-6262429003a0 Creating 
+ Container abarrotes-bench-runner-run-6262429003a0 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-f97f0129d870 Creating 
+ Container abarrotes-bench-runner-run-f97f0129d870 Created 
+[runner] mongodb_B_Q2_V2_c1_r1: 29 consultas completadas en la ventana -> results/raw/mongodb_B_Q2_V2_c1_r1.json
+ Container abarrotes-bench-runner-run-264131869e5a Creating 
+ Container abarrotes-bench-runner-run-264131869e5a Created 
+[finalize] mongodb_B_Q2_V2_c1_r1: status=ok qps=0.09666666666666666 p99=10343.913116455078 thr=0.0 rss_mb=674.34496 spill=False fuente=prometheus notas=[]
+[2026-10-31 16:33:54] FIN mongodb_B_Q2_V2_c1_r1; cooldown 60s
+[2026-10-31 16:34:55] AVANCE: 30 / 162
+[2026-10-31 16:34:55] INICIO postgresql_C_Q2_V2_c10_r1  [postgresql PROFILE_C_SEVERE Q2_V2 c=10 r=1]
+ Container abarrotes-bench-runner-run-502459eff6b1 Creating 
+ Container abarrotes-bench-runner-run-502459eff6b1 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-969424188b42 Creating 
+ Container abarrotes-bench-runner-run-969424188b42 Created 
+[runner] postgresql_C_Q2_V2_c10_r1: 88 consultas completadas en la ventana -> results/raw/postgresql_C_Q2_V2_c10_r1.json
+ Container abarrotes-bench-runner-run-29e1f8a9840b Creating 
+ Container abarrotes-bench-runner-run-29e1f8a9840b Created 
+[finalize] postgresql_C_Q2_V2_c10_r1: status=ok qps=0.29333333333333333 p99=34726.752507686615 thr=816.06336 rss_mb=179.023872 spill=False fuente=prometheus notas=[]
+[2026-10-31 16:41:18] FIN postgresql_C_Q2_V2_c10_r1; cooldown 60s
+[2026-10-31 16:42:18] AVANCE: 31 / 162
+[2026-10-31 16:42:18] INICIO postgresql_B_Q1_c10_r1  [postgresql PROFILE_B_MEDIUM Q1 c=10 r=1]
+ Container abarrotes-bench-runner-run-79900a3f4cad Creating 
+ Container abarrotes-bench-runner-run-79900a3f4cad Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-8d9af881ceca Creating 
+ Container abarrotes-bench-runner-run-8d9af881ceca Created 
+[runner] postgresql_B_Q1_c10_r1: 29 consultas completadas en la ventana -> results/raw/postgresql_B_Q1_c10_r1.json
+ Container abarrotes-bench-runner-run-10d74135436a Creating 
+ Container abarrotes-bench-runner-run-10d74135436a Created 
+[finalize] postgresql_B_Q1_c10_r1: status=spill qps=0.09666666666666666 p99=93399.89707946777 thr=545.820407 rss_mb=579.342336 spill=True fuente=prometheus notas=['spill: temp_files 0 -> 611', 'spill: temp_bytes 0 -> 40912363520', "spill: log 'temporary file'"]
+[2026-10-31 16:48:44] FIN postgresql_B_Q1_c10_r1; cooldown 60s
+[2026-10-31 16:49:45] AVANCE: 32 / 162
+[2026-10-31 16:49:45] INICIO postgresql_A_Q2_V2_c10_r1  [postgresql PROFILE_A_BASELINE Q2_V2 c=10 r=1]
+ Container abarrotes-bench-runner-run-ac01defac363 Creating 
+ Container abarrotes-bench-runner-run-ac01defac363 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-b462b17ffdf5 Creating 
+ Container abarrotes-bench-runner-run-b462b17ffdf5 Created 
+[runner] postgresql_A_Q2_V2_c10_r1: 470 consultas completadas en la ventana -> results/raw/postgresql_A_Q2_V2_c10_r1.json
+ Container abarrotes-bench-runner-run-a9160a2f432a Creating 
+ Container abarrotes-bench-runner-run-a9160a2f432a Created 
+[finalize] postgresql_A_Q2_V2_c10_r1: status=ok qps=1.5666666666666667 p99=10926.16081237793 thr=0.8424320000000001 rss_mb=180.744192 spill=False fuente=prometheus notas=[]
+[2026-10-31 16:56:08] FIN postgresql_A_Q2_V2_c10_r1; cooldown 60s
+[2026-10-31 16:57:08] AVANCE: 33 / 162
+[2026-10-31 16:57:08] INICIO postgresql_A_Q2_V1_c10_r1  [postgresql PROFILE_A_BASELINE Q2_V1 c=10 r=1]
+ Container abarrotes-bench-runner-run-57c1f1bbd7fb Creating 
+ Container abarrotes-bench-runner-run-57c1f1bbd7fb Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-80a6c8108389 Creating 
+ Container abarrotes-bench-runner-run-80a6c8108389 Created 
+[runner] postgresql_A_Q2_V1_c10_r1: 472 consultas completadas en la ventana -> results/raw/postgresql_A_Q2_V1_c10_r1.json
+ Container abarrotes-bench-runner-run-742d4983c6ff Creating 
+ Container abarrotes-bench-runner-run-742d4983c6ff Created 
+[finalize] postgresql_A_Q2_V1_c10_r1: status=ok qps=1.5733333333333333 p99=10776.194772720337 thr=1.6372490000000002 rss_mb=180.813824 spill=False fuente=prometheus notas=[]
+[2026-10-31 17:03:32] FIN postgresql_A_Q2_V1_c10_r1; cooldown 60s
+[2026-10-31 17:04:33] AVANCE: 34 / 162
+[2026-10-31 17:04:33] INICIO mongodb_C_Q1_c10_r1  [mongodb PROFILE_C_SEVERE Q1 c=10 r=1]
+ Container abarrotes-bench-runner-run-365b1af22a25 Creating 
+ Container abarrotes-bench-runner-run-365b1af22a25 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-b86f3520b49f Creating 
+ Container abarrotes-bench-runner-run-b86f3520b49f Created 
+[runner] mongodb_C_Q1_c10_r1: 52 consultas completadas en la ventana -> results/raw/mongodb_C_Q1_c10_r1.json
+ Container abarrotes-bench-runner-run-f46cb350a495 Creating 
+ Container abarrotes-bench-runner-run-f46cb350a495 Created 
+[finalize] mongodb_C_Q1_c10_r1: status=ok qps=0.17333333333333334 p99=58061.34651422501 thr=896.253845 rss_mb=471.04 spill=False fuente=prometheus notas=[]
+[2026-10-31 17:10:55] FIN mongodb_C_Q1_c10_r1; cooldown 60s
+[2026-10-31 17:11:55] AVANCE: 35 / 162
+[2026-10-31 17:11:55] INICIO postgresql_C_Q1_c10_r1  [postgresql PROFILE_C_SEVERE Q1 c=10 r=1]
+ Container abarrotes-bench-runner-run-86fe940bd797 Creating 
+ Container abarrotes-bench-runner-run-86fe940bd797 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-729f54c0e20c Creating 
+ Container abarrotes-bench-runner-run-729f54c0e20c Created 
+[runner] postgresql_C_Q1_c10_r1: 4 consultas completadas en la ventana -> results/raw/postgresql_C_Q1_c10_r1.json
+ Container abarrotes-bench-runner-run-c9793bcb1e85 Creating 
+ Container abarrotes-bench-runner-run-c9793bcb1e85 Created 
+[finalize] postgresql_C_Q1_c10_r1: status=spill qps=0.013333333333333334 p99=174389.47692394257 thr=758.6898229999999 rss_mb=576.036864 spill=True fuente=prometheus notas=['spill: temp_files 0 -> 261', 'spill: temp_bytes 0 -> 20740284416', "spill: log 'temporary file'"]
+[2026-10-31 17:18:19] FIN postgresql_C_Q1_c10_r1; cooldown 60s
+[2026-10-31 17:19:19] AVANCE: 36 / 162
+[2026-10-31 17:19:19] INICIO postgresql_A_Q2_V1_c1_r1  [postgresql PROFILE_A_BASELINE Q2_V1 c=1 r=1]
+ Container abarrotes-bench-runner-run-20bda27d17b4 Creating 
+ Container abarrotes-bench-runner-run-20bda27d17b4 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-dd5e4f21f95e Creating 
+ Container abarrotes-bench-runner-run-dd5e4f21f95e Created 
+[runner] postgresql_A_Q2_V1_c1_r1: 362 consultas completadas en la ventana -> results/raw/postgresql_A_Q2_V1_c1_r1.json
+ Container abarrotes-bench-runner-run-ef2adc9ad687 Creating 
+ Container abarrotes-bench-runner-run-ef2adc9ad687 Created 
+[finalize] postgresql_A_Q2_V1_c1_r1: status=ok qps=1.2066666666666668 p99=1017.5886726379391 thr=0.0 rss_mb=34.947072 spill=False fuente=prometheus notas=[]
+[2026-10-31 17:25:42] FIN postgresql_A_Q2_V1_c1_r1; cooldown 60s
+[2026-10-31 17:26:42] AVANCE: 37 / 162
+[2026-10-31 17:26:42] INICIO mongodb_C_Q2_V2_c1_r1  [mongodb PROFILE_C_SEVERE Q2_V2 c=1 r=1]
+ Container abarrotes-bench-runner-run-19d1d10eb7e7 Creating 
+ Container abarrotes-bench-runner-run-19d1d10eb7e7 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-a55792ca069b Creating 
+ Container abarrotes-bench-runner-run-a55792ca069b Created 
+[runner] mongodb_C_Q2_V2_c1_r1: 17 consultas completadas en la ventana -> results/raw/mongodb_C_Q2_V2_c1_r1.json
+ Container abarrotes-bench-runner-run-f7deb9a5e392 Creating 
+ Container abarrotes-bench-runner-run-f7deb9a5e392 Created 
+[finalize] mongodb_C_Q2_V2_c1_r1: status=ok qps=0.056666666666666664 p99=17119.389390945435 thr=18.897174 rss_mb=410.591232 spill=False fuente=prometheus notas=[]
+[2026-10-31 17:33:04] FIN mongodb_C_Q2_V2_c1_r1; cooldown 60s
+[2026-10-31 17:34:04] AVANCE: 38 / 162
+[2026-10-31 17:34:04] INICIO mongodb_B_Q2_V2_c10_r1  [mongodb PROFILE_B_MEDIUM Q2_V2 c=10 r=1]
+ Container abarrotes-bench-runner-run-4a8e5b693d03 Creating 
+ Container abarrotes-bench-runner-run-4a8e5b693d03 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-1bb60682ce40 Creating 
+ Container abarrotes-bench-runner-run-1bb60682ce40 Created 
+[runner] mongodb_B_Q2_V2_c10_r1: 100 consultas completadas en la ventana -> results/raw/mongodb_B_Q2_V2_c10_r1.json
+ Container abarrotes-bench-runner-run-bd341a4b81e0 Creating 
+ Container abarrotes-bench-runner-run-bd341a4b81e0 Created 
+[finalize] mongodb_B_Q2_V2_c10_r1: status=ok qps=0.3333333333333333 p99=27215.333290100098 thr=527.6730640000001 rss_mb=686.65344 spill=False fuente=prometheus notas=[]
+[2026-10-31 17:40:26] FIN mongodb_B_Q2_V2_c10_r1; cooldown 60s
+[2026-10-31 17:41:26] AVANCE: 39 / 162
+[2026-10-31 17:41:26] INICIO mongodb_B_Q2_V1_c50_r1  [mongodb PROFILE_B_MEDIUM Q2_V1 c=50 r=1]
+ Container abarrotes-bench-runner-run-2d33106f1ca1 Creating 
+ Container abarrotes-bench-runner-run-2d33106f1ca1 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-f347a3a76f49 Creating 
+ Container abarrotes-bench-runner-run-f347a3a76f49 Created 
+[runner] mongodb_B_Q2_V1_c50_r1: 89 consultas completadas en la ventana -> results/raw/mongodb_B_Q2_V1_c50_r1.json
+ Container abarrotes-bench-runner-run-db5ab0186bb6 Creating 
+ Container abarrotes-bench-runner-run-db5ab0186bb6 Created 
+[finalize] mongodb_B_Q2_V1_c50_r1: status=ok qps=0.2966666666666667 p99=149322.23412513733 thr=597.229081 rss_mb=836.448256 spill=False fuente=prometheus notas=[]
+[2026-10-31 17:47:49] FIN mongodb_B_Q2_V1_c50_r1; cooldown 60s
+[2026-10-31 17:48:50] AVANCE: 40 / 162
+[2026-10-31 17:48:50] INICIO mongodb_A_Q1_c1_r1  [mongodb PROFILE_A_BASELINE Q1 c=1 r=1]
+ Container abarrotes-bench-runner-run-509aa144cda5 Creating 
+ Container abarrotes-bench-runner-run-509aa144cda5 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-84e751f84261 Creating 
+ Container abarrotes-bench-runner-run-84e751f84261 Created 
+[runner] mongodb_A_Q1_c1_r1: 88 consultas completadas en la ventana -> results/raw/mongodb_A_Q1_c1_r1.json
+ Container abarrotes-bench-runner-run-c9514fa745ef Creating 
+ Container abarrotes-bench-runner-run-c9514fa745ef Created 
+[finalize] mongodb_A_Q1_c1_r1: status=ok qps=0.29333333333333333 p99=3617.3291420936575 thr=0.0 rss_mb=909.103104 spill=False fuente=prometheus notas=[]
+[2026-10-31 17:55:12] FIN mongodb_A_Q1_c1_r1; cooldown 60s
+[2026-10-31 17:56:13] AVANCE: 41 / 162
+[2026-10-31 17:56:13] INICIO mongodb_C_Q2_V1_c50_r1  [mongodb PROFILE_C_SEVERE Q2_V1 c=50 r=1]
+ Container abarrotes-bench-runner-run-d2a29d2410b4 Creating 
+ Container abarrotes-bench-runner-run-d2a29d2410b4 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-82d40e48ca1f Creating 
+ Container abarrotes-bench-runner-run-82d40e48ca1f Created 
+[runner] mongodb_C_Q2_V1_c50_r1: 50 consultas completadas en la ventana -> results/raw/mongodb_C_Q2_V1_c50_r1.json
+ Container abarrotes-bench-runner-run-600a94cd3129 Creating 
+ Container abarrotes-bench-runner-run-600a94cd3129 Created 
+[finalize] mongodb_C_Q2_V1_c50_r1: status=ok qps=0.16666666666666666 p99=162970.36475896835 thr=879.3448739999999 rss_mb=575.85664 spill=False fuente=prometheus notas=[]
+[2026-10-31 18:02:36] FIN mongodb_C_Q2_V1_c50_r1; cooldown 60s
+[2026-10-31 18:03:37] AVANCE: 42 / 162
+[2026-10-31 18:03:37] INICIO mongodb_C_Q2_V2_c10_r1  [mongodb PROFILE_C_SEVERE Q2_V2 c=10 r=1]
+ Container abarrotes-bench-runner-run-87d14b9296c3 Creating 
+ Container abarrotes-bench-runner-run-87d14b9296c3 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-f6d6b6a33fb8 Creating 
+ Container abarrotes-bench-runner-run-f6d6b6a33fb8 Created 
+[runner] mongodb_C_Q2_V2_c10_r1: 30 consultas completadas en la ventana -> results/raw/mongodb_C_Q2_V2_c10_r1.json
+ Container abarrotes-bench-runner-run-143030b21d3f Creating 
+ Container abarrotes-bench-runner-run-143030b21d3f Created 
+[finalize] mongodb_C_Q2_V2_c10_r1: status=ok qps=0.1 p99=77725.0698685646 thr=843.9555849999999 rss_mb=424.226816 spill=False fuente=prometheus notas=[]
+[2026-10-31 18:09:59] FIN mongodb_C_Q2_V2_c10_r1; cooldown 60s
+[2026-10-31 18:10:59] AVANCE: 43 / 162
+[2026-10-31 18:10:59] INICIO postgresql_B_Q2_V1_c10_r1  [postgresql PROFILE_B_MEDIUM Q2_V1 c=10 r=1]
+ Container abarrotes-bench-runner-run-a7ad08c0f15b Creating 
+ Container abarrotes-bench-runner-run-a7ad08c0f15b Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-b3fda222cc0d Creating 
+ Container abarrotes-bench-runner-run-b3fda222cc0d Created 
+[runner] postgresql_B_Q2_V1_c10_r1: 200 consultas completadas en la ventana -> results/raw/postgresql_B_Q2_V1_c10_r1.json
+ Container abarrotes-bench-runner-run-67d553c33085 Creating 
+ Container abarrotes-bench-runner-run-67d553c33085 Created 
+[finalize] postgresql_B_Q2_V1_c10_r1: status=ok qps=0.6666666666666666 p99=26191.735143661495 thr=586.1957440000001 rss_mb=179.83488 spill=False fuente=prometheus notas=[]
+[2026-10-31 18:17:22] FIN postgresql_B_Q2_V1_c10_r1; cooldown 60s
+[2026-10-31 18:18:22] AVANCE: 44 / 162
+[2026-10-31 18:18:23] INICIO mongodb_A_Q2_V1_c1_r1  [mongodb PROFILE_A_BASELINE Q2_V1 c=1 r=1]
+ Container abarrotes-bench-runner-run-bdbff3bcca32 Creating 
+ Container abarrotes-bench-runner-run-bdbff3bcca32 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-187272a1834c Creating 
+ Container abarrotes-bench-runner-run-187272a1834c Created 
+[runner] mongodb_A_Q2_V1_c1_r1: 336 consultas completadas en la ventana -> results/raw/mongodb_A_Q2_V1_c1_r1.json
+ Container abarrotes-bench-runner-run-c927bee34796 Creating 
+ Container abarrotes-bench-runner-run-c927bee34796 Created 
+[finalize] mongodb_A_Q2_V1_c1_r1: status=ok qps=1.12 p99=951.7487883567809 thr=0.0 rss_mb=945.225728 spill=False fuente=prometheus notas=[]
+[2026-10-31 18:24:44] FIN mongodb_A_Q2_V1_c1_r1; cooldown 60s
+[2026-10-31 18:25:45] AVANCE: 45 / 162
+[2026-10-31 18:25:45] INICIO postgresql_B_Q2_V1_c50_r1  [postgresql PROFILE_B_MEDIUM Q2_V1 c=50 r=1]
+ Container abarrotes-bench-runner-run-6c83c3844e18 Creating 
+ Container abarrotes-bench-runner-run-6c83c3844e18 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-49d7c59bba86 Creating 
+ Container abarrotes-bench-runner-run-49d7c59bba86 Created 
+[runner] postgresql_B_Q2_V1_c50_r1: 175 consultas completadas en la ventana -> results/raw/postgresql_B_Q2_V1_c50_r1.json
+ Container abarrotes-bench-runner-run-7c5490218c02 Creating 
+ Container abarrotes-bench-runner-run-7c5490218c02 Created 
+[finalize] postgresql_B_Q2_V1_c50_r1: status=ok qps=0.5833333333333334 p99=89655.95356464386 thr=588.943586 rss_mb=594.747392 spill=False fuente=prometheus notas=[]
+[2026-10-31 18:32:09] FIN postgresql_B_Q2_V1_c50_r1; cooldown 60s
+[2026-10-31 18:33:09] AVANCE: 46 / 162
+[2026-10-31 18:33:09] INICIO postgresql_A_Q1_c50_r1  [postgresql PROFILE_A_BASELINE Q1 c=50 r=1]
+ Container abarrotes-bench-runner-run-d02d7236d47f Creating 
+ Container abarrotes-bench-runner-run-d02d7236d47f Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-8472d4d2e721 Creating 
+ Container abarrotes-bench-runner-run-8472d4d2e721 Created 
+[runner] postgresql_A_Q1_c50_r1: 4 consultas completadas en la ventana -> results/raw/postgresql_A_Q1_c50_r1.json
+ Container abarrotes-bench-runner-run-88b7eaf5e843 Creating 
+ Container abarrotes-bench-runner-run-88b7eaf5e843 Created 
+[finalize] postgresql_A_Q1_c50_r1: status=spill qps=0.013333333333333334 p99=143308.51794958115 thr=0.16568300000000002 rss_mb=2055.499776 spill=True fuente=prometheus notas=['spill: temp_files 0 -> 1306', 'spill: temp_bytes 0 -> 94916100096', "spill: log 'temporary file'"]
+[2026-10-31 18:39:40] FIN postgresql_A_Q1_c50_r1; cooldown 60s
+[2026-10-31 18:40:41] AVANCE: 47 / 162
+[2026-10-31 18:40:41] INICIO mongodb_B_Q1_c1_r1  [mongodb PROFILE_B_MEDIUM Q1 c=1 r=1]
+ Container abarrotes-bench-runner-run-4b88d28e6d8f Creating 
+ Container abarrotes-bench-runner-run-4b88d28e6d8f Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-b4a3b405ddb1 Creating 
+ Container abarrotes-bench-runner-run-b4a3b405ddb1 Created 
+[runner] mongodb_B_Q1_c1_r1: 75 consultas completadas en la ventana -> results/raw/mongodb_B_Q1_c1_r1.json
+ Container abarrotes-bench-runner-run-049c6671baf2 Creating 
+ Container abarrotes-bench-runner-run-049c6671baf2 Created 
+[finalize] mongodb_B_Q1_c1_r1: status=ok qps=0.25 p99=4169.895510673523 thr=0.0 rss_mb=725.95456 spill=False fuente=prometheus notas=[]
+[2026-10-31 18:47:02] FIN mongodb_B_Q1_c1_r1; cooldown 60s
+[2026-10-31 18:48:02] AVANCE: 48 / 162
+[2026-10-31 18:48:02] INICIO postgresql_C_Q1_c50_r1  [postgresql PROFILE_C_SEVERE Q1 c=50 r=1]
+ Container abarrotes-bench-runner-run-6e9b21f231e6 Creating 
+ Container abarrotes-bench-runner-run-6e9b21f231e6 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-0996feb42592 Creating 
+ Container abarrotes-bench-runner-run-0996feb42592 Created 
+[runner] postgresql_C_Q1_c50_r1: 0 consultas completadas en la ventana -> results/raw/postgresql_C_Q1_c50_r1.json
+ Container abarrotes-bench-runner-run-5caeefb1a3e0 Creating 
+ Container abarrotes-bench-runner-run-5caeefb1a3e0 Created 
+[finalize] postgresql_C_Q1_c50_r1: status=oom qps=0.0 p99=None thr=225.999464 rss_mb=984.592384 spill=False fuente=prometheus notas=['docker inspect: OOMKilled', 'log: proceso terminado por señal 9 (OOM killer)', 'ninguna consulta completada dentro de la ventana', "3353/3353 consultas fallidas (> 5%); códigos ['ConnectionTimeout', 'OperationalError']"]
+[2026-10-31 18:54:31] FIN postgresql_C_Q1_c50_r1; cooldown 60s
+[2026-10-31 18:55:32] AVANCE: 49 / 162
+[2026-10-31 18:55:32] INICIO postgresql_B_Q1_c1_r1  [postgresql PROFILE_B_MEDIUM Q1 c=1 r=1]
+ Container abarrotes-bench-runner-run-36324e9b9d66 Creating 
+ Container abarrotes-bench-runner-run-36324e9b9d66 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-fc302faa3414 Creating 
+ Container abarrotes-bench-runner-run-fc302faa3414 Created 
+[runner] postgresql_B_Q1_c1_r1: 34 consultas completadas en la ventana -> results/raw/postgresql_B_Q1_c1_r1.json
+ Container abarrotes-bench-runner-run-fae777704f9d Creating 
+ Container abarrotes-bench-runner-run-fae777704f9d Created 
+[finalize] postgresql_B_Q1_c1_r1: status=spill qps=0.11333333333333333 p99=10661.486225128174 thr=39.722278 rss_mb=101.011456 spill=True fuente=prometheus notas=['spill: temp_files 90 -> 618', 'spill: temp_bytes 5576671232 -> 38798073856', "spill: log 'temporary file'"]
+[2026-10-31 19:01:56] FIN postgresql_B_Q1_c1_r1; cooldown 60s
+[2026-10-31 19:02:57] AVANCE: 50 / 162
+[2026-10-31 19:02:57] INICIO mongodb_A_Q2_V2_c10_r1  [mongodb PROFILE_A_BASELINE Q2_V2 c=10 r=1]
+ Container abarrotes-bench-runner-run-cdfaf9326e71 Creating 
+ Container abarrotes-bench-runner-run-cdfaf9326e71 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-ae4ab7742752 Creating 
+ Container abarrotes-bench-runner-run-ae4ab7742752 Created 
+[runner] mongodb_A_Q2_V2_c10_r1: 1334 consultas completadas en la ventana -> results/raw/mongodb_A_Q2_V2_c10_r1.json
+ Container abarrotes-bench-runner-run-10ab348d98c2 Creating 
+ Container abarrotes-bench-runner-run-10ab348d98c2 Created 
+[finalize] mongodb_A_Q2_V2_c10_r1: status=ok qps=4.446666666666666 p99=3001.969177722931 thr=0.871718 rss_mb=990.625792 spill=False fuente=prometheus notas=[]
+[2026-10-31 19:09:20] FIN mongodb_A_Q2_V2_c10_r1; cooldown 60s
+[2026-10-31 19:10:20] AVANCE: 51 / 162
+[2026-10-31 19:10:20] INICIO mongodb_A_Q2_V1_c50_r1  [mongodb PROFILE_A_BASELINE Q2_V1 c=50 r=1]
+ Container abarrotes-bench-runner-run-c5a87476e103 Creating 
+ Container abarrotes-bench-runner-run-c5a87476e103 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-7214400752bd Creating 
+ Container abarrotes-bench-runner-run-7214400752bd Created 
+[runner] mongodb_A_Q2_V1_c50_r1: 1289 consultas completadas en la ventana -> results/raw/mongodb_A_Q2_V1_c50_r1.json
+ Container abarrotes-bench-runner-run-7241ac9421fe Creating 
+ Container abarrotes-bench-runner-run-7241ac9421fe Created 
+[finalize] mongodb_A_Q2_V1_c50_r1: status=ok qps=4.296666666666667 p99=12068.070735931396 thr=0.692129 rss_mb=1127.1168 spill=False fuente=prometheus notas=[]
+[2026-10-31 19:16:44] FIN mongodb_A_Q2_V1_c50_r1; cooldown 60s
+[2026-10-31 19:17:44] AVANCE: 52 / 162
+[2026-10-31 19:17:44] INICIO mongodb_B_Q2_V1_c10_r1  [mongodb PROFILE_B_MEDIUM Q2_V1 c=10 r=1]
+ Container abarrotes-bench-runner-run-8dd8bc6a0ef8 Creating 
+ Container abarrotes-bench-runner-run-8dd8bc6a0ef8 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-c22c80fbd1ac Creating 
+ Container abarrotes-bench-runner-run-c22c80fbd1ac Created 
+[runner] mongodb_B_Q2_V1_c10_r1: 100 consultas completadas en la ventana -> results/raw/mongodb_B_Q2_V1_c10_r1.json
+ Container abarrotes-bench-runner-run-cea7363d8071 Creating 
+ Container abarrotes-bench-runner-run-cea7363d8071 Created 
+[finalize] mongodb_B_Q2_V1_c10_r1: status=ok qps=0.3333333333333333 p99=27234.086623191833 thr=534.875272 rss_mb=685.801472 spill=False fuente=prometheus notas=[]
+[2026-10-31 19:24:06] FIN mongodb_B_Q2_V1_c10_r1; cooldown 60s
+[2026-10-31 19:25:07] AVANCE: 53 / 162
+[2026-10-31 19:25:07] INICIO postgresql_B_Q2_V2_c10_r1  [postgresql PROFILE_B_MEDIUM Q2_V2 c=10 r=1]
+ Container abarrotes-bench-runner-run-62c0291c54c8 Creating 
+ Container abarrotes-bench-runner-run-62c0291c54c8 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-ee6c1b1f4f97 Creating 
+ Container abarrotes-bench-runner-run-ee6c1b1f4f97 Created 
+[runner] postgresql_B_Q2_V2_c10_r1: 210 consultas completadas en la ventana -> results/raw/postgresql_B_Q2_V2_c10_r1.json
+ Container abarrotes-bench-runner-run-9353c65360e2 Creating 
+ Container abarrotes-bench-runner-run-9353c65360e2 Created 
+[finalize] postgresql_B_Q2_V2_c10_r1: status=ok qps=0.7 p99=24387.03884124756 thr=586.38155 rss_mb=179.740672 spill=False fuente=prometheus notas=[]
+[2026-10-31 19:31:29] FIN postgresql_B_Q2_V2_c10_r1; cooldown 60s
+[2026-10-31 19:32:30] AVANCE: 54 / 162
+[2026-10-31 19:32:30] INICIO mongodb_A_Q1_c50_r2  [mongodb PROFILE_A_BASELINE Q1 c=50 r=2]
+ Container abarrotes-bench-runner-run-7d50686aa5b6 Creating 
+ Container abarrotes-bench-runner-run-7d50686aa5b6 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-69e530e0705a Creating 
+ Container abarrotes-bench-runner-run-69e530e0705a Created 
+[runner] mongodb_A_Q1_c50_r2: 250 consultas completadas en la ventana -> results/raw/mongodb_A_Q1_c50_r2.json
+ Container abarrotes-bench-runner-run-9bde470f4043 Creating 
+ Container abarrotes-bench-runner-run-9bde470f4043 Created 
+[finalize] mongodb_A_Q1_c50_r2: status=ok qps=0.8333333333333334 p99=50096.37419462204 thr=2.5960129999999997 rss_mb=1139.724288 spill=False fuente=prometheus notas=[]
+[2026-10-31 19:38:53] FIN mongodb_A_Q1_c50_r2; cooldown 60s
+[2026-10-31 19:39:53] AVANCE: 55 / 162
+[2026-10-31 19:39:53] INICIO mongodb_C_Q1_c10_r2  [mongodb PROFILE_C_SEVERE Q1 c=10 r=2]
+ Container abarrotes-bench-runner-run-8d8d877b53e3 Creating 
+ Container abarrotes-bench-runner-run-8d8d877b53e3 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-3764af1cc339 Creating 
+ Container abarrotes-bench-runner-run-3764af1cc339 Created 
+[runner] mongodb_C_Q1_c10_r2: 60 consultas completadas en la ventana -> results/raw/mongodb_C_Q1_c10_r2.json
+ Container abarrotes-bench-runner-run-4e5bc0bf7c0c Creating 
+ Container abarrotes-bench-runner-run-4e5bc0bf7c0c Created 
+[finalize] mongodb_C_Q1_c10_r2: status=ok qps=0.2 p99=51504.21846151351 thr=895.3682230000001 rss_mb=472.834048 spill=False fuente=prometheus notas=[]
+[2026-10-31 19:46:15] FIN mongodb_C_Q1_c10_r2; cooldown 60s
+[2026-10-31 19:47:16] AVANCE: 56 / 162
+[2026-10-31 19:47:16] INICIO mongodb_B_Q2_V1_c50_r2  [mongodb PROFILE_B_MEDIUM Q2_V1 c=50 r=2]
+ Container abarrotes-bench-runner-run-d07ee8025e2f Creating 
+ Container abarrotes-bench-runner-run-d07ee8025e2f Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-521103b27c67 Creating 
+ Container abarrotes-bench-runner-run-521103b27c67 Created 
+[runner] mongodb_B_Q2_V1_c50_r2: 140 consultas completadas en la ventana -> results/raw/mongodb_B_Q2_V1_c50_r2.json
+ Container abarrotes-bench-runner-run-39e111ffb646 Creating 
+ Container abarrotes-bench-runner-run-39e111ffb646 Created 
+[finalize] mongodb_B_Q2_V1_c50_r2: status=ok qps=0.4666666666666667 p99=114560.96263408661 thr=595.1105299999999 rss_mb=832.958464 spill=False fuente=prometheus notas=[]
+[2026-10-31 19:53:39] FIN mongodb_B_Q2_V1_c50_r2; cooldown 60s
+[2026-10-31 19:54:40] AVANCE: 57 / 162
+[2026-10-31 19:54:40] INICIO postgresql_A_Q2_V2_c10_r2  [postgresql PROFILE_A_BASELINE Q2_V2 c=10 r=2]
+ Container abarrotes-bench-runner-run-bf014b764871 Creating 
+ Container abarrotes-bench-runner-run-bf014b764871 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-109e905b346d Creating 
+ Container abarrotes-bench-runner-run-109e905b346d Created 
+[runner] postgresql_A_Q2_V2_c10_r2: 475 consultas completadas en la ventana -> results/raw/postgresql_A_Q2_V2_c10_r2.json
+ Container abarrotes-bench-runner-run-35258ee86ac0 Creating 
+ Container abarrotes-bench-runner-run-35258ee86ac0 Created 
+[finalize] postgresql_A_Q2_V2_c10_r2: status=ok qps=1.5833333333333333 p99=11444.010853767393 thr=1.83297 rss_mb=180.629504 spill=False fuente=prometheus notas=[]
+[2026-10-31 20:01:02] FIN postgresql_A_Q2_V2_c10_r2; cooldown 60s
+[2026-10-31 20:02:02] AVANCE: 58 / 162
+[2026-10-31 20:02:02] INICIO postgresql_C_Q2_V2_c10_r2  [postgresql PROFILE_C_SEVERE Q2_V2 c=10 r=2]
+ Container abarrotes-bench-runner-run-9b976d983ef4 Creating 
+ Container abarrotes-bench-runner-run-9b976d983ef4 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-9679fb542bee Creating 
+ Container abarrotes-bench-runner-run-9679fb542bee Created 
+[runner] postgresql_C_Q2_V2_c10_r2: 90 consultas completadas en la ventana -> results/raw/postgresql_C_Q2_V2_c10_r2.json
+ Container abarrotes-bench-runner-run-17d20ef3011c Creating 
+ Container abarrotes-bench-runner-run-17d20ef3011c Created 
+[finalize] postgresql_C_Q2_V2_c10_r2: status=ok qps=0.3 p99=33295.37222862244 thr=743.2743810000001 rss_mb=178.966528 spill=False fuente=prometheus notas=[]
+[2026-10-31 20:08:26] FIN postgresql_C_Q2_V2_c10_r2; cooldown 60s
+[2026-10-31 20:09:26] AVANCE: 59 / 162
+[2026-10-31 20:09:26] INICIO mongodb_A_Q2_V2_c1_r2  [mongodb PROFILE_A_BASELINE Q2_V2 c=1 r=2]
+ Container abarrotes-bench-runner-run-2b9399716719 Creating 
+ Container abarrotes-bench-runner-run-2b9399716719 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-2660fb11f72d Creating 
+ Container abarrotes-bench-runner-run-2660fb11f72d Created 
+[runner] mongodb_A_Q2_V2_c1_r2: 343 consultas completadas en la ventana -> results/raw/mongodb_A_Q2_V2_c1_r2.json
+ Container abarrotes-bench-runner-run-fab4b164b24c Creating 
+ Container abarrotes-bench-runner-run-fab4b164b24c Created 
+[finalize] mongodb_A_Q2_V2_c1_r2: status=ok qps=1.1433333333333333 p99=942.3699331283569 thr=0.0 rss_mb=941.858816 spill=False fuente=prometheus notas=[]
+[2026-10-31 20:15:48] FIN mongodb_A_Q2_V2_c1_r2; cooldown 60s
+[2026-10-31 20:16:49] AVANCE: 60 / 162
+[2026-10-31 20:16:49] INICIO mongodb_C_Q2_V1_c10_r2  [mongodb PROFILE_C_SEVERE Q2_V1 c=10 r=2]
+ Container abarrotes-bench-runner-run-98a2f06cc8d8 Creating 
+ Container abarrotes-bench-runner-run-98a2f06cc8d8 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-564d42ad2657 Creating 
+ Container abarrotes-bench-runner-run-564d42ad2657 Created 
+[runner] mongodb_C_Q2_V1_c10_r2: 20 consultas completadas en la ventana -> results/raw/mongodb_C_Q2_V1_c10_r2.json
+ Container abarrotes-bench-runner-run-c3c1ad175f43 Creating 
+ Container abarrotes-bench-runner-run-c3c1ad175f43 Created 
+[finalize] mongodb_C_Q2_V1_c10_r2: status=ok qps=0.06666666666666667 p99=150099.19796943665 thr=886.7447840000001 rss_mb=429.412352 spill=False fuente=prometheus notas=[]
+[2026-10-31 20:23:11] FIN mongodb_C_Q2_V1_c10_r2; cooldown 60s
+[2026-10-31 20:24:11] AVANCE: 61 / 162
+[2026-10-31 20:24:11] INICIO mongodb_B_Q1_c10_r2  [mongodb PROFILE_B_MEDIUM Q1 c=10 r=2]
+ Container abarrotes-bench-runner-run-47c6d240a45d Creating 
+ Container abarrotes-bench-runner-run-47c6d240a45d Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-392605dfa909 Creating 
+ Container abarrotes-bench-runner-run-392605dfa909 Created 
+[runner] mongodb_B_Q1_c10_r2: 121 consultas completadas en la ventana -> results/raw/mongodb_B_Q1_c10_r2.json
+ Container abarrotes-bench-runner-run-f04166c06f3f Creating 
+ Container abarrotes-bench-runner-run-f04166c06f3f Created 
+[finalize] mongodb_B_Q1_c10_r2: status=ok qps=0.4033333333333333 p99=27011.830282211304 thr=594.780115 rss_mb=765.083648 spill=False fuente=prometheus notas=[]
+[2026-10-31 20:30:34] FIN mongodb_B_Q1_c10_r2; cooldown 60s
+[2026-10-31 20:31:35] AVANCE: 62 / 162
+[2026-10-31 20:31:35] INICIO postgresql_A_Q2_V1_c50_r2  [postgresql PROFILE_A_BASELINE Q2_V1 c=50 r=2]
+ Container abarrotes-bench-runner-run-b31f12738431 Creating 
+ Container abarrotes-bench-runner-run-b31f12738431 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-e56da81274bf Creating 
+ Container abarrotes-bench-runner-run-e56da81274bf Created 
+[runner] postgresql_A_Q2_V1_c50_r2: 458 consultas completadas en la ventana -> results/raw/postgresql_A_Q2_V1_c50_r2.json
+ Container abarrotes-bench-runner-run-5eab40d66170 Creating 
+ Container abarrotes-bench-runner-run-5eab40d66170 Created 
+[finalize] postgresql_A_Q2_V1_c50_r2: status=ok qps=1.5266666666666666 p99=37375.156807899475 thr=0.7458619999999999 rss_mb=599.236608 spill=False fuente=prometheus notas=[]
+[2026-10-31 20:37:59] FIN postgresql_A_Q2_V1_c50_r2; cooldown 60s
+[2026-10-31 20:38:59] AVANCE: 63 / 162
+[2026-10-31 20:38:59] INICIO mongodb_A_Q2_V1_c10_r2  [mongodb PROFILE_A_BASELINE Q2_V1 c=10 r=2]
+ Container abarrotes-bench-runner-run-289e82986d94 Creating 
+ Container abarrotes-bench-runner-run-289e82986d94 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-f924eab287bc Creating 
+ Container abarrotes-bench-runner-run-f924eab287bc Created 
+[runner] mongodb_A_Q2_V1_c10_r2: 1274 consultas completadas en la ventana -> results/raw/mongodb_A_Q2_V1_c10_r2.json
+ Container abarrotes-bench-runner-run-19eba919a0e1 Creating 
+ Container abarrotes-bench-runner-run-19eba919a0e1 Created 
+[finalize] mongodb_A_Q2_V1_c10_r2: status=ok qps=4.246666666666667 p99=3278.461396694183 thr=1.764719 rss_mb=996.31104 spill=False fuente=prometheus notas=[]
+[2026-10-31 20:45:21] FIN mongodb_A_Q2_V1_c10_r2; cooldown 60s
+[2026-10-31 20:46:21] AVANCE: 64 / 162
+[2026-10-31 20:46:21] INICIO mongodb_A_Q2_V2_c50_r2  [mongodb PROFILE_A_BASELINE Q2_V2 c=50 r=2]
+ Container abarrotes-bench-runner-run-29ebdc9b4d77 Creating 
+ Container abarrotes-bench-runner-run-29ebdc9b4d77 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-156bd94b0100 Creating 
+ Container abarrotes-bench-runner-run-156bd94b0100 Created 
+[runner] mongodb_A_Q2_V2_c50_r2: 1293 consultas completadas en la ventana -> results/raw/mongodb_A_Q2_V2_c50_r2.json
+ Container abarrotes-bench-runner-run-91ae0a719ecf Creating 
+ Container abarrotes-bench-runner-run-91ae0a719ecf Created 
+[finalize] mongodb_A_Q2_V2_c50_r2: status=ok qps=4.31 p99=12438.655929565428 thr=0.390985 rss_mb=1130.68032 spill=False fuente=prometheus notas=[]
+[2026-10-31 20:52:44] FIN mongodb_A_Q2_V2_c50_r2; cooldown 60s
+[2026-10-31 20:53:45] AVANCE: 65 / 162
+[2026-10-31 20:53:45] INICIO postgresql_A_Q2_V1_c10_r2  [postgresql PROFILE_A_BASELINE Q2_V1 c=10 r=2]
+ Container abarrotes-bench-runner-run-d8ee5fae3218 Creating 
+ Container abarrotes-bench-runner-run-d8ee5fae3218 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-5d329a0bb369 Creating 
+ Container abarrotes-bench-runner-run-5d329a0bb369 Created 
+[runner] postgresql_A_Q2_V1_c10_r2: 481 consultas completadas en la ventana -> results/raw/postgresql_A_Q2_V1_c10_r2.json
+ Container abarrotes-bench-runner-run-39cfef08fadf Creating 
+ Container abarrotes-bench-runner-run-39cfef08fadf Created 
+[finalize] postgresql_A_Q2_V1_c10_r2: status=ok qps=1.6033333333333333 p99=10652.492570877075 thr=2.119594 rss_mb=180.625408 spill=False fuente=prometheus notas=[]
+[2026-10-31 21:00:07] FIN postgresql_A_Q2_V1_c10_r2; cooldown 60s
+[2026-10-31 21:01:08] AVANCE: 66 / 162
+[2026-10-31 21:01:08] INICIO postgresql_C_Q2_V2_c1_r2  [postgresql PROFILE_C_SEVERE Q2_V2 c=1 r=2]
+ Container abarrotes-bench-runner-run-ef89117ef7d8 Creating 
+ Container abarrotes-bench-runner-run-ef89117ef7d8 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-a20d2205071d Creating 
+ Container abarrotes-bench-runner-run-a20d2205071d Created 
+[runner] postgresql_C_Q2_V2_c1_r2: 111 consultas completadas en la ventana -> results/raw/postgresql_C_Q2_V2_c1_r2.json
+ Container abarrotes-bench-runner-run-8071d04d4013 Creating 
+ Container abarrotes-bench-runner-run-8071d04d4013 Created 
+[finalize] postgresql_C_Q2_V2_c1_r2: status=ok qps=0.37 p99=2894.134044647217 thr=591.09533 rss_mb=34.955264 spill=False fuente=prometheus notas=[]
+[2026-10-31 21:07:31] FIN postgresql_C_Q2_V2_c1_r2; cooldown 60s
+[2026-10-31 21:08:32] AVANCE: 67 / 162
+[2026-10-31 21:08:32] INICIO mongodb_B_Q2_V1_c10_r2  [mongodb PROFILE_B_MEDIUM Q2_V1 c=10 r=2]
+ Container abarrotes-bench-runner-run-1f6aa86d1d30 Creating 
+ Container abarrotes-bench-runner-run-1f6aa86d1d30 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-799ee9299283 Creating 
+ Container abarrotes-bench-runner-run-799ee9299283 Created 
+[runner] mongodb_B_Q2_V1_c10_r2: 90 consultas completadas en la ventana -> results/raw/mongodb_B_Q2_V1_c10_r2.json
+ Container abarrotes-bench-runner-run-7a609203de51 Creating 
+ Container abarrotes-bench-runner-run-7a609203de51 Created 
+[finalize] mongodb_B_Q2_V1_c10_r2: status=ok qps=0.3 p99=34316.92616939545 thr=553.402748 rss_mb=680.558592 spill=False fuente=prometheus notas=[]
+[2026-10-31 21:14:53] FIN mongodb_B_Q2_V1_c10_r2; cooldown 60s
+[2026-10-31 21:15:54] AVANCE: 68 / 162
+[2026-10-31 21:15:54] INICIO mongodb_C_Q2_V2_c1_r2  [mongodb PROFILE_C_SEVERE Q2_V2 c=1 r=2]
+ Container abarrotes-bench-runner-run-cfe0cbcf9d85 Creating 
+ Container abarrotes-bench-runner-run-cfe0cbcf9d85 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-336e3c72b644 Creating 
+ Container abarrotes-bench-runner-run-336e3c72b644 Created 
+[runner] mongodb_C_Q2_V2_c1_r2: 17 consultas completadas en la ventana -> results/raw/mongodb_C_Q2_V2_c1_r2.json
+ Container abarrotes-bench-runner-run-b10515f09379 Creating 
+ Container abarrotes-bench-runner-run-b10515f09379 Created 
+[finalize] mongodb_C_Q2_V2_c1_r2: status=ok qps=0.056666666666666664 p99=16994.234342575073 thr=19.116089000000002 rss_mb=414.552064 spill=False fuente=prometheus notas=[]
+[2026-10-31 21:22:15] FIN mongodb_C_Q2_V2_c1_r2; cooldown 60s
+[2026-10-31 21:23:16] AVANCE: 69 / 162
+[2026-10-31 21:23:16] INICIO mongodb_B_Q2_V1_c1_r2  [mongodb PROFILE_B_MEDIUM Q2_V1 c=1 r=2]
+ Container abarrotes-bench-runner-run-7488f6415e4a Creating 
+ Container abarrotes-bench-runner-run-7488f6415e4a Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-77550e7c95fb Creating 
+ Container abarrotes-bench-runner-run-77550e7c95fb Created 
+[runner] mongodb_B_Q2_V1_c1_r2: 28 consultas completadas en la ventana -> results/raw/mongodb_B_Q2_V1_c1_r2.json
+ Container abarrotes-bench-runner-run-634d229572d1 Creating 
+ Container abarrotes-bench-runner-run-634d229572d1 Created 
+[finalize] mongodb_B_Q2_V1_c1_r2: status=ok qps=0.09333333333333334 p99=10570.78735589981 thr=0.0 rss_mb=671.219712 spill=False fuente=prometheus notas=[]
+[2026-10-31 21:29:38] FIN mongodb_B_Q2_V1_c1_r2; cooldown 60s
+[2026-10-31 21:30:39] AVANCE: 70 / 162
+[2026-10-31 21:30:39] INICIO mongodb_A_Q1_c1_r2  [mongodb PROFILE_A_BASELINE Q1 c=1 r=2]
+ Container abarrotes-bench-runner-run-9f6dfb8946c5 Creating 
+ Container abarrotes-bench-runner-run-9f6dfb8946c5 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-e82a9b5ecd12 Creating 
+ Container abarrotes-bench-runner-run-e82a9b5ecd12 Created 
+[runner] mongodb_A_Q1_c1_r2: 87 consultas completadas en la ventana -> results/raw/mongodb_A_Q1_c1_r2.json
+ Container abarrotes-bench-runner-run-1d04c266ca3b Creating 
+ Container abarrotes-bench-runner-run-1d04c266ca3b Created 
+[finalize] mongodb_A_Q1_c1_r2: status=ok qps=0.29 p99=3609.7340154647827 thr=0.0 rss_mb=910.15168 spill=False fuente=prometheus notas=[]
+[2026-10-31 21:37:01] FIN mongodb_A_Q1_c1_r2; cooldown 60s
+[2026-10-31 21:38:01] AVANCE: 71 / 162
+[2026-10-31 21:38:01] INICIO mongodb_A_Q2_V2_c10_r2  [mongodb PROFILE_A_BASELINE Q2_V2 c=10 r=2]
+ Container abarrotes-bench-runner-run-571369d89828 Creating 
+ Container abarrotes-bench-runner-run-571369d89828 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-a821aa19ec8d Creating 
+ Container abarrotes-bench-runner-run-a821aa19ec8d Created 
+[runner] mongodb_A_Q2_V2_c10_r2: 1321 consultas completadas en la ventana -> results/raw/mongodb_A_Q2_V2_c10_r2.json
+ Container abarrotes-bench-runner-run-1a32f84dab03 Creating 
+ Container abarrotes-bench-runner-run-1a32f84dab03 Created 
+[finalize] mongodb_A_Q2_V2_c10_r2: status=ok qps=4.403333333333333 p99=3009.349727630615 thr=1.641295 rss_mb=991.49824 spill=False fuente=prometheus notas=[]
+[2026-10-31 21:44:24] FIN mongodb_A_Q2_V2_c10_r2; cooldown 60s
+[2026-10-31 21:45:24] AVANCE: 72 / 162
+[2026-10-31 21:45:24] INICIO mongodb_B_Q2_V2_c1_r2  [mongodb PROFILE_B_MEDIUM Q2_V2 c=1 r=2]
+ Container abarrotes-bench-runner-run-caf73883faa9 Creating 
+ Container abarrotes-bench-runner-run-caf73883faa9 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-1395ea939c6d Creating 
+ Container abarrotes-bench-runner-run-1395ea939c6d Created 
+[runner] mongodb_B_Q2_V2_c1_r2: 29 consultas completadas en la ventana -> results/raw/mongodb_B_Q2_V2_c1_r2.json
+ Container abarrotes-bench-runner-run-ce747547a35a Creating 
+ Container abarrotes-bench-runner-run-ce747547a35a Created 
+[finalize] mongodb_B_Q2_V2_c1_r2: status=ok qps=0.09666666666666666 p99=10439.562196731567 thr=0.0 rss_mb=685.60896 spill=False fuente=prometheus notas=[]
+[2026-10-31 21:51:46] FIN mongodb_B_Q2_V2_c1_r2; cooldown 60s
+[2026-10-31 21:52:47] AVANCE: 73 / 162
+[2026-10-31 21:52:47] INICIO postgresql_A_Q2_V2_c1_r2  [postgresql PROFILE_A_BASELINE Q2_V2 c=1 r=2]
+ Container abarrotes-bench-runner-run-f12affaa5855 Creating 
+ Container abarrotes-bench-runner-run-f12affaa5855 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-462cc8ef7b2c Creating 
+ Container abarrotes-bench-runner-run-462cc8ef7b2c Created 
+[runner] postgresql_A_Q2_V2_c1_r2: 369 consultas completadas en la ventana -> results/raw/postgresql_A_Q2_V2_c1_r2.json
+ Container abarrotes-bench-runner-run-c3bf28e05052 Creating 
+ Container abarrotes-bench-runner-run-c3bf28e05052 Created 
+[finalize] postgresql_A_Q2_V2_c1_r2: status=ok qps=1.23 p99=1006.4906597137451 thr=0.0 rss_mb=34.971648 spill=False fuente=prometheus notas=[]
+[2026-10-31 21:59:09] FIN postgresql_A_Q2_V2_c1_r2; cooldown 60s
+[2026-10-31 22:00:10] AVANCE: 74 / 162
+[2026-10-31 22:00:10] INICIO mongodb_A_Q2_V1_c1_r2  [mongodb PROFILE_A_BASELINE Q2_V1 c=1 r=2]
+ Container abarrotes-bench-runner-run-76926e4916f9 Creating 
+ Container abarrotes-bench-runner-run-76926e4916f9 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-d00410122133 Creating 
+ Container abarrotes-bench-runner-run-d00410122133 Created 
+[runner] mongodb_A_Q2_V1_c1_r2: 332 consultas completadas en la ventana -> results/raw/mongodb_A_Q2_V1_c1_r2.json
+ Container abarrotes-bench-runner-run-881d1f0cc12f Creating 
+ Container abarrotes-bench-runner-run-881d1f0cc12f Created 
+[finalize] mongodb_A_Q2_V1_c1_r2: status=ok qps=1.1066666666666667 p99=1051.032338142395 thr=0.0 rss_mb=944.304128 spill=False fuente=prometheus notas=[]
+[2026-10-31 22:06:32] FIN mongodb_A_Q2_V1_c1_r2; cooldown 60s
+[2026-10-31 22:07:32] AVANCE: 75 / 162
+[2026-10-31 22:07:33] INICIO mongodb_C_Q2_V1_c50_r2  [mongodb PROFILE_C_SEVERE Q2_V1 c=50 r=2]
+ Container abarrotes-bench-runner-run-a4d701ee1cf3 Creating 
+ Container abarrotes-bench-runner-run-a4d701ee1cf3 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-b0c76ea168d0 Creating 
+ Container abarrotes-bench-runner-run-b0c76ea168d0 Created 
+[runner] mongodb_C_Q2_V1_c50_r2: 50 consultas completadas en la ventana -> results/raw/mongodb_C_Q2_V1_c50_r2.json
+ Container abarrotes-bench-runner-run-4e752a3494b1 Creating 
+ Container abarrotes-bench-runner-run-4e752a3494b1 Created 
+[finalize] mongodb_C_Q2_V1_c50_r2: status=ok qps=0.16666666666666666 p99=138795.39559602737 thr=871.6457230000001 rss_mb=577.835008 spill=False fuente=prometheus notas=[]
+[2026-10-31 22:13:56] FIN mongodb_C_Q2_V1_c50_r2; cooldown 60s
+[2026-10-31 22:14:57] AVANCE: 76 / 162
+[2026-10-31 22:14:57] INICIO postgresql_B_Q2_V1_c10_r2  [postgresql PROFILE_B_MEDIUM Q2_V1 c=10 r=2]
+ Container abarrotes-bench-runner-run-73aa4fcbd4e2 Creating 
+ Container abarrotes-bench-runner-run-73aa4fcbd4e2 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-60afd7d315fb Creating 
+ Container abarrotes-bench-runner-run-60afd7d315fb Created 
+[runner] postgresql_B_Q2_V1_c10_r2: 217 consultas completadas en la ventana -> results/raw/postgresql_B_Q2_V1_c10_r2.json
+ Container abarrotes-bench-runner-run-57adc66b534c Creating 
+ Container abarrotes-bench-runner-run-57adc66b534c Created 
+[finalize] postgresql_B_Q2_V1_c10_r2: status=ok qps=0.7233333333333334 p99=24028.860569000244 thr=587.940266 rss_mb=179.666944 spill=False fuente=prometheus notas=[]
+[2026-10-31 22:21:19] FIN postgresql_B_Q2_V1_c10_r2; cooldown 60s
+[2026-10-31 22:22:19] AVANCE: 77 / 162
+[2026-10-31 22:22:19] INICIO mongodb_C_Q2_V2_c50_r2  [mongodb PROFILE_C_SEVERE Q2_V2 c=50 r=2]
+ Container abarrotes-bench-runner-run-3800fc06078a Creating 
+ Container abarrotes-bench-runner-run-3800fc06078a Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-821156bccc19 Creating 
+ Container abarrotes-bench-runner-run-821156bccc19 Created 
+[runner] mongodb_C_Q2_V2_c50_r2: 50 consultas completadas en la ventana -> results/raw/mongodb_C_Q2_V2_c50_r2.json
+ Container abarrotes-bench-runner-run-2ecc7a7f72ea Creating 
+ Container abarrotes-bench-runner-run-2ecc7a7f72ea Created 
+[finalize] mongodb_C_Q2_V2_c50_r2: status=ok qps=0.16666666666666666 p99=172739.63485956192 thr=887.9813529999999 rss_mb=573.804544 spill=False fuente=prometheus notas=[]
+[2026-10-31 22:28:42] FIN mongodb_C_Q2_V2_c50_r2; cooldown 60s
+[2026-10-31 22:29:42] AVANCE: 78 / 162
+[2026-10-31 22:29:42] INICIO postgresql_A_Q1_c50_r2  [postgresql PROFILE_A_BASELINE Q1 c=50 r=2]
+ Container abarrotes-bench-runner-run-95a5cd1c718b Creating 
+ Container abarrotes-bench-runner-run-95a5cd1c718b Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-da4ab61382d9 Creating 
+ Container abarrotes-bench-runner-run-da4ab61382d9 Created 
+[runner] postgresql_A_Q1_c50_r2: 4 consultas completadas en la ventana -> results/raw/postgresql_A_Q1_c50_r2.json
+ Container abarrotes-bench-runner-run-a6ded84a44c0 Creating 
+ Container abarrotes-bench-runner-run-a6ded84a44c0 Created 
+[finalize] postgresql_A_Q1_c50_r2: status=spill qps=0.013333333333333334 p99=148792.53923654556 thr=0.13871699999999998 rss_mb=2050.49856 spill=True fuente=prometheus notas=['spill: temp_files 0 -> 1263', 'spill: temp_bytes 0 -> 94408622080', "spill: log 'temporary file'"]
+[2026-10-31 22:36:10] FIN postgresql_A_Q1_c50_r2; cooldown 60s
+[2026-10-31 22:37:11] AVANCE: 79 / 162
+[2026-10-31 22:37:11] INICIO mongodb_C_Q2_V1_c1_r2  [mongodb PROFILE_C_SEVERE Q2_V1 c=1 r=2]
+ Container abarrotes-bench-runner-run-38b5f5c4ccbf Creating 
+ Container abarrotes-bench-runner-run-38b5f5c4ccbf Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-d1555e5da70c Creating 
+ Container abarrotes-bench-runner-run-d1555e5da70c Created 
+[runner] mongodb_C_Q2_V1_c1_r2: 17 consultas completadas en la ventana -> results/raw/mongodb_C_Q2_V1_c1_r2.json
+ Container abarrotes-bench-runner-run-a0b4dfbe04f5 Creating 
+ Container abarrotes-bench-runner-run-a0b4dfbe04f5 Created 
+[finalize] mongodb_C_Q2_V1_c1_r2: status=ok qps=0.056666666666666664 p99=17383.5520362854 thr=19.314359000000003 rss_mb=416.514048 spill=False fuente=prometheus notas=[]
+[2026-10-31 22:43:32] FIN mongodb_C_Q2_V1_c1_r2; cooldown 60s
+[2026-10-31 22:44:33] AVANCE: 80 / 162
+[2026-10-31 22:44:33] INICIO postgresql_B_Q2_V2_c10_r2  [postgresql PROFILE_B_MEDIUM Q2_V2 c=10 r=2]
+ Container abarrotes-bench-runner-run-4234f1505135 Creating 
+ Container abarrotes-bench-runner-run-4234f1505135 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-026c80f9342d Creating 
+ Container abarrotes-bench-runner-run-026c80f9342d Created 
+[runner] postgresql_B_Q2_V2_c10_r2: 208 consultas completadas en la ventana -> results/raw/postgresql_B_Q2_V2_c10_r2.json
+ Container abarrotes-bench-runner-run-8daff43d67c5 Creating 
+ Container abarrotes-bench-runner-run-8daff43d67c5 Created 
+[finalize] postgresql_B_Q2_V2_c10_r2: status=ok qps=0.6933333333333334 p99=24511.761348247528 thr=584.062871 rss_mb=179.785728 spill=False fuente=prometheus notas=[]
+[2026-10-31 22:50:55] FIN postgresql_B_Q2_V2_c10_r2; cooldown 60s
+[2026-10-31 22:51:56] AVANCE: 81 / 162
+[2026-10-31 22:51:56] INICIO postgresql_B_Q2_V2_c50_r2  [postgresql PROFILE_B_MEDIUM Q2_V2 c=50 r=2]
+ Container abarrotes-bench-runner-run-8dcf95853210 Creating 
+ Container abarrotes-bench-runner-run-8dcf95853210 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-1d712318b686 Creating 
+ Container abarrotes-bench-runner-run-1d712318b686 Created 
+[runner] postgresql_B_Q2_V2_c50_r2: 174 consultas completadas en la ventana -> results/raw/postgresql_B_Q2_V2_c50_r2.json
+ Container abarrotes-bench-runner-run-352db08f326a Creating 
+ Container abarrotes-bench-runner-run-352db08f326a Created 
+[finalize] postgresql_B_Q2_V2_c50_r2: status=ok qps=0.58 p99=90394.74325656891 thr=587.760969 rss_mb=595.369984 spill=False fuente=prometheus notas=[]
+[2026-10-31 22:58:21] FIN postgresql_B_Q2_V2_c50_r2; cooldown 60s
+[2026-10-31 22:59:21] AVANCE: 82 / 162
+[2026-10-31 22:59:21] INICIO mongodb_C_Q2_V2_c10_r2  [mongodb PROFILE_C_SEVERE Q2_V2 c=10 r=2]
+ Container abarrotes-bench-runner-run-9c48abfbf3ab Creating 
+ Container abarrotes-bench-runner-run-9c48abfbf3ab Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-2f67807215c6 Creating 
+ Container abarrotes-bench-runner-run-2f67807215c6 Created 
+[runner] mongodb_C_Q2_V2_c10_r2: 20 consultas completadas en la ventana -> results/raw/mongodb_C_Q2_V2_c10_r2.json
+ Container abarrotes-bench-runner-run-8d9215748333 Creating 
+ Container abarrotes-bench-runner-run-8d9215748333 Created 
+[finalize] mongodb_C_Q2_V2_c10_r2: status=ok qps=0.06666666666666667 p99=129286.76472902298 thr=891.1235859999999 rss_mb=424.370176 spill=False fuente=prometheus notas=[]
+[2026-10-31 23:05:44] FIN mongodb_C_Q2_V2_c10_r2; cooldown 60s
+[2026-10-31 23:06:44] AVANCE: 83 / 162
+[2026-10-31 23:06:44] INICIO mongodb_B_Q1_c50_r2  [mongodb PROFILE_B_MEDIUM Q1 c=50 r=2]
+ Container abarrotes-bench-runner-run-6def5e8b640f Creating 
+ Container abarrotes-bench-runner-run-6def5e8b640f Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-1384cc2a7919 Creating 
+ Container abarrotes-bench-runner-run-1384cc2a7919 Created 
+[runner] mongodb_B_Q1_c50_r2: 100 consultas completadas en la ventana -> results/raw/mongodb_B_Q1_c50_r2.json
+ Container abarrotes-bench-runner-run-390b9f818083 Creating 
+ Container abarrotes-bench-runner-run-390b9f818083 Created 
+[finalize] mongodb_B_Q1_c50_r2: status=ok qps=0.3333333333333333 p99=120825.30185461044 thr=598.1418659999999 rss_mb=836.5056 spill=False fuente=prometheus notas=[]
+[2026-10-31 23:13:08] FIN mongodb_B_Q1_c50_r2; cooldown 60s
+[2026-10-31 23:14:09] AVANCE: 84 / 162
+[2026-10-31 23:14:09] INICIO mongodb_A_Q1_c10_r2  [mongodb PROFILE_A_BASELINE Q1 c=10 r=2]
+ Container abarrotes-bench-runner-run-a838293ea3d0 Creating 
+ Container abarrotes-bench-runner-run-a838293ea3d0 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-cdc970a3a316 Creating 
+ Container abarrotes-bench-runner-run-cdc970a3a316 Created 
+[runner] mongodb_A_Q1_c10_r2: 311 consultas completadas en la ventana -> results/raw/mongodb_A_Q1_c10_r2.json
+ Container abarrotes-bench-runner-run-ac061d49abb7 Creating 
+ Container abarrotes-bench-runner-run-ac061d49abb7 Created 
+[finalize] mongodb_A_Q1_c10_r2: status=ok qps=1.0366666666666666 p99=10711.628007888794 thr=1.7092239999999999 rss_mb=963.842048 spill=False fuente=prometheus notas=[]
+[2026-10-31 23:20:32] FIN mongodb_A_Q1_c10_r2; cooldown 60s
+[2026-10-31 23:21:32] AVANCE: 85 / 162
+[2026-10-31 23:21:32] INICIO postgresql_A_Q2_V1_c1_r2  [postgresql PROFILE_A_BASELINE Q2_V1 c=1 r=2]
+ Container abarrotes-bench-runner-run-67e93b61a330 Creating 
+ Container abarrotes-bench-runner-run-67e93b61a330 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-ec2f42a61f2a Creating 
+ Container abarrotes-bench-runner-run-ec2f42a61f2a Created 
+[runner] postgresql_A_Q2_V1_c1_r2: 365 consultas completadas en la ventana -> results/raw/postgresql_A_Q2_V1_c1_r2.json
+ Container abarrotes-bench-runner-run-747de22d4047 Creating 
+ Container abarrotes-bench-runner-run-747de22d4047 Created 
+[finalize] postgresql_A_Q2_V1_c1_r2: status=ok qps=1.2166666666666666 p99=1033.5279655456543 thr=0.0 rss_mb=34.955264 spill=False fuente=prometheus notas=[]
+[2026-10-31 23:27:54] FIN postgresql_A_Q2_V1_c1_r2; cooldown 60s
+[2026-10-31 23:28:55] AVANCE: 86 / 162
+[2026-10-31 23:28:55] INICIO postgresql_B_Q2_V1_c1_r2  [postgresql PROFILE_B_MEDIUM Q2_V1 c=1 r=2]
+ Container abarrotes-bench-runner-run-524ef94fcf72 Creating 
+ Container abarrotes-bench-runner-run-524ef94fcf72 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-7fd88a4e9dc5 Creating 
+ Container abarrotes-bench-runner-run-7fd88a4e9dc5 Created 
+[runner] postgresql_B_Q2_V1_c1_r2: 231 consultas completadas en la ventana -> results/raw/postgresql_B_Q2_V1_c1_r2.json
+ Container abarrotes-bench-runner-run-e5ab6d90ddec Creating 
+ Container abarrotes-bench-runner-run-e5ab6d90ddec Created 
+[finalize] postgresql_B_Q2_V1_c1_r2: status=ok qps=0.77 p99=1407.7115535736084 thr=289.88500600000003 rss_mb=35.00032 spill=False fuente=prometheus notas=[]
+[2026-10-31 23:35:18] FIN postgresql_B_Q2_V1_c1_r2; cooldown 60s
+[2026-10-31 23:36:19] AVANCE: 87 / 162
+[2026-10-31 23:36:19] INICIO postgresql_C_Q1_c10_r2  [postgresql PROFILE_C_SEVERE Q1 c=10 r=2]
+ Container abarrotes-bench-runner-run-465e744ed43e Creating 
+ Container abarrotes-bench-runner-run-465e744ed43e Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-dc9f1cf6852a Creating 
+ Container abarrotes-bench-runner-run-dc9f1cf6852a Created 
+[runner] postgresql_C_Q1_c10_r2: 4 consultas completadas en la ventana -> results/raw/postgresql_C_Q1_c10_r2.json
+ Container abarrotes-bench-runner-run-59d2af4eced5 Creating 
+ Container abarrotes-bench-runner-run-59d2af4eced5 Created 
+[finalize] postgresql_C_Q1_c10_r2: status=spill qps=0.013333333333333334 p99=174386.198015213 thr=757.318524 rss_mb=581.03808 spill=True fuente=prometheus notas=['spill: temp_files 0 -> 267', 'spill: temp_bytes 0 -> 20686487552', "spill: log 'temporary file'"]
+[2026-10-31 23:42:42] FIN postgresql_C_Q1_c10_r2; cooldown 60s
+[2026-10-31 23:43:43] AVANCE: 88 / 162
+[2026-10-31 23:43:43] INICIO mongodb_B_Q2_V2_c10_r2  [mongodb PROFILE_B_MEDIUM Q2_V2 c=10 r=2]
+ Container abarrotes-bench-runner-run-46a930461a8f Creating 
+ Container abarrotes-bench-runner-run-46a930461a8f Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-65020d23f695 Creating 
+ Container abarrotes-bench-runner-run-65020d23f695 Created 
+[runner] mongodb_B_Q2_V2_c10_r2: 104 consultas completadas en la ventana -> results/raw/mongodb_B_Q2_V2_c10_r2.json
+ Container abarrotes-bench-runner-run-9d370e2b04d2 Creating 
+ Container abarrotes-bench-runner-run-9d370e2b04d2 Created 
+[finalize] mongodb_B_Q2_V2_c10_r2: status=ok qps=0.3466666666666667 p99=30781.206345558167 thr=536.884575 rss_mb=679.493632 spill=False fuente=prometheus notas=[]
+[2026-10-31 23:50:05] FIN mongodb_B_Q2_V2_c10_r2; cooldown 60s
+[2026-10-31 23:51:05] AVANCE: 89 / 162
+[2026-10-31 23:51:05] INICIO postgresql_C_Q2_V1_c1_r2  [postgresql PROFILE_C_SEVERE Q2_V1 c=1 r=2]
+ Container abarrotes-bench-runner-run-4d6f34d6dee0 Creating 
+ Container abarrotes-bench-runner-run-4d6f34d6dee0 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-8beeba204570 Creating 
+ Container abarrotes-bench-runner-run-8beeba204570 Created 
+[runner] postgresql_C_Q2_V1_c1_r2: 113 consultas completadas en la ventana -> results/raw/postgresql_C_Q2_V1_c1_r2.json
+ Container abarrotes-bench-runner-run-03fee7432f85 Creating 
+ Container abarrotes-bench-runner-run-03fee7432f85 Created 
+[finalize] postgresql_C_Q2_V1_c1_r2: status=ok qps=0.37666666666666665 p99=2990.8627223968506 thr=593.05846 rss_mb=34.983936 spill=False fuente=prometheus notas=[]
+[2026-10-31 23:57:27] FIN postgresql_C_Q2_V1_c1_r2; cooldown 60s
+[2026-10-31 23:58:28] AVANCE: 90 / 162
+[2026-10-31 23:58:28] INICIO postgresql_C_Q2_V2_c50_r2  [postgresql PROFILE_C_SEVERE Q2_V2 c=50 r=2]
+ Container abarrotes-bench-runner-run-f1f4ba8e5b2c Creating 
+ Container abarrotes-bench-runner-run-f1f4ba8e5b2c Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-6d5ab65a4949 Creating 
+ Container abarrotes-bench-runner-run-6d5ab65a4949 Created 
+[runner] postgresql_C_Q2_V2_c50_r2: 52 consultas completadas en la ventana -> results/raw/postgresql_C_Q2_V2_c50_r2.json
+ Container abarrotes-bench-runner-run-f3a46d833a73 Creating 
+ Container abarrotes-bench-runner-run-f3a46d833a73 Created 
+[finalize] postgresql_C_Q2_V2_c50_r2: status=ok qps=0.17333333333333334 p99=192527.97179937363 thr=889.7675449999999 rss_mb=593.948672 spill=False fuente=prometheus notas=[]
+[2026-11-01 00:04:53] FIN postgresql_C_Q2_V2_c50_r2; cooldown 60s
+[2026-11-01 00:05:54] AVANCE: 91 / 162
+[2026-11-01 00:05:54] INICIO postgresql_C_Q2_V1_c50_r2  [postgresql PROFILE_C_SEVERE Q2_V1 c=50 r=2]
+ Container abarrotes-bench-runner-run-94583b31207d Creating 
+ Container abarrotes-bench-runner-run-94583b31207d Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-61f9987a0721 Creating 
+ Container abarrotes-bench-runner-run-61f9987a0721 Created 
+[runner] postgresql_C_Q2_V1_c50_r2: 53 consultas completadas en la ventana -> results/raw/postgresql_C_Q2_V1_c50_r2.json
+ Container abarrotes-bench-runner-run-fe19cf5eeb82 Creating 
+ Container abarrotes-bench-runner-run-fe19cf5eeb82 Created 
+[finalize] postgresql_C_Q2_V1_c50_r2: status=ok qps=0.17666666666666667 p99=183780.2748298645 thr=889.221714 rss_mb=593.690624 spill=False fuente=prometheus notas=[]
+[2026-11-01 00:12:19] FIN postgresql_C_Q2_V1_c50_r2; cooldown 60s
+[2026-11-01 00:13:20] AVANCE: 92 / 162
+[2026-11-01 00:13:20] INICIO postgresql_C_Q1_c1_r2  [postgresql PROFILE_C_SEVERE Q1 c=1 r=2]
+ Container abarrotes-bench-runner-run-3861e8e1807a Creating 
+ Container abarrotes-bench-runner-run-3861e8e1807a Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-01544133fd30 Creating 
+ Container abarrotes-bench-runner-run-01544133fd30 Created 
+[runner] postgresql_C_Q1_c1_r2: 19 consultas completadas en la ventana -> results/raw/postgresql_C_Q1_c1_r2.json
+ Container abarrotes-bench-runner-run-f28ed86ef07f Creating 
+ Container abarrotes-bench-runner-run-f28ed86ef07f Created 
+[finalize] postgresql_C_Q1_c1_r2: status=spill qps=0.06333333333333334 p99=15674.66372013092 thr=207.65026999999998 rss_mb=100.4544 spill=True fuente=prometheus notas=['spill: temp_files 60 -> 363', 'spill: temp_bytes 3717709824 -> 22506520576', "spill: log 'temporary file'"]
+[2026-11-01 00:19:44] FIN postgresql_C_Q1_c1_r2; cooldown 60s
+[2026-11-01 00:20:45] AVANCE: 93 / 162
+[2026-11-01 00:20:45] INICIO postgresql_B_Q1_c50_r2  [postgresql PROFILE_B_MEDIUM Q1 c=50 r=2]
+ Container abarrotes-bench-runner-run-8b6bf177abc5 Creating 
+ Container abarrotes-bench-runner-run-8b6bf177abc5 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-b1dd23d6fe00 Creating 
+ Container abarrotes-bench-runner-run-b1dd23d6fe00 Created 
+[runner] postgresql_B_Q1_c50_r2: 0 consultas completadas en la ventana -> results/raw/postgresql_B_Q1_c50_r2.json
+ Container abarrotes-bench-runner-run-9bb72899d6e3 Creating 
+ Container abarrotes-bench-runner-run-9bb72899d6e3 Created 
+[finalize] postgresql_B_Q1_c50_r2: status=oom qps=0.0 p99=None thr=579.138254 rss_mb=1808.216064 spill=True fuente=prometheus notas=['spill: temp_bytes 22506520576 -> 39392608256', "spill: log 'temporary file'", 'docker inspect: OOMKilled', 'log: proceso terminado por señal 9 (OOM killer)', 'ninguna consulta completada dentro de la ventana', "99/149 consultas fallidas (> 5%); códigos ['OperationalError']"]
+[2026-11-01 00:27:11] FIN postgresql_B_Q1_c50_r2; cooldown 60s
+[2026-11-01 00:28:12] AVANCE: 94 / 162
+[2026-11-01 00:28:12] INICIO postgresql_A_Q2_V2_c50_r2  [postgresql PROFILE_A_BASELINE Q2_V2 c=50 r=2]
+ Container abarrotes-bench-runner-run-6ec2e03c1532 Creating 
+ Container abarrotes-bench-runner-run-6ec2e03c1532 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-e55281fd18f6 Creating 
+ Container abarrotes-bench-runner-run-e55281fd18f6 Created 
+[runner] postgresql_A_Q2_V2_c50_r2: 452 consultas completadas en la ventana -> results/raw/postgresql_A_Q2_V2_c50_r2.json
+ Container abarrotes-bench-runner-run-71ed21c8a5d2 Creating 
+ Container abarrotes-bench-runner-run-71ed21c8a5d2 Created 
+[finalize] postgresql_A_Q2_V2_c50_r2: status=ok qps=1.5066666666666666 p99=40388.36414575577 thr=1.604331 rss_mb=598.79424 spill=False fuente=prometheus notas=[]
+[2026-11-01 00:34:36] FIN postgresql_A_Q2_V2_c50_r2; cooldown 60s
+[2026-11-01 00:35:37] AVANCE: 95 / 162
+[2026-11-01 00:35:37] INICIO postgresql_B_Q2_V1_c50_r2  [postgresql PROFILE_B_MEDIUM Q2_V1 c=50 r=2]
+ Container abarrotes-bench-runner-run-1dd5df152abf Creating 
+ Container abarrotes-bench-runner-run-1dd5df152abf Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-ef2ebed5aa29 Creating 
+ Container abarrotes-bench-runner-run-ef2ebed5aa29 Created 
+[runner] postgresql_B_Q2_V1_c50_r2: 177 consultas completadas en la ventana -> results/raw/postgresql_B_Q2_V1_c50_r2.json
+ Container abarrotes-bench-runner-run-c9e5a668c556 Creating 
+ Container abarrotes-bench-runner-run-c9e5a668c556 Created 
+[finalize] postgresql_B_Q2_V1_c50_r2: status=ok qps=0.59 p99=85597.28518486024 thr=587.153269 rss_mb=594.952192 spill=False fuente=prometheus notas=[]
+[2026-11-01 00:42:01] FIN postgresql_B_Q2_V1_c50_r2; cooldown 60s
+[2026-11-01 00:43:02] AVANCE: 96 / 162
+[2026-11-01 00:43:02] INICIO postgresql_A_Q1_c1_r2  [postgresql PROFILE_A_BASELINE Q1 c=1 r=2]
+ Container abarrotes-bench-runner-run-315a0a10832a Creating 
+ Container abarrotes-bench-runner-run-315a0a10832a Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-4b13056a9012 Creating 
+ Container abarrotes-bench-runner-run-4b13056a9012 Created 
+[runner] postgresql_A_Q1_c1_r2: 36 consultas completadas en la ventana -> results/raw/postgresql_A_Q1_c1_r2.json
+ Container abarrotes-bench-runner-run-eb2a70bbd276 Creating 
+ Container abarrotes-bench-runner-run-eb2a70bbd276 Created 
+[finalize] postgresql_A_Q1_c1_r2: status=spill qps=0.12 p99=9435.301220417023 thr=0.0 rss_mb=100.855808 spill=True fuente=prometheus notas=['spill: temp_files 185 -> 747', 'spill: temp_bytes 45898547200 -> 81106976768', "spill: log 'temporary file'"]
+[2026-11-01 00:49:27] FIN postgresql_A_Q1_c1_r2; cooldown 60s
+[2026-11-01 00:50:27] AVANCE: 97 / 162
+[2026-11-01 00:50:27] INICIO mongodb_C_Q1_c1_r2  [mongodb PROFILE_C_SEVERE Q1 c=1 r=2]
+ Container abarrotes-bench-runner-run-affe6835fa81 Creating 
+ Container abarrotes-bench-runner-run-affe6835fa81 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-2c05878f602f Creating 
+ Container abarrotes-bench-runner-run-2c05878f602f Created 
+[runner] mongodb_C_Q1_c1_r2: 67 consultas completadas en la ventana -> results/raw/mongodb_C_Q1_c1_r2.json
+ Container abarrotes-bench-runner-run-f11b5b8a4d9b Creating 
+ Container abarrotes-bench-runner-run-f11b5b8a4d9b Created 
+[finalize] mongodb_C_Q1_c1_r2: status=ok qps=0.22333333333333333 p99=4620.071210861206 thr=12.287669000000001 rss_mb=450.646016 spill=False fuente=prometheus notas=[]
+[2026-11-01 00:56:49] FIN mongodb_C_Q1_c1_r2; cooldown 60s
+[2026-11-01 00:57:50] AVANCE: 98 / 162
+[2026-11-01 00:57:50] INICIO postgresql_B_Q2_V2_c1_r2  [postgresql PROFILE_B_MEDIUM Q2_V2 c=1 r=2]
+ Container abarrotes-bench-runner-run-cee01eaa5d61 Creating 
+ Container abarrotes-bench-runner-run-cee01eaa5d61 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-9b1e90b85fcb Creating 
+ Container abarrotes-bench-runner-run-9b1e90b85fcb Created 
+[runner] postgresql_B_Q2_V2_c1_r2: 228 consultas completadas en la ventana -> results/raw/postgresql_B_Q2_V2_c1_r2.json
+ Container abarrotes-bench-runner-run-93278980089c Creating 
+ Container abarrotes-bench-runner-run-93278980089c Created 
+[finalize] postgresql_B_Q2_V2_c1_r2: status=ok qps=0.76 p99=1472.6986241340635 thr=290.75480300000004 rss_mb=34.975744 spill=False fuente=prometheus notas=[]
+[2026-11-01 01:04:12] FIN postgresql_B_Q2_V2_c1_r2; cooldown 60s
+[2026-11-01 01:05:13] AVANCE: 99 / 162
+[2026-11-01 01:05:13] INICIO mongodb_A_Q2_V1_c50_r2  [mongodb PROFILE_A_BASELINE Q2_V1 c=50 r=2]
+ Container abarrotes-bench-runner-run-a9efb5fa32d9 Creating 
+ Container abarrotes-bench-runner-run-a9efb5fa32d9 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-09a6a8c2ba6c Creating 
+ Container abarrotes-bench-runner-run-09a6a8c2ba6c Created 
+[runner] mongodb_A_Q2_V1_c50_r2: 1254 consultas completadas en la ventana -> results/raw/mongodb_A_Q2_V1_c50_r2.json
+ Container abarrotes-bench-runner-run-2a0bb8e68c59 Creating 
+ Container abarrotes-bench-runner-run-2a0bb8e68c59 Created 
+[finalize] mongodb_A_Q2_V1_c50_r2: status=ok qps=4.18 p99=12285.449438095093 thr=1.379503 rss_mb=1120.661504 spill=False fuente=prometheus notas=[]
+[2026-11-01 01:11:36] FIN mongodb_A_Q2_V1_c50_r2; cooldown 60s
+[2026-11-01 01:12:37] AVANCE: 100 / 162
+[2026-11-01 01:12:37] INICIO postgresql_A_Q1_c10_r2  [postgresql PROFILE_A_BASELINE Q1 c=10 r=2]
+ Container abarrotes-bench-runner-run-3ea5c5fc821d Creating 
+ Container abarrotes-bench-runner-run-3ea5c5fc821d Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-74a0b0a77a32 Creating 
+ Container abarrotes-bench-runner-run-74a0b0a77a32 Created 
+[runner] postgresql_A_Q1_c10_r2: 81 consultas completadas en la ventana -> results/raw/postgresql_A_Q1_c10_r2.json
+ Container abarrotes-bench-runner-run-3bc5b70fb2e8 Creating 
+ Container abarrotes-bench-runner-run-3bc5b70fb2e8 Created 
+[finalize] postgresql_A_Q1_c10_r2: status=spill qps=0.27 p99=42696.98462486267 thr=0.316896 rss_mb=582.004736 spill=True fuente=prometheus notas=['spill: temp_files 155 -> 1427', 'spill: temp_bytes 11132690432 -> 96011968512', "spill: log 'temporary file'"]
+[2026-11-01 01:19:08] FIN postgresql_A_Q1_c10_r2; cooldown 60s
+[2026-11-01 01:20:09] AVANCE: 101 / 162
+[2026-11-01 01:20:09] INICIO mongodb_B_Q1_c1_r2  [mongodb PROFILE_B_MEDIUM Q1 c=1 r=2]
+ Container abarrotes-bench-runner-run-d66a151e3853 Creating 
+ Container abarrotes-bench-runner-run-d66a151e3853 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-f253e2775b50 Creating 
+ Container abarrotes-bench-runner-run-f253e2775b50 Created 
+[runner] mongodb_B_Q1_c1_r2: 71 consultas completadas en la ventana -> results/raw/mongodb_B_Q1_c1_r2.json
+ Container abarrotes-bench-runner-run-e0d75e0bbdef Creating 
+ Container abarrotes-bench-runner-run-e0d75e0bbdef Created 
+[finalize] mongodb_B_Q1_c1_r2: status=ok qps=0.23666666666666666 p99=4401.822328567505 thr=0.0 rss_mb=720.687104 spill=False fuente=prometheus notas=[]
+[2026-11-01 01:26:31] FIN mongodb_B_Q1_c1_r2; cooldown 60s
+[2026-11-01 01:27:32] AVANCE: 102 / 162
+[2026-11-01 01:27:32] INICIO mongodb_B_Q2_V2_c50_r2  [mongodb PROFILE_B_MEDIUM Q2_V2 c=50 r=2]
+ Container abarrotes-bench-runner-run-bbcf80d3a57e Creating 
+ Container abarrotes-bench-runner-run-bbcf80d3a57e Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-f49fd2e5c5db Creating 
+ Container abarrotes-bench-runner-run-f49fd2e5c5db Created 
+[runner] mongodb_B_Q2_V2_c50_r2: 144 consultas completadas en la ventana -> results/raw/mongodb_B_Q2_V2_c50_r2.json
+ Container abarrotes-bench-runner-run-5cc2c363c11f Creating 
+ Container abarrotes-bench-runner-run-5cc2c363c11f Created 
+[finalize] mongodb_B_Q2_V2_c50_r2: status=ok qps=0.48 p99=124132.7284836769 thr=595.864486 rss_mb=835.584 spill=False fuente=prometheus notas=[]
+[2026-11-01 01:33:56] FIN mongodb_B_Q2_V2_c50_r2; cooldown 60s
+[2026-11-01 01:34:57] AVANCE: 103 / 162
+[2026-11-01 01:34:57] INICIO postgresql_B_Q1_c10_r2  [postgresql PROFILE_B_MEDIUM Q1 c=10 r=2]
+ Container abarrotes-bench-runner-run-652a63427c25 Creating 
+ Container abarrotes-bench-runner-run-652a63427c25 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-dcc361151fa5 Creating 
+ Container abarrotes-bench-runner-run-dcc361151fa5 Created 
+[runner] postgresql_B_Q1_c10_r2: 24 consultas completadas en la ventana -> results/raw/postgresql_B_Q1_c10_r2.json
+ Container abarrotes-bench-runner-run-c45179fb450d Creating 
+ Container abarrotes-bench-runner-run-c45179fb450d Created 
+[finalize] postgresql_B_Q1_c10_r2: status=spill qps=0.08 p99=94997.28199243546 thr=537.899949 rss_mb=577.957888 spill=True fuente=prometheus notas=['spill: temp_files 0 -> 596', 'spill: temp_bytes 0 -> 40598290432', "spill: log 'temporary file'"]
+[2026-11-01 01:41:22] FIN postgresql_B_Q1_c10_r2; cooldown 60s
+[2026-11-01 01:42:23] AVANCE: 104 / 162
+[2026-11-01 01:42:23] INICIO mongodb_C_Q1_c50_r2  [mongodb PROFILE_C_SEVERE Q1 c=50 r=2]
+ Container abarrotes-bench-runner-run-97b038a003bf Creating 
+ Container abarrotes-bench-runner-run-97b038a003bf Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-94be1e0c49be Creating 
+ Container abarrotes-bench-runner-run-94be1e0c49be Created 
+[runner] mongodb_C_Q1_c50_r2: 0 consultas completadas en la ventana -> results/raw/mongodb_C_Q1_c50_r2.json
+ Container abarrotes-bench-runner-run-b2a130628a4a Creating 
+ Container abarrotes-bench-runner-run-b2a130628a4a Created 
+[finalize] mongodb_C_Q1_c50_r2: status=error qps=0.0 p99=None thr=898.655973 rss_mb=594.014208 spill=False fuente=prometheus notas=['ninguna consulta completada dentro de la ventana']
+[2026-11-01 01:48:46] FIN mongodb_C_Q1_c50_r2; cooldown 60s
+[2026-11-01 01:49:47] AVANCE: 105 / 162
+[2026-11-01 01:49:47] INICIO postgresql_C_Q2_V1_c10_r2  [postgresql PROFILE_C_SEVERE Q2_V1 c=10 r=2]
+ Container abarrotes-bench-runner-run-486d4d2fb6e9 Creating 
+ Container abarrotes-bench-runner-run-486d4d2fb6e9 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-c663f6e7ab47 Creating 
+ Container abarrotes-bench-runner-run-c663f6e7ab47 Created 
+[runner] postgresql_C_Q2_V1_c10_r2: 80 consultas completadas en la ventana -> results/raw/postgresql_C_Q2_V1_c10_r2.json
+ Container abarrotes-bench-runner-run-46cd439bd3b5 Creating 
+ Container abarrotes-bench-runner-run-46cd439bd3b5 Created 
+[finalize] postgresql_C_Q2_V1_c10_r2: status=ok qps=0.26666666666666666 p99=35483.35251569748 thr=759.305704 rss_mb=178.95424 spill=False fuente=prometheus notas=[]
+[2026-11-01 01:56:11] FIN postgresql_C_Q2_V1_c10_r2; cooldown 60s
+[2026-11-01 01:57:12] AVANCE: 106 / 162
+[2026-11-01 01:57:12] INICIO postgresql_B_Q1_c1_r2  [postgresql PROFILE_B_MEDIUM Q1 c=1 r=2]
+ Container abarrotes-bench-runner-run-f0f2bf025f50 Creating 
+ Container abarrotes-bench-runner-run-f0f2bf025f50 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-65d7625c022e Creating 
+ Container abarrotes-bench-runner-run-65d7625c022e Created 
+[runner] postgresql_B_Q1_c1_r2: 32 consultas completadas en la ventana -> results/raw/postgresql_B_Q1_c1_r2.json
+ Container abarrotes-bench-runner-run-388a528a8150 Creating 
+ Container abarrotes-bench-runner-run-388a528a8150 Created 
+[finalize] postgresql_B_Q1_c1_r2: status=spill qps=0.10666666666666667 p99=11539.783787727358 thr=46.252970999999995 rss_mb=100.98688 spill=True fuente=prometheus notas=['spill: temp_files 105 -> 612', 'spill: temp_bytes 6505963520 -> 38051708928', "spill: log 'temporary file'"]
+[2026-11-01 02:03:36] FIN postgresql_B_Q1_c1_r2; cooldown 60s
+[2026-11-01 02:04:37] AVANCE: 107 / 162
+[2026-11-01 02:04:37] INICIO postgresql_C_Q1_c50_r2  [postgresql PROFILE_C_SEVERE Q1 c=50 r=2]
+ Container abarrotes-bench-runner-run-0e0b0b9c3db1 Creating 
+ Container abarrotes-bench-runner-run-0e0b0b9c3db1 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-9faacd817126 Creating 
+ Container abarrotes-bench-runner-run-9faacd817126 Created 
+[runner] postgresql_C_Q1_c50_r2: 0 consultas completadas en la ventana -> results/raw/postgresql_C_Q1_c50_r2.json
+ Container abarrotes-bench-runner-run-e89114efa4fc Creating 
+ Container abarrotes-bench-runner-run-e89114efa4fc Created 
+[finalize] postgresql_C_Q1_c50_r2: status=oom qps=0.0 p99=None thr=593.074791 rss_mb=1000.890368 spill=False fuente=prometheus notas=['docker inspect: OOMKilled', 'log: proceso terminado por señal 9 (OOM killer)', 'ninguna consulta completada dentro de la ventana', "8882/8882 consultas fallidas (> 5%); códigos ['OperationalError']"]
+[2026-11-01 02:11:14] FIN postgresql_C_Q1_c50_r2; cooldown 60s
+[2026-11-01 02:12:15] AVANCE: 108 / 162
+[2026-11-01 02:12:15] INICIO mongodb_A_Q1_c1_r3  [mongodb PROFILE_A_BASELINE Q1 c=1 r=3]
+ Container abarrotes-bench-runner-run-2b5de8e623e2 Creating 
+ Container abarrotes-bench-runner-run-2b5de8e623e2 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-ef1edd48c478 Creating 
+ Container abarrotes-bench-runner-run-ef1edd48c478 Created 
+[runner] mongodb_A_Q1_c1_r3: 89 consultas completadas en la ventana -> results/raw/mongodb_A_Q1_c1_r3.json
+ Container abarrotes-bench-runner-run-8e274cb1a655 Creating 
+ Container abarrotes-bench-runner-run-8e274cb1a655 Created 
+[finalize] mongodb_A_Q1_c1_r3: status=ok qps=0.2966666666666667 p99=3408.450765609741 thr=0.0 rss_mb=908.705792 spill=False fuente=prometheus notas=[]
+[2026-11-01 02:18:35] FIN mongodb_A_Q1_c1_r3; cooldown 60s
+[2026-11-01 02:19:36] AVANCE: 109 / 162
+[2026-11-01 02:19:36] INICIO postgresql_A_Q1_c10_r3  [postgresql PROFILE_A_BASELINE Q1 c=10 r=3]
+ Container abarrotes-bench-runner-run-151cb16bf034 Creating 
+ Container abarrotes-bench-runner-run-151cb16bf034 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-031a287a26c8 Creating 
+ Container abarrotes-bench-runner-run-031a287a26c8 Created 
+[runner] postgresql_A_Q1_c10_r3: 78 consultas completadas en la ventana -> results/raw/postgresql_A_Q1_c10_r3.json
+ Container abarrotes-bench-runner-run-39527d0d9512 Creating 
+ Container abarrotes-bench-runner-run-39527d0d9512 Created 
+[finalize] postgresql_A_Q1_c10_r3: status=spill qps=0.26 p99=42849.02581691742 thr=0.335579 rss_mb=582.250496 spill=True fuente=prometheus notas=['spill: temp_files 137 -> 1405', 'spill: temp_bytes 9293586432 -> 95775236096', "spill: log 'temporary file'"]
+[2026-11-01 02:26:03] FIN postgresql_A_Q1_c10_r3; cooldown 60s
+[2026-11-01 02:27:04] AVANCE: 110 / 162
+[2026-11-01 02:27:04] INICIO mongodb_B_Q2_V2_c10_r3  [mongodb PROFILE_B_MEDIUM Q2_V2 c=10 r=3]
+ Container abarrotes-bench-runner-run-725433c6b826 Creating 
+ Container abarrotes-bench-runner-run-725433c6b826 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-74bf89efa1bf Creating 
+ Container abarrotes-bench-runner-run-74bf89efa1bf Created 
+[runner] mongodb_B_Q2_V2_c10_r3: 100 consultas completadas en la ventana -> results/raw/mongodb_B_Q2_V2_c10_r3.json
+ Container abarrotes-bench-runner-run-7f5307b0c28b Creating 
+ Container abarrotes-bench-runner-run-7f5307b0c28b Created 
+[finalize] mongodb_B_Q2_V2_c10_r3: status=ok qps=0.3333333333333333 p99=28177.896287441254 thr=533.1431240000001 rss_mb=683.23328 spill=False fuente=prometheus notas=[]
+[2026-11-01 02:33:25] FIN mongodb_B_Q2_V2_c10_r3; cooldown 60s
+[2026-11-01 02:34:26] AVANCE: 111 / 162
+[2026-11-01 02:34:26] INICIO mongodb_C_Q2_V2_c10_r3  [mongodb PROFILE_C_SEVERE Q2_V2 c=10 r=3]
+ Container abarrotes-bench-runner-run-7192d5703011 Creating 
+ Container abarrotes-bench-runner-run-7192d5703011 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-07bebb65e0ce Creating 
+ Container abarrotes-bench-runner-run-07bebb65e0ce Created 
+[runner] mongodb_C_Q2_V2_c10_r3: 30 consultas completadas en la ventana -> results/raw/mongodb_C_Q2_V2_c10_r3.json
+ Container abarrotes-bench-runner-run-0e128259d6b9 Creating 
+ Container abarrotes-bench-runner-run-0e128259d6b9 Created 
+[finalize] mongodb_C_Q2_V2_c10_r3: status=ok qps=0.1 p99=75813.0594420433 thr=859.795315 rss_mb=427.163648 spill=False fuente=prometheus notas=[]
+[2026-11-01 02:40:48] FIN mongodb_C_Q2_V2_c10_r3; cooldown 60s
+[2026-11-01 02:41:49] AVANCE: 112 / 162
+[2026-11-01 02:41:49] INICIO mongodb_B_Q1_c50_r3  [mongodb PROFILE_B_MEDIUM Q1 c=50 r=3]
+ Container abarrotes-bench-runner-run-cc2625e9dcf3 Creating 
+ Container abarrotes-bench-runner-run-cc2625e9dcf3 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-4cc3831b11e6 Creating 
+ Container abarrotes-bench-runner-run-4cc3831b11e6 Created 
+[runner] mongodb_B_Q1_c50_r3: 100 consultas completadas en la ventana -> results/raw/mongodb_B_Q1_c50_r3.json
+ Container abarrotes-bench-runner-run-22d5abe6946e Creating 
+ Container abarrotes-bench-runner-run-22d5abe6946e Created 
+[finalize] mongodb_B_Q1_c50_r3: status=ok qps=0.3333333333333333 p99=109765.01675128937 thr=595.744717 rss_mb=856.461312 spill=False fuente=prometheus notas=[]
+[2026-11-01 02:48:12] FIN mongodb_B_Q1_c50_r3; cooldown 60s
+[2026-11-01 02:49:13] AVANCE: 113 / 162
+[2026-11-01 02:49:13] INICIO postgresql_A_Q2_V1_c10_r3  [postgresql PROFILE_A_BASELINE Q2_V1 c=10 r=3]
+ Container abarrotes-bench-runner-run-93a944207b69 Creating 
+ Container abarrotes-bench-runner-run-93a944207b69 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-f2c9f1c50572 Creating 
+ Container abarrotes-bench-runner-run-f2c9f1c50572 Created 
+[runner] postgresql_A_Q2_V1_c10_r3: 475 consultas completadas en la ventana -> results/raw/postgresql_A_Q2_V1_c10_r3.json
+ Container abarrotes-bench-runner-run-acd0592a4423 Creating 
+ Container abarrotes-bench-runner-run-acd0592a4423 Created 
+[finalize] postgresql_A_Q2_V1_c10_r3: status=ok qps=1.5833333333333333 p99=10676.473622322083 thr=1.63097 rss_mb=180.645888 spill=False fuente=prometheus notas=[]
+[2026-11-01 02:55:35] FIN postgresql_A_Q2_V1_c10_r3; cooldown 60s
+[2026-11-01 02:56:36] AVANCE: 114 / 162
+[2026-11-01 02:56:36] INICIO postgresql_C_Q2_V2_c1_r3  [postgresql PROFILE_C_SEVERE Q2_V2 c=1 r=3]
+ Container abarrotes-bench-runner-run-be483f11878e Creating 
+ Container abarrotes-bench-runner-run-be483f11878e Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-37f468d86b8c Creating 
+ Container abarrotes-bench-runner-run-37f468d86b8c Created 
+[runner] postgresql_C_Q2_V2_c1_r3: 123 consultas completadas en la ventana -> results/raw/postgresql_C_Q2_V2_c1_r3.json
+ Container abarrotes-bench-runner-run-5a3f1fd52c22 Creating 
+ Container abarrotes-bench-runner-run-5a3f1fd52c22 Created 
+[finalize] postgresql_C_Q2_V2_c1_r3: status=ok qps=0.41 p99=2771.882643699646 thr=586.416105 rss_mb=35.004416 spill=False fuente=prometheus notas=[]
+[2026-11-01 03:02:59] FIN postgresql_C_Q2_V2_c1_r3; cooldown 60s
+[2026-11-01 03:04:00] AVANCE: 115 / 162
+[2026-11-01 03:04:00] INICIO postgresql_A_Q1_c1_r3  [postgresql PROFILE_A_BASELINE Q1 c=1 r=3]
+ Container abarrotes-bench-runner-run-658fd8644d99 Creating 
+ Container abarrotes-bench-runner-run-658fd8644d99 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-eb1529d2c23c Creating 
+ Container abarrotes-bench-runner-run-eb1529d2c23c Created 
+[runner] postgresql_A_Q1_c1_r3: 38 consultas completadas en la ventana -> results/raw/postgresql_A_Q1_c1_r3.json
+ Container abarrotes-bench-runner-run-07dbf4ece5e8 Creating 
+ Container abarrotes-bench-runner-run-07dbf4ece5e8 Created 
+[finalize] postgresql_A_Q1_c1_r3: status=spill qps=0.12666666666666668 p99=9521.501977443697 thr=0.0 rss_mb=101.203968 spill=True fuente=prometheus notas=['spill: temp_files 105 -> 704', 'spill: temp_bytes 6506004480 -> 43668029440', "spill: log 'temporary file'"]
+[2026-11-01 03:10:25] FIN postgresql_A_Q1_c1_r3; cooldown 60s
+[2026-11-01 03:11:26] AVANCE: 116 / 162
+[2026-11-01 03:11:26] INICIO mongodb_A_Q2_V2_c1_r3  [mongodb PROFILE_A_BASELINE Q2_V2 c=1 r=3]
+ Container abarrotes-bench-runner-run-0f57eab0d318 Creating 
+ Container abarrotes-bench-runner-run-0f57eab0d318 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-5d723bd231b4 Creating 
+ Container abarrotes-bench-runner-run-5d723bd231b4 Created 
+[runner] mongodb_A_Q2_V2_c1_r3: 344 consultas completadas en la ventana -> results/raw/mongodb_A_Q2_V2_c1_r3.json
+ Container abarrotes-bench-runner-run-92e4694ed110 Creating 
+ Container abarrotes-bench-runner-run-92e4694ed110 Created 
+[finalize] mongodb_A_Q2_V2_c1_r3: status=ok qps=1.1466666666666667 p99=963.2464218139648 thr=0.0 rss_mb=947.113984 spill=False fuente=prometheus notas=[]
+[2026-11-01 03:17:47] FIN mongodb_A_Q2_V2_c1_r3; cooldown 60s
+[2026-11-01 03:18:48] AVANCE: 117 / 162
+[2026-11-01 03:18:48] INICIO postgresql_A_Q2_V1_c1_r3  [postgresql PROFILE_A_BASELINE Q2_V1 c=1 r=3]
+ Container abarrotes-bench-runner-run-a3cd435eda4c Creating 
+ Container abarrotes-bench-runner-run-a3cd435eda4c Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-defbb5db0ad2 Creating 
+ Container abarrotes-bench-runner-run-defbb5db0ad2 Created 
+[runner] postgresql_A_Q2_V1_c1_r3: 368 consultas completadas en la ventana -> results/raw/postgresql_A_Q2_V1_c1_r3.json
+ Container abarrotes-bench-runner-run-9dcde840e075 Creating 
+ Container abarrotes-bench-runner-run-9dcde840e075 Created 
+[finalize] postgresql_A_Q2_V1_c1_r3: status=ok qps=1.2266666666666666 p99=1027.001554965973 thr=0.0 rss_mb=34.97984 spill=False fuente=prometheus notas=[]
+[2026-11-01 03:25:11] FIN postgresql_A_Q2_V1_c1_r3; cooldown 60s
+[2026-11-01 03:26:11] AVANCE: 118 / 162
+[2026-11-01 03:26:11] INICIO mongodb_A_Q2_V1_c1_r3  [mongodb PROFILE_A_BASELINE Q2_V1 c=1 r=3]
+ Container abarrotes-bench-runner-run-94a80ec3f45d Creating 
+ Container abarrotes-bench-runner-run-94a80ec3f45d Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-70d4acb20ca0 Creating 
+ Container abarrotes-bench-runner-run-70d4acb20ca0 Created 
+[runner] mongodb_A_Q2_V1_c1_r3: 346 consultas completadas en la ventana -> results/raw/mongodb_A_Q2_V1_c1_r3.json
+ Container abarrotes-bench-runner-run-9f7a29832b4c Creating 
+ Container abarrotes-bench-runner-run-9f7a29832b4c Created 
+[finalize] mongodb_A_Q2_V1_c1_r3: status=ok qps=1.1533333333333333 p99=940.3261423110963 thr=0.0 rss_mb=938.565632 spill=False fuente=prometheus notas=[]
+[2026-11-01 03:32:33] FIN mongodb_A_Q2_V1_c1_r3; cooldown 60s
+[2026-11-01 03:33:34] AVANCE: 119 / 162
+[2026-11-01 03:33:34] INICIO mongodb_A_Q1_c50_r3  [mongodb PROFILE_A_BASELINE Q1 c=50 r=3]
+ Container abarrotes-bench-runner-run-55c316b8ec83 Creating 
+ Container abarrotes-bench-runner-run-55c316b8ec83 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-7ebbc6fb5b5b Creating 
+ Container abarrotes-bench-runner-run-7ebbc6fb5b5b Created 
+[runner] mongodb_A_Q1_c50_r3: 250 consultas completadas en la ventana -> results/raw/mongodb_A_Q1_c50_r3.json
+ Container abarrotes-bench-runner-run-bf57c62fce5e Creating 
+ Container abarrotes-bench-runner-run-bf57c62fce5e Created 
+[finalize] mongodb_A_Q1_c50_r3: status=ok qps=0.8333333333333334 p99=50259.043645858765 thr=2.817921 rss_mb=1146.683392 spill=False fuente=prometheus notas=[]
+[2026-11-01 03:39:58] FIN mongodb_A_Q1_c50_r3; cooldown 60s
+[2026-11-01 03:40:59] AVANCE: 120 / 162
+[2026-11-01 03:40:59] INICIO mongodb_B_Q1_c1_r3  [mongodb PROFILE_B_MEDIUM Q1 c=1 r=3]
+ Container abarrotes-bench-runner-run-8e683c284ee6 Creating 
+ Container abarrotes-bench-runner-run-8e683c284ee6 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-c17545a49786 Creating 
+ Container abarrotes-bench-runner-run-c17545a49786 Created 
+[runner] mongodb_B_Q1_c1_r3: 76 consultas completadas en la ventana -> results/raw/mongodb_B_Q1_c1_r3.json
+ Container abarrotes-bench-runner-run-91568a955677 Creating 
+ Container abarrotes-bench-runner-run-91568a955677 Created 
+[finalize] mongodb_B_Q1_c1_r3: status=ok qps=0.25333333333333335 p99=4119.352459907532 thr=0.0 rss_mb=732.209152 spill=False fuente=prometheus notas=[]
+[2026-11-01 03:47:20] FIN mongodb_B_Q1_c1_r3; cooldown 60s
+[2026-11-01 03:48:21] AVANCE: 121 / 162
+[2026-11-01 03:48:21] INICIO postgresql_B_Q2_V2_c10_r3  [postgresql PROFILE_B_MEDIUM Q2_V2 c=10 r=3]
+ Container abarrotes-bench-runner-run-479e2341e248 Creating 
+ Container abarrotes-bench-runner-run-479e2341e248 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-f1991bbb2734 Creating 
+ Container abarrotes-bench-runner-run-f1991bbb2734 Created 
+[runner] postgresql_B_Q2_V2_c10_r3: 210 consultas completadas en la ventana -> results/raw/postgresql_B_Q2_V2_c10_r3.json
+ Container abarrotes-bench-runner-run-f16882a617e6 Creating 
+ Container abarrotes-bench-runner-run-f16882a617e6 Created 
+[finalize] postgresql_B_Q2_V2_c10_r3: status=ok qps=0.7 p99=24298.32326412201 thr=586.315577 rss_mb=179.748864 spill=False fuente=prometheus notas=[]
+[2026-11-01 03:54:44] FIN postgresql_B_Q2_V2_c10_r3; cooldown 60s
+[2026-11-01 03:55:45] AVANCE: 122 / 162
+[2026-11-01 03:55:45] INICIO mongodb_A_Q2_V2_c10_r3  [mongodb PROFILE_A_BASELINE Q2_V2 c=10 r=3]
+ Container abarrotes-bench-runner-run-24ad86753d60 Creating 
+ Container abarrotes-bench-runner-run-24ad86753d60 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-2021ded3a245 Creating 
+ Container abarrotes-bench-runner-run-2021ded3a245 Created 
+[runner] mongodb_A_Q2_V2_c10_r3: 1321 consultas completadas en la ventana -> results/raw/mongodb_A_Q2_V2_c10_r3.json
+ Container abarrotes-bench-runner-run-19675b638269 Creating 
+ Container abarrotes-bench-runner-run-19675b638269 Created 
+[finalize] mongodb_A_Q2_V2_c10_r3: status=ok qps=4.403333333333333 p99=3062.4862670898424 thr=2.3141429999999996 rss_mb=985.075712 spill=False fuente=prometheus notas=[]
+[2026-11-01 04:02:07] FIN mongodb_A_Q2_V2_c10_r3; cooldown 60s
+[2026-11-01 04:03:08] AVANCE: 123 / 162
+[2026-11-01 04:03:08] INICIO postgresql_A_Q2_V2_c50_r3  [postgresql PROFILE_A_BASELINE Q2_V2 c=50 r=3]
+ Container abarrotes-bench-runner-run-e6d37dfaeab8 Creating 
+ Container abarrotes-bench-runner-run-e6d37dfaeab8 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-2a2efc0bcd96 Creating 
+ Container abarrotes-bench-runner-run-2a2efc0bcd96 Created 
+[runner] postgresql_A_Q2_V2_c50_r3: 456 consultas completadas en la ventana -> results/raw/postgresql_A_Q2_V2_c50_r3.json
+ Container abarrotes-bench-runner-run-87df3033885d Creating 
+ Container abarrotes-bench-runner-run-87df3033885d Created 
+[finalize] postgresql_A_Q2_V2_c50_r3: status=ok qps=1.52 p99=38798.993265628815 thr=1.7888750000000002 rss_mb=599.072768 spill=False fuente=prometheus notas=[]
+[2026-11-01 04:09:32] FIN postgresql_A_Q2_V2_c50_r3; cooldown 60s
+[2026-11-01 11:45:28] AVANCE: 124 / 162
+[2026-11-01 11:45:28] INICIO postgresql_A_Q1_c50_r3  [postgresql PROFILE_A_BASELINE Q1 c=50 r=3]
+ Container abarrotes-bench-runner-run-24c9732c5628 Creating 
+ Container abarrotes-bench-runner-run-24c9732c5628 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-219af9980392 Creating 
+ Container abarrotes-bench-runner-run-219af9980392 Created 
+[runner] postgresql_A_Q1_c50_r3: 4 consultas completadas en la ventana -> results/raw/postgresql_A_Q1_c50_r3.json
+ Container abarrotes-bench-runner-run-5819ad033924 Creating 
+ Container abarrotes-bench-runner-run-5819ad033924 Created 
+[finalize] postgresql_A_Q1_c50_r3: status=spill qps=0.013333333333333334 p99=153662.83817768097 thr=0.14371799999999998 rss_mb=2044.547072 spill=True fuente=prometheus notas=['spill: temp_files 0 -> 1150', 'spill: temp_bytes 0 -> 92760334336', "spill: log 'temporary file'"]
+[2026-11-01 11:51:59] FIN postgresql_A_Q1_c50_r3; cooldown 60s
+[2026-11-01 11:53:00] AVANCE: 125 / 162
+[2026-11-01 11:53:00] INICIO postgresql_C_Q2_V2_c10_r3  [postgresql PROFILE_C_SEVERE Q2_V2 c=10 r=3]
+ Container abarrotes-bench-runner-run-c2c331436836 Creating 
+ Container abarrotes-bench-runner-run-c2c331436836 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-99869747530a Creating 
+ Container abarrotes-bench-runner-run-99869747530a Created 
+[runner] postgresql_C_Q2_V2_c10_r3: 89 consultas completadas en la ventana -> results/raw/postgresql_C_Q2_V2_c10_r3.json
+ Container abarrotes-bench-runner-run-80fb1e9e1827 Creating 
+ Container abarrotes-bench-runner-run-80fb1e9e1827 Created 
+[finalize] postgresql_C_Q2_V2_c10_r3: status=ok qps=0.2966666666666667 p99=41901.271276474006 thr=879.6108519999999 rss_mb=178.999296 spill=False fuente=prometheus notas=[]
+[2026-11-01 11:59:24] FIN postgresql_C_Q2_V2_c10_r3; cooldown 60s
+[2026-11-01 12:00:25] AVANCE: 126 / 162
+[2026-11-01 12:00:25] INICIO postgresql_B_Q1_c1_r3  [postgresql PROFILE_B_MEDIUM Q1 c=1 r=3]
+ Container abarrotes-bench-runner-run-e6774f819bae Creating 
+ Container abarrotes-bench-runner-run-e6774f819bae Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-5a6e1ed9f6f8 Creating 
+ Container abarrotes-bench-runner-run-5a6e1ed9f6f8 Created 
+[runner] postgresql_B_Q1_c1_r3: 30 consultas completadas en la ventana -> results/raw/postgresql_B_Q1_c1_r3.json
+ Container abarrotes-bench-runner-run-820eda3fad18 Creating 
+ Container abarrotes-bench-runner-run-820eda3fad18 Created 
+[finalize] postgresql_B_Q1_c1_r3: status=spill qps=0.1 p99=14255.952522754671 thr=36.679503000000004 rss_mb=101.072896 spill=True fuente=prometheus notas=['spill: temp_files 1240 -> 1708', 'spill: temp_bytes 98336940032 -> 127780790272', "spill: log 'temporary file'"]
+[2026-11-01 12:06:52] FIN postgresql_B_Q1_c1_r3; cooldown 60s
+[2026-11-01 12:07:53] AVANCE: 127 / 162
+[2026-11-01 12:07:53] INICIO postgresql_B_Q2_V1_c10_r3  [postgresql PROFILE_B_MEDIUM Q2_V1 c=10 r=3]
+ Container abarrotes-bench-runner-run-e492711bfaa7 Creating 
+ Container abarrotes-bench-runner-run-e492711bfaa7 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-d68fc12e521f Creating 
+ Container abarrotes-bench-runner-run-d68fc12e521f Created 
+[runner] postgresql_B_Q2_V1_c10_r3: 230 consultas completadas en la ventana -> results/raw/postgresql_B_Q2_V1_c10_r3.json
+ Container abarrotes-bench-runner-run-71649cd98f11 Creating 
+ Container abarrotes-bench-runner-run-71649cd98f11 Created 
+[finalize] postgresql_B_Q2_V1_c10_r3: status=ok qps=0.7666666666666667 p99=22072.41355895996 thr=589.210299 rss_mb=179.634176 spill=False fuente=prometheus notas=[]
+[2026-11-01 12:14:17] FIN postgresql_B_Q2_V1_c10_r3; cooldown 60s
+[2026-11-01 12:15:18] AVANCE: 128 / 162
+[2026-11-01 12:15:18] INICIO postgresql_C_Q2_V1_c1_r3  [postgresql PROFILE_C_SEVERE Q2_V1 c=1 r=3]
+ Container abarrotes-bench-runner-run-2bf7d4d650e6 Creating 
+ Container abarrotes-bench-runner-run-2bf7d4d650e6 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-bdc9ec032f7a Creating 
+ Container abarrotes-bench-runner-run-bdc9ec032f7a Created 
+[runner] postgresql_C_Q2_V1_c1_r3: 106 consultas completadas en la ventana -> results/raw/postgresql_C_Q2_V1_c1_r3.json
+ Container abarrotes-bench-runner-run-2a28b75c4504 Creating 
+ Container abarrotes-bench-runner-run-2a28b75c4504 Created 
+[finalize] postgresql_C_Q2_V1_c1_r3: status=ok qps=0.35333333333333333 p99=3102.746331691742 thr=591.4402620000001 rss_mb=34.942976 spill=False fuente=prometheus notas=[]
+[2026-11-01 12:21:42] FIN postgresql_C_Q2_V1_c1_r3; cooldown 60s
+[2026-11-01 12:22:43] AVANCE: 129 / 162
+[2026-11-01 12:22:43] INICIO postgresql_C_Q1_c10_r3  [postgresql PROFILE_C_SEVERE Q1 c=10 r=3]
+ Container abarrotes-bench-runner-run-3f777c709af9 Creating 
+ Container abarrotes-bench-runner-run-3f777c709af9 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-370e48240d4c Creating 
+ Container abarrotes-bench-runner-run-370e48240d4c Created 
+[runner] postgresql_C_Q1_c10_r3: 0 consultas completadas en la ventana -> results/raw/postgresql_C_Q1_c10_r3.json
+ Container abarrotes-bench-runner-run-3b8e8e93dff8 Creating 
+ Container abarrotes-bench-runner-run-3b8e8e93dff8 Created 
+[finalize] postgresql_C_Q1_c10_r3: status=error qps=0.0 p99=None thr=787.276014 rss_mb=575.471616 spill=True fuente=prometheus notas=['spill: temp_files 1708 -> 1949', 'spill: temp_bytes 127780790272 -> 145752236032', "spill: log 'temporary file'", 'ninguna consulta completada dentro de la ventana']
+[2026-11-01 12:29:09] FIN postgresql_C_Q1_c10_r3; cooldown 60s
+[2026-11-01 12:30:10] AVANCE: 130 / 162
+[2026-11-01 12:30:10] INICIO mongodb_A_Q2_V2_c50_r3  [mongodb PROFILE_A_BASELINE Q2_V2 c=50 r=3]
+ Container abarrotes-bench-runner-run-59f264bb5635 Creating 
+ Container abarrotes-bench-runner-run-59f264bb5635 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-6e8ddadb6195 Creating 
+ Container abarrotes-bench-runner-run-6e8ddadb6195 Created 
+[runner] mongodb_A_Q2_V2_c50_r3: 1155 consultas completadas en la ventana -> results/raw/mongodb_A_Q2_V2_c50_r3.json
+ Container abarrotes-bench-runner-run-ffcfb6b8e68d Creating 
+ Container abarrotes-bench-runner-run-ffcfb6b8e68d Created 
+[finalize] mongodb_A_Q2_V2_c50_r3: status=ok qps=3.85 p99=13248.147916793823 thr=1.664281 rss_mb=1128.501248 spill=False fuente=prometheus notas=[]
+[2026-11-01 12:36:36] FIN mongodb_A_Q2_V2_c50_r3; cooldown 60s
+[2026-11-01 12:37:37] AVANCE: 131 / 162
+[2026-11-01 12:37:37] INICIO mongodb_C_Q2_V1_c10_r3  [mongodb PROFILE_C_SEVERE Q2_V1 c=10 r=3]
+ Container abarrotes-bench-runner-run-cd4b29970e20 Creating 
+ Container abarrotes-bench-runner-run-cd4b29970e20 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-a58c67f1e012 Creating 
+ Container abarrotes-bench-runner-run-a58c67f1e012 Created 
+[runner] mongodb_C_Q2_V1_c10_r3: 30 consultas completadas en la ventana -> results/raw/mongodb_C_Q2_V1_c10_r3.json
+ Container abarrotes-bench-runner-run-a147dd651766 Creating 
+ Container abarrotes-bench-runner-run-a147dd651766 Created 
+[finalize] mongodb_C_Q2_V1_c10_r3: status=ok qps=0.1 p99=80356.30435705185 thr=853.338443 rss_mb=424.493056 spill=False fuente=prometheus notas=[]
+[2026-11-01 12:44:01] FIN mongodb_C_Q2_V1_c10_r3; cooldown 60s
+[2026-11-01 12:45:02] AVANCE: 132 / 162
+[2026-11-01 12:45:02] INICIO postgresql_C_Q2_V2_c50_r3  [postgresql PROFILE_C_SEVERE Q2_V2 c=50 r=3]
+ Container abarrotes-bench-runner-run-c19b7bae4b3b Creating 
+ Container abarrotes-bench-runner-run-c19b7bae4b3b Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-65f2d1af0da9 Creating 
+ Container abarrotes-bench-runner-run-65f2d1af0da9 Created 
+[runner] postgresql_C_Q2_V2_c50_r3: 54 consultas completadas en la ventana -> results/raw/postgresql_C_Q2_V2_c50_r3.json
+ Container abarrotes-bench-runner-run-4a618869216a Creating 
+ Container abarrotes-bench-runner-run-4a618869216a Created 
+[finalize] postgresql_C_Q2_V2_c50_r3: status=ok qps=0.18 p99=154429.76067066193 thr=886.4944660000001 rss_mb=594.169856 spill=False fuente=prometheus notas=[]
+[2026-11-01 12:51:28] FIN postgresql_C_Q2_V2_c50_r3; cooldown 60s
+[2026-11-01 12:52:29] AVANCE: 133 / 162
+[2026-11-01 12:52:29] INICIO postgresql_C_Q2_V1_c50_r3  [postgresql PROFILE_C_SEVERE Q2_V1 c=50 r=3]
+ Container abarrotes-bench-runner-run-9c63a19045d4 Creating 
+ Container abarrotes-bench-runner-run-9c63a19045d4 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-a99c8729eb11 Creating 
+ Container abarrotes-bench-runner-run-a99c8729eb11 Created 
+[runner] postgresql_C_Q2_V1_c50_r3: 54 consultas completadas en la ventana -> results/raw/postgresql_C_Q2_V1_c50_r3.json
+ Container abarrotes-bench-runner-run-4237b251e1f1 Creating 
+ Container abarrotes-bench-runner-run-4237b251e1f1 Created 
+[finalize] postgresql_C_Q2_V1_c50_r3: status=ok qps=0.18 p99=184420.78970432281 thr=883.7608950000001 rss_mb=594.47296 spill=False fuente=prometheus notas=[]
+[2026-11-01 12:58:56] FIN postgresql_C_Q2_V1_c50_r3; cooldown 60s
+[2026-11-01 12:59:57] AVANCE: 134 / 162
+[2026-11-01 12:59:57] INICIO mongodb_A_Q2_V1_c10_r3  [mongodb PROFILE_A_BASELINE Q2_V1 c=10 r=3]
+ Container abarrotes-bench-runner-run-841903500400 Creating 
+ Container abarrotes-bench-runner-run-841903500400 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-2be41920969c Creating 
+ Container abarrotes-bench-runner-run-2be41920969c Created 
+[runner] mongodb_A_Q2_V1_c10_r3: 1214 consultas completadas en la ventana -> results/raw/mongodb_A_Q2_V1_c10_r3.json
+ Container abarrotes-bench-runner-run-c76d977cab79 Creating 
+ Container abarrotes-bench-runner-run-c76d977cab79 Created 
+[finalize] mongodb_A_Q2_V1_c10_r3: status=ok qps=4.046666666666667 p99=3169.0395903587337 thr=1.3058100000000001 rss_mb=989.913088 spill=False fuente=prometheus notas=[]
+[2026-11-01 13:06:20] FIN mongodb_A_Q2_V1_c10_r3; cooldown 60s
+[2026-11-01 13:07:21] AVANCE: 135 / 162
+[2026-11-01 13:07:21] INICIO postgresql_A_Q2_V1_c50_r3  [postgresql PROFILE_A_BASELINE Q2_V1 c=50 r=3]
+ Container abarrotes-bench-runner-run-1c8126f7c496 Creating 
+ Container abarrotes-bench-runner-run-1c8126f7c496 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-7a7b19500151 Creating 
+ Container abarrotes-bench-runner-run-7a7b19500151 Created 
+[runner] postgresql_A_Q2_V1_c50_r3: 403 consultas completadas en la ventana -> results/raw/postgresql_A_Q2_V1_c50_r3.json
+ Container abarrotes-bench-runner-run-74909759dc2b Creating 
+ Container abarrotes-bench-runner-run-74909759dc2b Created 
+[finalize] postgresql_A_Q2_V1_c50_r3: status=ok qps=1.3433333333333333 p99=42010.77776908875 thr=2.189575 rss_mb=597.966848 spill=False fuente=prometheus notas=[]
+[2026-11-01 13:13:46] FIN postgresql_A_Q2_V1_c50_r3; cooldown 60s
+[2026-11-01 13:14:47] AVANCE: 136 / 162
+[2026-11-01 13:14:47] INICIO postgresql_C_Q1_c1_r3  [postgresql PROFILE_C_SEVERE Q1 c=1 r=3]
+ Container abarrotes-bench-runner-run-142d2433626a Creating 
+ Container abarrotes-bench-runner-run-142d2433626a Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-765c718fe5a2 Creating 
+ Container abarrotes-bench-runner-run-765c718fe5a2 Created 
+[runner] postgresql_C_Q1_c1_r3: 21 consultas completadas en la ventana -> results/raw/postgresql_C_Q1_c1_r3.json
+ Container abarrotes-bench-runner-run-54674234e932 Creating 
+ Container abarrotes-bench-runner-run-54674234e932 Created 
+[finalize] postgresql_C_Q1_c1_r3: status=spill qps=0.07 p99=14304.035186767578 thr=179.668968 rss_mb=100.667392 spill=True fuente=prometheus notas=['spill: temp_files 60 -> 393', 'spill: temp_bytes 3717742592 -> 24949137408', "spill: log 'temporary file'"]
+[2026-11-01 13:21:12] FIN postgresql_C_Q1_c1_r3; cooldown 60s
+[2026-11-01 13:22:14] AVANCE: 137 / 162
+[2026-11-01 13:22:14] INICIO postgresql_B_Q2_V2_c1_r3  [postgresql PROFILE_B_MEDIUM Q2_V2 c=1 r=3]
+ Container abarrotes-bench-runner-run-48ec5d918e23 Creating 
+ Container abarrotes-bench-runner-run-48ec5d918e23 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-7162ad13eeae Creating 
+ Container abarrotes-bench-runner-run-7162ad13eeae Created 
+[runner] postgresql_B_Q2_V2_c1_r3: 227 consultas completadas en la ventana -> results/raw/postgresql_B_Q2_V2_c1_r3.json
+ Container abarrotes-bench-runner-run-32b79bfab950 Creating 
+ Container abarrotes-bench-runner-run-32b79bfab950 Created 
+[finalize] postgresql_B_Q2_V2_c1_r3: status=ok qps=0.7566666666666667 p99=1446.2807512283325 thr=288.46750499999996 rss_mb=35.037184 spill=False fuente=prometheus notas=[]
+[2026-11-01 13:28:37] FIN postgresql_B_Q2_V2_c1_r3; cooldown 60s
+[2026-11-01 13:29:39] AVANCE: 138 / 162
+[2026-11-01 13:29:39] INICIO mongodb_C_Q2_V2_c1_r3  [mongodb PROFILE_C_SEVERE Q2_V2 c=1 r=3]
+ Container abarrotes-bench-runner-run-cde3b163415d Creating 
+ Container abarrotes-bench-runner-run-cde3b163415d Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-5ddf5444beea Creating 
+ Container abarrotes-bench-runner-run-5ddf5444beea Created 
+[runner] mongodb_C_Q2_V2_c1_r3: 17 consultas completadas en la ventana -> results/raw/mongodb_C_Q2_V2_c1_r3.json
+ Container abarrotes-bench-runner-run-ea6b5bb303c1 Creating 
+ Container abarrotes-bench-runner-run-ea6b5bb303c1 Created 
+[finalize] mongodb_C_Q2_V2_c1_r3: status=ok qps=0.056666666666666664 p99=16623.460264205933 thr=19.778494 rss_mb=406.757376 spill=False fuente=prometheus notas=[]
+[2026-11-01 13:36:02] FIN mongodb_C_Q2_V2_c1_r3; cooldown 60s
+[2026-11-01 13:37:03] AVANCE: 139 / 162
+[2026-11-01 13:37:03] INICIO mongodb_B_Q1_c10_r3  [mongodb PROFILE_B_MEDIUM Q1 c=10 r=3]
+ Container abarrotes-bench-runner-run-a3296b722114 Creating 
+ Container abarrotes-bench-runner-run-a3296b722114 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-7a2b1903ab92 Creating 
+ Container abarrotes-bench-runner-run-7a2b1903ab92 Created 
+[runner] mongodb_B_Q1_c10_r3: 124 consultas completadas en la ventana -> results/raw/mongodb_B_Q1_c10_r3.json
+ Container abarrotes-bench-runner-run-3b251319252d Creating 
+ Container abarrotes-bench-runner-run-3b251319252d Created 
+[finalize] mongodb_B_Q1_c10_r3: status=ok qps=0.41333333333333333 p99=27590.616374015808 thr=597.956498 rss_mb=754.434048 spill=False fuente=prometheus notas=[]
+[2026-11-01 13:43:25] FIN mongodb_B_Q1_c10_r3; cooldown 60s
+[2026-11-01 13:44:27] AVANCE: 140 / 162
+[2026-11-01 13:44:27] INICIO mongodb_C_Q1_c10_r3  [mongodb PROFILE_C_SEVERE Q1 c=10 r=3]
+ Container abarrotes-bench-runner-run-5bf0d6d0ac7a Creating 
+ Container abarrotes-bench-runner-run-5bf0d6d0ac7a Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-be27ab8d0d96 Creating 
+ Container abarrotes-bench-runner-run-be27ab8d0d96 Created 
+[runner] mongodb_C_Q1_c10_r3: 48 consultas completadas en la ventana -> results/raw/mongodb_C_Q1_c10_r3.json
+ Container abarrotes-bench-runner-run-fc707cdd4a1c Creating 
+ Container abarrotes-bench-runner-run-fc707cdd4a1c Created 
+[finalize] mongodb_C_Q1_c10_r3: status=ok qps=0.16 p99=58429.022114276886 thr=893.234101 rss_mb=470.798336 spill=False fuente=prometheus notas=[]
+[2026-11-01 13:50:50] FIN mongodb_C_Q1_c10_r3; cooldown 60s
+[2026-11-01 13:51:51] AVANCE: 141 / 162
+[2026-11-01 13:51:51] INICIO postgresql_B_Q2_V1_c1_r3  [postgresql PROFILE_B_MEDIUM Q2_V1 c=1 r=3]
+ Container abarrotes-bench-runner-run-008962f98c71 Creating 
+ Container abarrotes-bench-runner-run-008962f98c71 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-498dcb75bd88 Creating 
+ Container abarrotes-bench-runner-run-498dcb75bd88 Created 
+[runner] postgresql_B_Q2_V1_c1_r3: 231 consultas completadas en la ventana -> results/raw/postgresql_B_Q2_V1_c1_r3.json
+ Container abarrotes-bench-runner-run-d88dc5aff3b9 Creating 
+ Container abarrotes-bench-runner-run-d88dc5aff3b9 Created 
+[finalize] postgresql_B_Q2_V1_c1_r3: status=ok qps=0.77 p99=1407.784605026245 thr=289.14840499999997 rss_mb=34.983936 spill=False fuente=prometheus notas=[]
+[2026-11-01 13:58:13] FIN postgresql_B_Q2_V1_c1_r3; cooldown 60s
+[2026-11-01 13:59:14] AVANCE: 142 / 162
+[2026-11-01 13:59:14] INICIO mongodb_B_Q2_V2_c50_r3  [mongodb PROFILE_B_MEDIUM Q2_V2 c=50 r=3]
+ Container abarrotes-bench-runner-run-480fc848edc7 Creating 
+ Container abarrotes-bench-runner-run-480fc848edc7 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-01550d1e77f4 Creating 
+ Container abarrotes-bench-runner-run-01550d1e77f4 Created 
+[runner] mongodb_B_Q2_V2_c50_r3: 137 consultas completadas en la ventana -> results/raw/mongodb_B_Q2_V2_c50_r3.json
+ Container abarrotes-bench-runner-run-0988b56b902b Creating 
+ Container abarrotes-bench-runner-run-0988b56b902b Created 
+[finalize] mongodb_B_Q2_V2_c50_r3: status=ok qps=0.45666666666666667 p99=140223.28221321103 thr=594.563007 rss_mb=836.775936 spill=False fuente=prometheus notas=[]
+[2026-11-01 14:05:37] FIN mongodb_B_Q2_V2_c50_r3; cooldown 60s
+[2026-11-01 14:06:38] AVANCE: 143 / 162
+[2026-11-01 14:06:38] INICIO postgresql_B_Q2_V1_c50_r3  [postgresql PROFILE_B_MEDIUM Q2_V1 c=50 r=3]
+ Container abarrotes-bench-runner-run-067a36c4d777 Creating 
+ Container abarrotes-bench-runner-run-067a36c4d777 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-3c5980874591 Creating 
+ Container abarrotes-bench-runner-run-3c5980874591 Created 
+[runner] postgresql_B_Q2_V1_c50_r3: 175 consultas completadas en la ventana -> results/raw/postgresql_B_Q2_V1_c50_r3.json
+ Container abarrotes-bench-runner-run-5701782cb566 Creating 
+ Container abarrotes-bench-runner-run-5701782cb566 Created 
+[finalize] postgresql_B_Q2_V1_c50_r3: status=ok qps=0.5833333333333334 p99=89460.38650035858 thr=586.952451 rss_mb=595.88608 spill=False fuente=prometheus notas=[]
+[2026-11-01 14:13:03] FIN postgresql_B_Q2_V1_c50_r3; cooldown 60s
+[2026-11-01 14:14:05] AVANCE: 144 / 162
+[2026-11-01 14:14:05] INICIO postgresql_C_Q2_V1_c10_r3  [postgresql PROFILE_C_SEVERE Q2_V1 c=10 r=3]
+ Container abarrotes-bench-runner-run-586ce0372e74 Creating 
+ Container abarrotes-bench-runner-run-586ce0372e74 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-d05e6d4799be Creating 
+ Container abarrotes-bench-runner-run-d05e6d4799be Created 
+[runner] postgresql_C_Q2_V1_c10_r3: 85 consultas completadas en la ventana -> results/raw/postgresql_C_Q2_V1_c10_r3.json
+ Container abarrotes-bench-runner-run-b118e521079e Creating 
+ Container abarrotes-bench-runner-run-b118e521079e Created 
+[finalize] postgresql_C_Q2_V1_c10_r3: status=ok qps=0.2833333333333333 p99=33907.03983306885 thr=817.0195299999999 rss_mb=179.48672 spill=False fuente=prometheus notas=[]
+[2026-11-01 14:20:28] FIN postgresql_C_Q2_V1_c10_r3; cooldown 60s
+[2026-11-01 14:21:30] AVANCE: 145 / 162
+[2026-11-01 14:21:30] INICIO mongodb_B_Q2_V1_c10_r3  [mongodb PROFILE_B_MEDIUM Q2_V1 c=10 r=3]
+ Container abarrotes-bench-runner-run-41a21172b1a8 Creating 
+ Container abarrotes-bench-runner-run-41a21172b1a8 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-f26355a168ba Creating 
+ Container abarrotes-bench-runner-run-f26355a168ba Created 
+[runner] mongodb_B_Q2_V1_c10_r3: 100 consultas completadas en la ventana -> results/raw/mongodb_B_Q2_V1_c10_r3.json
+ Container abarrotes-bench-runner-run-78a2273ddbf8 Creating 
+ Container abarrotes-bench-runner-run-78a2273ddbf8 Created 
+[finalize] mongodb_B_Q2_V1_c10_r3: status=ok qps=0.3333333333333333 p99=28301.63786649704 thr=527.267165 rss_mb=688.218112 spill=False fuente=prometheus notas=[]
+[2026-11-01 14:27:51] FIN mongodb_B_Q2_V1_c10_r3; cooldown 60s
+[2026-11-01 14:28:52] AVANCE: 146 / 162
+[2026-11-01 14:28:52] INICIO postgresql_B_Q1_c10_r3  [postgresql PROFILE_B_MEDIUM Q1 c=10 r=3]
+ Container abarrotes-bench-runner-run-d4ec9bc7b6a3 Creating 
+ Container abarrotes-bench-runner-run-d4ec9bc7b6a3 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-f792459a98dd Creating 
+ Container abarrotes-bench-runner-run-f792459a98dd Created 
+[runner] postgresql_B_Q1_c10_r3: 34 consultas completadas en la ventana -> results/raw/postgresql_B_Q1_c10_r3.json
+ Container abarrotes-bench-runner-run-eb44bb8a7997 Creating 
+ Container abarrotes-bench-runner-run-eb44bb8a7997 Created 
+[finalize] postgresql_B_Q1_c10_r3: status=spill qps=0.11333333333333333 p99=88522.61943817139 thr=517.983603 rss_mb=579.252224 spill=True fuente=prometheus notas=['spill: temp_files 0 -> 624', 'spill: temp_bytes 0 -> 46712315904', "spill: log 'temporary file'"]
+[2026-11-01 14:35:19] FIN postgresql_B_Q1_c10_r3; cooldown 60s
+[2026-11-01 14:36:20] AVANCE: 147 / 162
+[2026-11-01 14:36:20] INICIO mongodb_C_Q1_c50_r3  [mongodb PROFILE_C_SEVERE Q1 c=50 r=3]
+ Container abarrotes-bench-runner-run-b221e27b7d50 Creating 
+ Container abarrotes-bench-runner-run-b221e27b7d50 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-59ec3fa481ad Creating 
+ Container abarrotes-bench-runner-run-59ec3fa481ad Created 
+[runner] mongodb_C_Q1_c50_r3: 0 consultas completadas en la ventana -> results/raw/mongodb_C_Q1_c50_r3.json
+ Container abarrotes-bench-runner-run-21889daddf5b Creating 
+ Container abarrotes-bench-runner-run-21889daddf5b Created 
+[finalize] mongodb_C_Q1_c50_r3: status=error qps=0.0 p99=None thr=896.136641 rss_mb=618.020864 spill=False fuente=prometheus notas=['ninguna consulta completada dentro de la ventana']
+[2026-11-01 14:42:44] FIN mongodb_C_Q1_c50_r3; cooldown 60s
+[2026-11-01 14:43:45] AVANCE: 148 / 162
+[2026-11-01 14:43:45] INICIO postgresql_C_Q1_c50_r3  [postgresql PROFILE_C_SEVERE Q1 c=50 r=3]
+ Container abarrotes-bench-runner-run-d2ba7591fc87 Creating 
+ Container abarrotes-bench-runner-run-d2ba7591fc87 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-b0f82aff7f4f Creating 
+ Container abarrotes-bench-runner-run-b0f82aff7f4f Created 
+[runner] postgresql_C_Q1_c50_r3: 0 consultas completadas en la ventana -> results/raw/postgresql_C_Q1_c50_r3.json
+ Container abarrotes-bench-runner-run-f0109d970063 Creating 
+ Container abarrotes-bench-runner-run-f0109d970063 Created 
+[finalize] postgresql_C_Q1_c50_r3: status=oom qps=0.0 p99=None thr=273.932574 rss_mb=989.0816 spill=False fuente=prometheus notas=['docker inspect: OOMKilled', 'log: proceso terminado por señal 9 (OOM killer)', 'ninguna consulta completada dentro de la ventana', "3416/3416 consultas fallidas (> 5%); códigos ['ConnectionTimeout', 'OperationalError']"]
+[2026-11-01 14:50:12] FIN postgresql_C_Q1_c50_r3; cooldown 60s
+[2026-11-01 14:51:13] AVANCE: 149 / 162
+[2026-11-01 14:51:13] INICIO mongodb_C_Q2_V2_c50_r3  [mongodb PROFILE_C_SEVERE Q2_V2 c=50 r=3]
+ Container abarrotes-bench-runner-run-7c5e5b2d5ae4 Creating 
+ Container abarrotes-bench-runner-run-7c5e5b2d5ae4 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-39bbb7afe58e Creating 
+ Container abarrotes-bench-runner-run-39bbb7afe58e Created 
+[runner] mongodb_C_Q2_V2_c50_r3: 0 consultas completadas en la ventana -> results/raw/mongodb_C_Q2_V2_c50_r3.json
+ Container abarrotes-bench-runner-run-874f91261f4a Creating 
+ Container abarrotes-bench-runner-run-874f91261f4a Created 
+[finalize] mongodb_C_Q2_V2_c50_r3: status=error qps=0.0 p99=None thr=886.0209749999999 rss_mb=583.847936 spill=False fuente=prometheus notas=['ninguna consulta completada dentro de la ventana']
+[2026-11-01 14:57:37] FIN mongodb_C_Q2_V2_c50_r3; cooldown 60s
+[2026-11-01 14:58:38] AVANCE: 150 / 162
+[2026-11-01 14:58:38] INICIO mongodb_A_Q1_c10_r3  [mongodb PROFILE_A_BASELINE Q1 c=10 r=3]
+ Container abarrotes-bench-runner-run-e5e8714dcff8 Creating 
+ Container abarrotes-bench-runner-run-e5e8714dcff8 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-664ead1e895d Creating 
+ Container abarrotes-bench-runner-run-664ead1e895d Created 
+[runner] mongodb_A_Q1_c10_r3: 296 consultas completadas en la ventana -> results/raw/mongodb_A_Q1_c10_r3.json
+ Container abarrotes-bench-runner-run-3e806a3b1893 Creating 
+ Container abarrotes-bench-runner-run-3e806a3b1893 Created 
+[finalize] mongodb_A_Q1_c10_r3: status=ok qps=0.9866666666666667 p99=11289.122188091278 thr=0.622113 rss_mb=963.944448 spill=False fuente=prometheus notas=[]
+[2026-11-01 15:05:00] FIN mongodb_A_Q1_c10_r3; cooldown 60s
+[2026-11-01 15:06:02] AVANCE: 151 / 162
+[2026-11-01 15:06:02] INICIO postgresql_A_Q2_V2_c1_r3  [postgresql PROFILE_A_BASELINE Q2_V2 c=1 r=3]
+ Container abarrotes-bench-runner-run-d60e2287cdbd Creating 
+ Container abarrotes-bench-runner-run-d60e2287cdbd Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-19a7d6267b72 Creating 
+ Container abarrotes-bench-runner-run-19a7d6267b72 Created 
+[runner] postgresql_A_Q2_V2_c1_r3: 352 consultas completadas en la ventana -> results/raw/postgresql_A_Q2_V2_c1_r3.json
+ Container abarrotes-bench-runner-run-97d52edf5463 Creating 
+ Container abarrotes-bench-runner-run-97d52edf5463 Created 
+[finalize] postgresql_A_Q2_V2_c1_r3: status=ok qps=1.1733333333333333 p99=981.5326285362245 thr=0.0 rss_mb=34.930688 spill=False fuente=prometheus notas=[]
+[2026-11-01 15:12:25] FIN postgresql_A_Q2_V2_c1_r3; cooldown 60s
+[2026-11-01 15:13:26] AVANCE: 152 / 162
+[2026-11-01 15:13:26] INICIO postgresql_A_Q2_V2_c10_r3  [postgresql PROFILE_A_BASELINE Q2_V2 c=10 r=3]
+ Container abarrotes-bench-runner-run-ad305a36b484 Creating 
+ Container abarrotes-bench-runner-run-ad305a36b484 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-0f440a3ddbd7 Creating 
+ Container abarrotes-bench-runner-run-0f440a3ddbd7 Created 
+[runner] postgresql_A_Q2_V2_c10_r3: 461 consultas completadas en la ventana -> results/raw/postgresql_A_Q2_V2_c10_r3.json
+ Container abarrotes-bench-runner-run-907914600969 Creating 
+ Container abarrotes-bench-runner-run-907914600969 Created 
+[finalize] postgresql_A_Q2_V2_c10_r3: status=ok qps=1.5366666666666666 p99=11132.308530807493 thr=0.7596189999999999 rss_mb=180.580352 spill=False fuente=prometheus notas=[]
+[2026-11-01 15:19:50] FIN postgresql_A_Q2_V2_c10_r3; cooldown 60s
+[2026-11-01 15:20:51] AVANCE: 153 / 162
+[2026-11-01 15:20:51] INICIO mongodb_C_Q2_V1_c1_r3  [mongodb PROFILE_C_SEVERE Q2_V1 c=1 r=3]
+ Container abarrotes-bench-runner-run-b578f49f08d8 Creating 
+ Container abarrotes-bench-runner-run-b578f49f08d8 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-e1f2ad14b0ec Creating 
+ Container abarrotes-bench-runner-run-e1f2ad14b0ec Created 
+[runner] mongodb_C_Q2_V1_c1_r3: 16 consultas completadas en la ventana -> results/raw/mongodb_C_Q2_V1_c1_r3.json
+ Container abarrotes-bench-runner-run-1e7842c7670b Creating 
+ Container abarrotes-bench-runner-run-1e7842c7670b Created 
+[finalize] mongodb_C_Q2_V1_c1_r3: status=ok qps=0.05333333333333334 p99=17579.165947437286 thr=19.917309 rss_mb=407.683072 spill=False fuente=prometheus notas=[]
+[2026-11-01 15:27:13] FIN mongodb_C_Q2_V1_c1_r3; cooldown 60s
+[2026-11-01 15:28:14] AVANCE: 154 / 162
+[2026-11-01 15:28:14] INICIO mongodb_B_Q2_V2_c1_r3  [mongodb PROFILE_B_MEDIUM Q2_V2 c=1 r=3]
+ Container abarrotes-bench-runner-run-68091dc8b37c Creating 
+ Container abarrotes-bench-runner-run-68091dc8b37c Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-34bcd7d5faf7 Creating 
+ Container abarrotes-bench-runner-run-34bcd7d5faf7 Created 
+[runner] mongodb_B_Q2_V2_c1_r3: 30 consultas completadas en la ventana -> results/raw/mongodb_B_Q2_V2_c1_r3.json
+ Container abarrotes-bench-runner-run-b8787f957973 Creating 
+ Container abarrotes-bench-runner-run-b8787f957973 Created 
+[finalize] mongodb_B_Q2_V2_c1_r3: status=ok qps=0.1 p99=10410.248486995697 thr=0.0 rss_mb=670.90432 spill=False fuente=prometheus notas=[]
+[2026-11-01 15:34:36] FIN mongodb_B_Q2_V2_c1_r3; cooldown 60s
+[2026-11-01 15:35:37] AVANCE: 155 / 162
+[2026-11-01 15:35:37] INICIO mongodb_B_Q2_V1_c1_r3  [mongodb PROFILE_B_MEDIUM Q2_V1 c=1 r=3]
+ Container abarrotes-bench-runner-run-a01ede0847f5 Creating 
+ Container abarrotes-bench-runner-run-a01ede0847f5 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-caaaa237685f Creating 
+ Container abarrotes-bench-runner-run-caaaa237685f Created 
+[runner] mongodb_B_Q2_V1_c1_r3: 29 consultas completadas en la ventana -> results/raw/mongodb_B_Q2_V1_c1_r3.json
+ Container abarrotes-bench-runner-run-c33f718f7ab8 Creating 
+ Container abarrotes-bench-runner-run-c33f718f7ab8 Created 
+[finalize] mongodb_B_Q2_V1_c1_r3: status=ok qps=0.09666666666666666 p99=10523.128442764282 thr=0.0 rss_mb=686.342144 spill=False fuente=prometheus notas=[]
+[2026-11-01 15:41:59] FIN mongodb_B_Q2_V1_c1_r3; cooldown 60s
+[2026-11-01 15:43:00] AVANCE: 156 / 162
+[2026-11-01 15:43:00] INICIO mongodb_B_Q2_V1_c50_r3  [mongodb PROFILE_B_MEDIUM Q2_V1 c=50 r=3]
+ Container abarrotes-bench-runner-run-e4f64833b415 Creating 
+ Container abarrotes-bench-runner-run-e4f64833b415 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-885e1bd5ca75 Creating 
+ Container abarrotes-bench-runner-run-885e1bd5ca75 Created 
+[runner] mongodb_B_Q2_V1_c50_r3: 250 consultas completadas en la ventana -> results/raw/mongodb_B_Q2_V1_c50_r3.json
+ Container abarrotes-bench-runner-run-afd12d20ef46 Creating 
+ Container abarrotes-bench-runner-run-afd12d20ef46 Created 
+[finalize] mongodb_B_Q2_V1_c50_r3: status=ok qps=0.8333333333333334 p99=50241.05456113815 thr=577.195043 rss_mb=837.644288 spill=False fuente=prometheus notas=[]
+[2026-11-01 15:49:24] FIN mongodb_B_Q2_V1_c50_r3; cooldown 60s
+[2026-11-01 15:50:25] AVANCE: 157 / 162
+[2026-11-01 15:50:25] INICIO mongodb_C_Q2_V1_c50_r3  [mongodb PROFILE_C_SEVERE Q2_V1 c=50 r=3]
+ Container abarrotes-bench-runner-run-82eb5361110b Creating 
+ Container abarrotes-bench-runner-run-82eb5361110b Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-be75eb7f567b Creating 
+ Container abarrotes-bench-runner-run-be75eb7f567b Created 
+[runner] mongodb_C_Q2_V1_c50_r3: 0 consultas completadas en la ventana -> results/raw/mongodb_C_Q2_V1_c50_r3.json
+ Container abarrotes-bench-runner-run-53c2fcf7fa61 Creating 
+ Container abarrotes-bench-runner-run-53c2fcf7fa61 Created 
+[finalize] mongodb_C_Q2_V1_c50_r3: status=error qps=0.0 p99=None thr=885.5812010000001 rss_mb=581.24288 spill=False fuente=prometheus notas=['ninguna consulta completada dentro de la ventana']
+[2026-11-01 15:56:49] FIN mongodb_C_Q2_V1_c50_r3; cooldown 60s
+[2026-11-01 15:57:50] AVANCE: 158 / 162
+[2026-11-01 15:57:51] INICIO postgresql_B_Q2_V2_c50_r3  [postgresql PROFILE_B_MEDIUM Q2_V2 c=50 r=3]
+ Container abarrotes-bench-runner-run-241c9cd6326b Creating 
+ Container abarrotes-bench-runner-run-241c9cd6326b Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-7206fe48bb26 Creating 
+ Container abarrotes-bench-runner-run-7206fe48bb26 Created 
+[runner] postgresql_B_Q2_V2_c50_r3: 173 consultas completadas en la ventana -> results/raw/postgresql_B_Q2_V2_c50_r3.json
+ Container abarrotes-bench-runner-run-d21d4d962778 Creating 
+ Container abarrotes-bench-runner-run-d21d4d962778 Created 
+[finalize] postgresql_B_Q2_V2_c50_r3: status=ok qps=0.5766666666666667 p99=92708.09098243713 thr=585.430935 rss_mb=595.685376 spill=False fuente=prometheus notas=[]
+[2026-11-01 16:04:17] FIN postgresql_B_Q2_V2_c50_r3; cooldown 60s
+[2026-11-01 16:05:19] AVANCE: 159 / 162
+[2026-11-01 16:05:19] INICIO mongodb_C_Q1_c1_r3  [mongodb PROFILE_C_SEVERE Q1 c=1 r=3]
+ Container abarrotes-bench-runner-run-55febf08a191 Creating 
+ Container abarrotes-bench-runner-run-55febf08a191 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-312f1e474f3f Creating 
+ Container abarrotes-bench-runner-run-312f1e474f3f Created 
+[runner] mongodb_C_Q1_c1_r3: 66 consultas completadas en la ventana -> results/raw/mongodb_C_Q1_c1_r3.json
+ Container abarrotes-bench-runner-run-a1b5ef983986 Creating 
+ Container abarrotes-bench-runner-run-a1b5ef983986 Created 
+[finalize] mongodb_C_Q1_c1_r3: status=ok qps=0.22 p99=4803.315126895904 thr=12.294155 rss_mb=453.05856 spill=False fuente=prometheus notas=[]
+[2026-11-01 16:11:41] FIN mongodb_C_Q1_c1_r3; cooldown 60s
+[2026-11-01 16:12:43] AVANCE: 160 / 162
+[2026-11-01 16:12:43] INICIO postgresql_B_Q1_c50_r3  [postgresql PROFILE_B_MEDIUM Q1 c=50 r=3]
+ Container abarrotes-bench-runner-run-622344cd3e48 Creating 
+ Container abarrotes-bench-runner-run-622344cd3e48 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-af1725aa9227 Creating 
+ Container abarrotes-bench-runner-run-af1725aa9227 Created 
+[runner] postgresql_B_Q1_c50_r3: 0 consultas completadas en la ventana -> results/raw/postgresql_B_Q1_c50_r3.json
+ Container abarrotes-bench-runner-run-d92346306b81 Creating 
+ Container abarrotes-bench-runner-run-d92346306b81 Created 
+[finalize] postgresql_B_Q1_c50_r3: status=oom qps=0.0 p99=None thr=530.0512679999999 rss_mb=1815.928832 spill=True fuente=prometheus notas=['spill: temp_files 0 -> 57', 'spill: temp_bytes 0 -> 8454078464', "spill: log 'temporary file'", 'docker inspect: OOMKilled', 'log: proceso terminado por señal 9 (OOM killer)', 'ninguna consulta completada dentro de la ventana', "150/200 consultas fallidas (> 5%); códigos ['OperationalError']"]
+[2026-11-01 16:19:09] FIN postgresql_B_Q1_c50_r3; cooldown 60s
+[2026-11-01 16:20:10] AVANCE: 161 / 162
+[2026-11-01 16:20:11] INICIO mongodb_A_Q2_V1_c50_r3  [mongodb PROFILE_A_BASELINE Q2_V1 c=50 r=3]
+ Container abarrotes-bench-runner-run-3b1508a32f67 Creating 
+ Container abarrotes-bench-runner-run-3b1508a32f67 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-b1fcae914e44 Creating 
+ Container abarrotes-bench-runner-run-b1fcae914e44 Created 
+[runner] mongodb_A_Q2_V1_c50_r3: 1201 consultas completadas en la ventana -> results/raw/mongodb_A_Q2_V1_c50_r3.json
+ Container abarrotes-bench-runner-run-62c9b7eb07ab Creating 
+ Container abarrotes-bench-runner-run-62c9b7eb07ab Created 
+[finalize] mongodb_A_Q2_V1_c50_r3: status=ok qps=4.003333333333333 p99=12664.06798362732 thr=1.902395 rss_mb=1131.64288 spill=False fuente=prometheus notas=[]
+[2026-11-01 16:26:36] FIN mongodb_A_Q2_V1_c50_r3; cooldown 60s
+[2026-11-01 16:27:37] AVANCE: 162 / 162
+[2026-11-01 16:27:38] MATRIZ TERMINADA
+[2026-11-01 16:27:38] explain mongodb PROFILE_A_BASELINE
+ Container abarrotes-bench-runner-run-87d5b6a1c6b4 Creating 
+ Container abarrotes-bench-runner-run-87d5b6a1c6b4 Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-e6007a9fccaf Creating 
+ Container abarrotes-bench-runner-run-e6007a9fccaf Created 
+[explain] mongodb_A_Q1: {'usedDisk': False, 'COLLSCAN': True, 'IXSCAN': False, 'error': None}
+[explain] mongodb_A_Q2_V1: {'usedDisk': False, 'COLLSCAN': False, 'IXSCAN': True, 'error': None}
+[explain] mongodb_A_Q2_V1_EXPLORATORIA_SIN_LIMIT: {'usedDisk': False, 'COLLSCAN': False, 'IXSCAN': True, 'error': None}
+[explain] mongodb_A_Q2_V2: {'usedDisk': False, 'COLLSCAN': False, 'IXSCAN': True, 'error': None}
+[explain] mongodb_A_Q2_V2_EXPLORATORIA_SIN_LIMIT: {'usedDisk': False, 'COLLSCAN': False, 'IXSCAN': True, 'error': None}
+[2026-11-01 16:28:03] explain mongodb PROFILE_B_MEDIUM
+ Container abarrotes-bench-runner-run-d0bacc4c1c9b Creating 
+ Container abarrotes-bench-runner-run-d0bacc4c1c9b Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-6b7a1f919691 Creating 
+ Container abarrotes-bench-runner-run-6b7a1f919691 Created 
+[explain] mongodb_B_Q1: {'usedDisk': False, 'COLLSCAN': True, 'IXSCAN': False, 'error': None}
+[explain] mongodb_B_Q2_V1: {'usedDisk': False, 'COLLSCAN': False, 'IXSCAN': True, 'error': None}
+[explain] mongodb_B_Q2_V1_EXPLORATORIA_SIN_LIMIT: {'usedDisk': False, 'COLLSCAN': False, 'IXSCAN': True, 'error': None}
+[explain] mongodb_B_Q2_V2: {'usedDisk': False, 'COLLSCAN': False, 'IXSCAN': True, 'error': None}
+[explain] mongodb_B_Q2_V2_EXPLORATORIA_SIN_LIMIT: {'usedDisk': False, 'COLLSCAN': False, 'IXSCAN': True, 'error': None}
+[2026-11-01 16:29:06] explain mongodb PROFILE_C_SEVERE
+ Container abarrotes-bench-runner-run-a08d384b4e8f Creating 
+ Container abarrotes-bench-runner-run-a08d384b4e8f Created 
+[ready] mongodb: 500000 documentos
+ Container abarrotes-bench-runner-run-b675e2d4cbe3 Creating 
+ Container abarrotes-bench-runner-run-b675e2d4cbe3 Created 
+[explain] mongodb_C_Q1: {'usedDisk': False, 'COLLSCAN': True, 'IXSCAN': False, 'error': None}
+[explain] mongodb_C_Q2_V1: {'usedDisk': False, 'COLLSCAN': False, 'IXSCAN': True, 'error': None}
+[explain] mongodb_C_Q2_V1_EXPLORATORIA_SIN_LIMIT: {'usedDisk': False, 'COLLSCAN': False, 'IXSCAN': True, 'error': None}
+[explain] mongodb_C_Q2_V2: {'usedDisk': False, 'COLLSCAN': False, 'IXSCAN': True, 'error': None}
+[explain] mongodb_C_Q2_V2_EXPLORATORIA_SIN_LIMIT: {'usedDisk': False, 'COLLSCAN': False, 'IXSCAN': True, 'error': None}
+[2026-11-01 16:30:37] explain postgresql PROFILE_A_BASELINE
+ Container abarrotes-bench-runner-run-c9e6f4e058e3 Creating 
+ Container abarrotes-bench-runner-run-c9e6f4e058e3 Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-e9b83c87201f Creating 
+ Container abarrotes-bench-runner-run-e9b83c87201f Created 
+[explain] postgresql_A_Q1: {'sort_method': 'quicksort  Average Memory: 42kB  Peak Memory: 42kB', 'external_merge': True, 'temp_buffers': True, 'seq_scan': True, 'index_scan': False, 'error': None}
+[explain] postgresql_A_Q2_V1: {'sort_method': 'top-N heapsort  Memory: 276kB', 'external_merge': False, 'temp_buffers': False, 'seq_scan': True, 'index_scan': False, 'error': None}
+[explain] postgresql_A_Q2_V1_EXPLORATORIA_SIN_LIMIT: {'sort_method': 'external merge  Disk: 3560kB', 'external_merge': True, 'temp_buffers': True, 'seq_scan': True, 'index_scan': False, 'error': None}
+[explain] postgresql_A_Q2_V2: {'sort_method': 'top-N heapsort  Memory: 276kB', 'external_merge': False, 'temp_buffers': False, 'seq_scan': True, 'index_scan': False, 'error': None}
+[explain] postgresql_A_Q2_V2_EXPLORATORIA_SIN_LIMIT: {'sort_method': 'quicksort  Memory: 5234kB', 'external_merge': False, 'temp_buffers': False, 'seq_scan': True, 'index_scan': False, 'error': None}
+[2026-11-01 16:31:19] explain postgresql PROFILE_B_MEDIUM
+ Container abarrotes-bench-runner-run-4111be2fa0ea Creating 
+ Container abarrotes-bench-runner-run-4111be2fa0ea Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-f2609386d16a Creating 
+ Container abarrotes-bench-runner-run-f2609386d16a Created 
+[explain] postgresql_B_Q1: {'sort_method': 'quicksort  Average Memory: 42kB  Peak Memory: 42kB', 'external_merge': True, 'temp_buffers': True, 'seq_scan': True, 'index_scan': False, 'error': None}
+[explain] postgresql_B_Q2_V1: {'sort_method': 'top-N heapsort  Memory: 276kB', 'external_merge': False, 'temp_buffers': False, 'seq_scan': True, 'index_scan': False, 'error': None}
+[explain] postgresql_B_Q2_V1_EXPLORATORIA_SIN_LIMIT: {'sort_method': 'external merge  Disk: 3440kB', 'external_merge': True, 'temp_buffers': True, 'seq_scan': True, 'index_scan': False, 'error': None}
+[explain] postgresql_B_Q2_V2: {'sort_method': 'top-N heapsort  Memory: 276kB', 'external_merge': False, 'temp_buffers': False, 'seq_scan': True, 'index_scan': False, 'error': None}
+[explain] postgresql_B_Q2_V2_EXPLORATORIA_SIN_LIMIT: {'sort_method': 'quicksort  Memory: 5321kB', 'external_merge': False, 'temp_buffers': False, 'seq_scan': True, 'index_scan': False, 'error': None}
+[2026-11-01 16:32:04] explain postgresql PROFILE_C_SEVERE
+ Container abarrotes-bench-runner-run-75c9378b4c3a Creating 
+ Container abarrotes-bench-runner-run-75c9378b4c3a Created 
+[ready] postgresql: 500000 documentos
+ Container abarrotes-bench-runner-run-8566b496c16e Creating 
+ Container abarrotes-bench-runner-run-8566b496c16e Created 
+[explain] postgresql_C_Q1: {'sort_method': 'quicksort  Average Memory: 42kB  Peak Memory: 42kB', 'external_merge': True, 'temp_buffers': True, 'seq_scan': True, 'index_scan': False, 'error': None}
+[explain] postgresql_C_Q2_V1: {'sort_method': 'top-N heapsort  Memory: 274kB', 'external_merge': False, 'temp_buffers': False, 'seq_scan': True, 'index_scan': False, 'error': None}
+[explain] postgresql_C_Q2_V1_EXPLORATORIA_SIN_LIMIT: {'sort_method': 'external merge  Disk: 3408kB', 'external_merge': True, 'temp_buffers': True, 'seq_scan': True, 'index_scan': False, 'error': None}
+[explain] postgresql_C_Q2_V2: {'sort_method': 'top-N heapsort  Memory: 276kB', 'external_merge': False, 'temp_buffers': False, 'seq_scan': True, 'index_scan': False, 'error': None}
+[explain] postgresql_C_Q2_V2_EXPLORATORIA_SIN_LIMIT: {'sort_method': 'quicksort  Memory: 5348kB', 'external_merge': False, 'temp_buffers': False, 'seq_scan': True, 'index_scan': False, 'error': None}
+ Container abarrotes-bench-runner-run-43e7fe2f67d2 Creating 
+ Container abarrotes-bench-runner-run-43e7fe2f67d2 Created 
+consolidado: 162 filas -> entregables/mediciones.csv
+tablas, M3, figuras, baseline y eventos -> entregables/
