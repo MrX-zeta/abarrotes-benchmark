@@ -1,0 +1,25 @@
+Operación,Usuario,Tipo,Datos que requiere,Frecuencia (A/M/B)
+Revisar inventario,Personal de inventario,Lectura / actualización,"Producto, identificador, categoría, existencia",Alta
+Registrar productos,Personal de inventario,Alta,"Identificador, código de barras, categoría, precio, oferta",Baja
+Modificar productos,Personal de inventario,Actualización,"Identificador, código de barras, categoría, precio, oferta",Baja
+Modificar precios,Personal de inventario,Actualización,"Producto, precio, oferta",Baja
+Consultar inventario,Personal de inventario,Lectura,"Producto, categoría, existencia",Alta
+Organizar productos por categoría,Personal de inventario,Actualización,"Producto, categoría",Alta
+Consultar mapa de la tienda,Dueño,Lectura,"Sucursal, pasillos, estantes, productos",Alta
+Consultar mapa de la tienda,Personal de inventario,Lectura,"Sucursal, pasillos, estantes, productos",Alta
+Consultar mapa de la tienda,Cliente,Lectura,"Sucursal, pasillos, estantes, productos",Alta
+Consultar ubicación de empleados,Dueño,Lectura,"Sucursal, ubicación del empleado",Alta
+Consultar ubicación de empleados,Cliente,Lectura,"Sucursal, ubicación del empleado",Alta
+Actualizar ubicación del personal,Personal de inventario,Actualización,"Empleado, sucursal, ubicación",Alta
+Consultar personal disponible,Dueño,Lectura,"Empleado, función, sucursal, disponibilidad",Alta
+Registrar pedido en línea,Cliente,Alta,"Cliente, productos, cantidades, sucursal",Media
+Consultar pedidos en línea,Dueño,Lectura,"Pedido, productos, cliente, estado, sucursal",Media
+Consultar ventas,Cajero,Lectura,"Venta, productos, cantidades, precios",Alta
+Consultar ventas,Dueño,Lectura,"Venta, productos, cantidades, precios, sucursal",Alta
+Consultar categorías de productos,Cliente,Lectura,"Producto, categoría",Alta
+Consultar ubicación de productos,Cliente,Lectura,"Producto, categoría, pasillo, estante",Alta
+Registrar recepción de productos,Personal de inventario,Alta,"Producto, cantidad, categoría",Alta
+Mover productos a estantes,Personal de inventario,Actualización,"Producto, cantidad, pasillo, estante",Alta
+Dar de baja un producto (borrado lógico),Personal de inventario,Escritura,"Id del producto, código de barras, motivo de baja",Baja
+Dar de baja un empleado,Dueño,Escritura,"Id del empleado, nombre, sucursal y fecha de baja",Baja
+Cancelar pedido,Cliente,Escritura,"Id del pedido, cliente, productos, estado del pedido y fecha de cancelación",Baja
