@@ -1,0 +1,125 @@
+{
+  "generado_en": "2026-10-31T18:35:13Z",
+  "descripcion": "Ficha técnica del benchmark MongoDB vs PostgreSQL JSONB (tienda de abarrotes). Complementa al CSV sin modificar su esquema (ADR-001).",
+  "query_id": {
+    "Q1": {
+      "descripcion": "Unwind, Filter & Grouping (playbook 5.1)",
+      "config": {
+        "mongodb": {
+          "pipeline": "queries/mongodb/q1_unwind_group.json",
+          "allowDiskUse": null
+        },
+        "postgresql": {
+          "sql": "queries/postgresql/q1_unwind_group.sql",
+          "work_mem": null
+        }
+      }
+    },
+    "Q2_V1": {
+      "descripcion": "Massive Sort & Top-K, variante sin spill permitido / 4MB (playbook 5.2)",
+      "config": {
+        "mongodb": {
+          "pipeline": "queries/mongodb/q2_sort_topk.json",
+          "allowDiskUse": false
+        },
+        "postgresql": {
+          "sql": "queries/postgresql/q2_sort_topk.sql",
+          "work_mem": "4MB"
+        }
+      }
+    },
+    "Q2_V2": {
+      "descripcion": "Massive Sort & Top-K, variante con spill permitido / 64MB (playbook 5.2)",
+      "config": {
+        "mongodb": {
+          "pipeline": "queries/mongodb/q2_sort_topk.json",
+          "allowDiskUse": true
+        },
+        "postgresql": {
+          "sql": "queries/postgresql/q2_sort_topk.sql",
+          "work_mem": "64MB"
+        }
+      }
+    }
+  },
+  "perfiles": {
+    "PROFILE_A_BASELINE": {
+      "PROFILE_ID": "PROFILE_A_BASELINE",
+      "DB_CPUS": "4.0",
+      "DB_MEM": "4096m",
+      "DB_SWAPPINESS": "0",
+      "MONGO_CACHE_GB": "1",
+      "PG_SHARED_BUFFERS": "1GB"
+    },
+    "PROFILE_B_MEDIUM": {
+      "PROFILE_ID": "PROFILE_B_MEDIUM",
+      "DB_CPUS": "2.0",
+      "DB_MEM": "2048m",
+      "DB_SWAPPINESS": "0",
+      "MONGO_CACHE_GB": "0.5",
+      "PG_SHARED_BUFFERS": "512MB"
+    },
+    "PROFILE_C_SEVERE": {
+      "PROFILE_ID": "PROFILE_C_SEVERE",
+      "DB_CPUS": "1.0",
+      "DB_MEM": "1024m",
+      "DB_SWAPPINESS": "0",
+      "MONGO_CACHE_GB": "0.25",
+      "PG_SHARED_BUFFERS": "256MB"
+    }
+  },
+  "nucleos": {
+    "DB_CPUSET": "0-3",
+    "RUNNER_CPUSET": "4-11",
+    "MONITOR_CPUSET": "12-15"
+  },
+  "protocolo": {
+    "warmup_s": 60,
+    "medicion_s": 300,
+    "cooldown_s": 60,
+    "flush": "sync; echo 3 > /proc/sys/vm/drop_caches (contenedor privilegiado en la VM de Docker)",
+    "concurrencias": [
+      1,
+      10,
+      50
+    ],
+    "repeticiones": 3,
+    "configuraciones": 54,
+    "ejecuciones": 162,
+    "orden": "bloques por repetición, aleatorio dentro del bloque",
+    "semilla_orden": 20261031
+  },
+  "dataset": {
+    "archivo": "data/pedidos.ndjson",
+    "documentos": 500000,
+    "semilla": 20261031,
+    "sha256": "43b43458640bdec09312c39f9fbbf5472ada900d12bd8b23a1e919bef681cc9d"
+  },
+  "csv": {
+    "columnas": [
+      "timestamp_epoch",
+      "engine",
+      "profile",
+      "query_id",
+      "concurrency",
+      "run_number",
+      "throughput_qps",
+      "latency_p50_ms",
+      "latency_p95_ms",
+      "latency_p99_ms",
+      "cpu_throttled_seconds",
+      "max_rss_mb",
+      "disk_spill",
+      "status"
+    ],
+    "max_rss_mb": "máximo de container_memory_rss en la ventana / 1 000 000",
+    "cpu_throttled_seconds": "fin - inicio de container_cpu_cfs_throttled_seconds_total en la ventana",
+    "status_prioridad": "oom > error > spill > ok"
+  },
+  "versiones": "# Versiones exactas (2026-10-31T18:29:15Z)\ndocker_server=29.9.2\ncompose=5.6.1\nimage mongo:8.0.34 mongo@sha256:b9924c330a8bbc5800fe9c69f04a84e221eca7b28fd049a0354147d9908fa142\nimage postgres:17.11 postgres@sha256:31ba9c94a03ada9988f2bb493a22a75eef3a185884533e5cdbcd498ea835b08f\nimage gcr.io/cadvisor/cadvisor:v0.52.1 gcr.io/cadvisor/cadvisor@sha256:f40e65878e25c2e78ea037f73a449527a0fb994e303dc3e34cb6b187b4b91435\nimage prom/prometheus:v3.5.0 prom/prometheus@sha256:63805ebb8d2b3920190daf1cb14a60871b16fd38bed42b857a3182bc621f4996\nimage prom/node-exporter:v1.9.1 prom/node-exporter@sha256:d00a542e409ee618a4edc67da14dd48c5da66726bbd5537ab2af9c1dfc442c8a\nimage alpine:3.20 alpine@sha256:d9e853e87e55526f6b2917df91a2115c36dd7c696a35be12163d44e6e2a4b6bc\nimage abarrotes-runner:1.0 abarrotes-runner@sha256:e945432c667480bbe16dcf9505af1a5c640bb479d1f11e85ef9b0dcd57f49bca\nmongod: db version v8.0.34\npostgres: postgres (PostgreSQL) 17.11 (Debian 17.11-1.pgdg13+2)\nrunner python libs:\nmatplotlib==3.11.2\nnumpy==2.5.3\npandas==3.0.5\npsycopg==3.3.6\npsycopg-binary==3.3.6\npymongo==4.19.0\nrequests==2.34.2\n",
+  "decisiones": [
+    "docs/decisiones/ADR-001-criterios-de-interpretacion.md",
+    "docs/decisiones/ADR-002-dominio-y-equivalencia.md",
+    "docs/decisiones/ADR-003-decisiones-operativas.md"
+  ]
+}
