@@ -1,0 +1,343 @@
+{
+  "nodos": [
+    {
+      "id": "M1",
+      "tipo": "pregunta",
+      "nombre": "Latencia P95/P99 bajo límites de CPU y memoria"
+    },
+    {
+      "id": "M2",
+      "tipo": "pregunta",
+      "nombre": "Buffers de orden/agrupación: spill u OOM"
+    },
+    {
+      "id": "M3",
+      "tipo": "pregunta",
+      "nombre": "Huella de CPU y memoria por 1 000 documentos"
+    },
+    {
+      "id": "ENT",
+      "tipo": "fuente",
+      "nombre": "Entrevista (original + complementada)",
+      "archivo": "docs/proyecto/"
+    },
+    {
+      "id": "ADR1",
+      "tipo": "decision",
+      "nombre": "Criterios de interpretación",
+      "archivo": "docs/decisiones/ADR-001-criterios-de-interpretacion.md"
+    },
+    {
+      "id": "ADR2",
+      "tipo": "decision",
+      "nombre": "Dominio y equivalencia",
+      "archivo": "docs/decisiones/ADR-002-dominio-y-equivalencia.md"
+    },
+    {
+      "id": "ADR3",
+      "tipo": "decision",
+      "nombre": "Decisiones operativas",
+      "archivo": "docs/decisiones/ADR-003-decisiones-operativas.md"
+    },
+    {
+      "id": "ESQ",
+      "tipo": "diseno",
+      "nombre": "Colección pedidos",
+      "archivo": "docs/diseno/esquema_pedidos.md"
+    },
+    {
+      "id": "GEN",
+      "tipo": "archivo",
+      "nombre": "Generador de 500 000 pedidos",
+      "archivo": "synthetic_data_generator.py"
+    },
+    {
+      "id": "VER",
+      "tipo": "archivo",
+      "nombre": "Verificación del dataset",
+      "archivo": "scripts/verify_dataset.py"
+    },
+    {
+      "id": "MDB",
+      "tipo": "motor",
+      "nombre": "MongoDB 8.0.34 (WiredTiger)"
+    },
+    {
+      "id": "PG",
+      "tipo": "motor",
+      "nombre": "PostgreSQL 17.11 (JSONB)"
+    },
+    {
+      "id": "PRF",
+      "tipo": "componente",
+      "nombre": "Perfiles A/B/C",
+      "archivo": "profiles/"
+    },
+    {
+      "id": "DC",
+      "tipo": "archivo",
+      "nombre": "docker-compose.yml",
+      "archivo": "docker-compose.yml"
+    },
+    {
+      "id": "Q1",
+      "tipo": "consulta",
+      "nombre": "Q1 unwind-filtro-agrupación (CPU)",
+      "archivo": "queries/"
+    },
+    {
+      "id": "Q2V1",
+      "tipo": "consulta",
+      "nombre": "Q2_V1 Top-1000 (allowDiskUse false / 4MB)",
+      "archivo": "queries/"
+    },
+    {
+      "id": "Q2V2",
+      "tipo": "consulta",
+      "nombre": "Q2_V2 Top-1000 (allowDiskUse true / 64MB)",
+      "archivo": "queries/"
+    },
+    {
+      "id": "RUN",
+      "tipo": "archivo",
+      "nombre": "Runner multiproceso",
+      "archivo": "benchmark_runner/"
+    },
+    {
+      "id": "ORQ",
+      "tipo": "archivo",
+      "nombre": "Orquestación de la matriz (162 corridas)",
+      "archivo": "run_benchmarks.sh"
+    },
+    {
+      "id": "TEL",
+      "tipo": "componente",
+      "nombre": "cAdvisor + Node Exporter + Prometheus (1 s)",
+      "archivo": "config/prometheus/"
+    },
+    {
+      "id": "CG",
+      "tipo": "componente",
+      "nombre": "Lectura directa del cgroup (respaldo)",
+      "archivo": "benchmark_runner/cgroup.py"
+    },
+    {
+      "id": "CSV",
+      "tipo": "entregable",
+      "nombre": "mediciones.csv (esquema 8.2)",
+      "archivo": "entregables/mediciones.csv"
+    },
+    {
+      "id": "META",
+      "tipo": "entregable",
+      "nombre": "benchmark_metadata.json",
+      "archivo": "entregables/benchmark_metadata.json"
+    },
+    {
+      "id": "EXP",
+      "tipo": "evidencia",
+      "nombre": "Planes explain / EXPLAIN ANALYZE",
+      "archivo": "results/explain/"
+    },
+    {
+      "id": "EVI",
+      "tipo": "evidencia",
+      "nombre": "Evidencias baseline / spill / OOM",
+      "archivo": "entregables/evidencias/"
+    },
+    {
+      "id": "AN",
+      "tipo": "archivo",
+      "nombre": "Análisis: tablas, M3, figuras",
+      "archivo": "scripts/analyze_results.py"
+    },
+    {
+      "id": "REP",
+      "tipo": "entregable",
+      "nombre": "Reporte de 7 secciones",
+      "archivo": "entregables/reporte/reporte_metricas.md"
+    }
+  ],
+  "aristas": [
+    {
+      "de": "ENT",
+      "a": "ESQ",
+      "relacion": "justifica"
+    },
+    {
+      "de": "ADR2",
+      "a": "ESQ",
+      "relacion": "define"
+    },
+    {
+      "de": "ESQ",
+      "a": "GEN",
+      "relacion": "especifica"
+    },
+    {
+      "de": "GEN",
+      "a": "VER",
+      "relacion": "verificado_por"
+    },
+    {
+      "de": "GEN",
+      "a": "MDB",
+      "relacion": "carga"
+    },
+    {
+      "de": "GEN",
+      "a": "PG",
+      "relacion": "carga"
+    },
+    {
+      "de": "ADR3",
+      "a": "PRF",
+      "relacion": "configura"
+    },
+    {
+      "de": "PRF",
+      "a": "DC",
+      "relacion": "parametriza"
+    },
+    {
+      "de": "DC",
+      "a": "MDB",
+      "relacion": "limita"
+    },
+    {
+      "de": "DC",
+      "a": "PG",
+      "relacion": "limita"
+    },
+    {
+      "de": "ADR2",
+      "a": "Q1",
+      "relacion": "define"
+    },
+    {
+      "de": "ADR2",
+      "a": "Q2V1",
+      "relacion": "define"
+    },
+    {
+      "de": "ADR1",
+      "a": "Q2V1",
+      "relacion": "define"
+    },
+    {
+      "de": "ADR1",
+      "a": "Q2V2",
+      "relacion": "define"
+    },
+    {
+      "de": "Q1",
+      "a": "M1",
+      "relacion": "responde"
+    },
+    {
+      "de": "Q1",
+      "a": "M3",
+      "relacion": "responde"
+    },
+    {
+      "de": "Q2V1",
+      "a": "M2",
+      "relacion": "responde"
+    },
+    {
+      "de": "Q2V2",
+      "a": "M2",
+      "relacion": "responde"
+    },
+    {
+      "de": "ORQ",
+      "a": "RUN",
+      "relacion": "ejecuta"
+    },
+    {
+      "de": "RUN",
+      "a": "Q1",
+      "relacion": "ejecuta"
+    },
+    {
+      "de": "RUN",
+      "a": "Q2V1",
+      "relacion": "ejecuta"
+    },
+    {
+      "de": "RUN",
+      "a": "Q2V2",
+      "relacion": "ejecuta"
+    },
+    {
+      "de": "TEL",
+      "a": "RUN",
+      "relacion": "mide"
+    },
+    {
+      "de": "CG",
+      "a": "RUN",
+      "relacion": "respalda"
+    },
+    {
+      "de": "RUN",
+      "a": "CSV",
+      "relacion": "produce"
+    },
+    {
+      "de": "ADR1",
+      "a": "CSV",
+      "relacion": "interpreta"
+    },
+    {
+      "de": "ORQ",
+      "a": "META",
+      "relacion": "produce"
+    },
+    {
+      "de": "ORQ",
+      "a": "EXP",
+      "relacion": "produce"
+    },
+    {
+      "de": "CSV",
+      "a": "AN",
+      "relacion": "alimenta"
+    },
+    {
+      "de": "AN",
+      "a": "EVI",
+      "relacion": "produce"
+    },
+    {
+      "de": "AN",
+      "a": "REP",
+      "relacion": "alimenta"
+    },
+    {
+      "de": "EXP",
+      "a": "REP",
+      "relacion": "respalda"
+    },
+    {
+      "de": "EVI",
+      "a": "REP",
+      "relacion": "respalda"
+    },
+    {
+      "de": "M1",
+      "a": "REP",
+      "relacion": "respondida_en"
+    },
+    {
+      "de": "M2",
+      "a": "REP",
+      "relacion": "respondida_en"
+    },
+    {
+      "de": "M3",
+      "a": "REP",
+      "relacion": "respondida_en"
+    }
+  ]
+}
